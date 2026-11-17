@@ -5,12 +5,14 @@ El reconocimiento léxico se incorporó posteriormente en la
 [etapa 3](08-analisis-lexico.md) y el parser/AST en la
 [etapa 4](09-analisis-sintactico.md). La semántica y el endpoint POST están
 implementados en [etapa 5](10-semantica-y-api.md), con consultas de recursos.
+La [interfaz de etapa 6](11-interfaz.md) consume estos contratos y genera sus
+tipos TypeScript desde los esquemas exportados.
 
 ## Entrada única para editor y archivo
 
-El lenguaje es texto; `.hor` es su extensión de archivo. El usuario podrá escribir
+El lenguaje es texto; `.hor` es su extensión de archivo. El usuario puede escribir
 o pegarlo en el recuadro, o pulsar «Subir .hor» para cargarlo en el mismo editor.
-El frontend leerá el archivo en UTF-8, permitirá editarlo y enviará el contenido.
+El frontend lee el archivo en UTF-8, permite editarlo y envía el contenido.
 No se necesita un archivo para compilar texto escrito directamente.
 
 Cuerpo de `POST /api/v1/analyses`:

@@ -2,8 +2,8 @@
 
 El caso de uso ejecuta léxico, sintaxis y semántica, conserva los resultados de
 cada fase y entrega tokens, AST, símbolos, comprobaciones y horarios normalizados.
-El editor, el botón Subir .hor y las pestañas de resultados se construirán en la
-etapa 6 según la referencia visual. La API ya permite probar el motor completo.
+El editor, el botón Subir .hor y las pestañas de resultados están disponibles en la
+[etapa 6](11-interfaz.md) según la referencia visual. La API permite probar el motor completo.
 
 ## Probar por terminal
 

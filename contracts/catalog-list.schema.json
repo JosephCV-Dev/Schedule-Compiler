@@ -1,0 +1,65 @@
+{
+  "$defs": {
+    "CatalogSourceResponse": {
+      "additionalProperties": false,
+      "properties": {
+        "file": {
+          "title": "File",
+          "type": "string"
+        },
+        "sha256": {
+          "title": "Sha256",
+          "type": "string"
+        },
+        "sheet": {
+          "title": "Sheet",
+          "type": "string"
+        }
+      },
+      "required": [
+        "file",
+        "sha256",
+        "sheet"
+      ],
+      "title": "CatalogSourceResponse",
+      "type": "object"
+    },
+    "CatalogSummaryResponse": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "source": {
+          "$ref": "#/$defs/CatalogSourceResponse"
+        },
+        "snapshot_sha256": {
+          "title": "Snapshot Sha256",
+          "type": "string"
+        },
+        "offers": {
+          "title": "Offers",
+          "type": "integer"
+        },
+        "sessions": {
+          "title": "Sessions",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "source",
+        "snapshot_sha256",
+        "offers",
+        "sessions"
+      ],
+      "title": "CatalogSummaryResponse",
+      "type": "object"
+    }
+  },
+  "items": {
+    "$ref": "#/$defs/CatalogSummaryResponse"
+  },
+  "type": "array"
+}

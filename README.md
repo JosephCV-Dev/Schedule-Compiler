@@ -5,11 +5,12 @@ con análisis léxico, sintáctico y semántico e interfaz web.
 
 ## Estado
 
-Etapa 5: motor completo y API disponibles. Las tres fases entregan tokens, AST,
+Etapa 6: interfaz web conectada al motor completo y su API. Las tres fases entregan tokens, AST,
 símbolos, diagnósticos, comprobaciones y horario normalizado. Profesores libres,
 aulas nuevas sujetas a ocupación y asignaciones pendientes según política.
 Capacidad, laboratorio y límites siguen sin configurar y se muestran expresamente.
-La interfaz completa corresponde a la etapa 6.
+Editor de texto y carga .hor, árbol interactivo, tablas, diagnósticos, consola y
+calendario disponibles. [Guía de la interfaz](docs/11-interfaz.md).
 
 Stack confirmado: frontend React con TypeScript y Vite, API en Python con FastAPI
 y modelos del núcleo independientes del framework; lexer basic y parser LALR de Lark.
@@ -98,7 +99,8 @@ npm run dev
 
 Abrir `http://127.0.0.1:5173`. La página indica si el backend está conectado.
 Documentación de la API: `http://127.0.0.1:8000/docs`, con análisis y consultas de
-recursos disponibles. El editor y sus pestañas todavía no están implementados.
+recursos disponibles. Escribir o pegar código, subir un `.hor` o cargar un ejemplo
+y pulsar **Compilar**. Para apagar los servidores, pulsar **Ctrl+C** en cada terminal.
 
 Organización inicial:
 
@@ -111,7 +113,7 @@ backend/src/schedule_compiler/
   infrastructure/   # Datos y política
 backend/tests/
 frontend/src/
-  app/              # Composición inicial
+  app/              # Composición, estado y estilos
   api/              # Cliente HTTP
   features/editor/
   features/analysis/
@@ -119,7 +121,7 @@ frontend/src/
   components/
 ```
 
-La lógica de los módulos reservados se añadirá según el roadmap. Instrucciones
+La etapa 7 de verificación final y entrega queda pendiente. Instrucciones
 adicionales en [backend](backend/README.md) y [frontend](frontend/README.md).
 
 ## Documentación
@@ -133,6 +135,7 @@ adicionales en [backend](backend/README.md) y [frontend](frontend/README.md).
 - [Analizador léxico y comandos de prueba](docs/08-analisis-lexico.md).
 - [Analizador sintáctico y árbol AST](docs/09-analisis-sintactico.md).
 - [Semántica, API y análisis completo](docs/10-semantica-y-api.md).
+- [Interfaz, uso y pruebas de navegador](docs/11-interfaz.md).
 
 ## Verificar modelos y contrato
 
@@ -148,7 +151,7 @@ backend/.venv/bin/python scripts/exportar_contratos.py --check
 ```
 
 Los casos en `contracts/examples/` se generan con el motor real desde etapa 5 y
-se contrastan con la respuesta HTTP. La interfaz futura admitirá escribir/pegar texto y
+se contrastan con la respuesta HTTP. La interfaz admite escribir/pegar texto y
 cargar un `.hor` en el mismo editor. El AST exportado tiene nodos e hijos para
 dibujar el árbol, sin imponer su distribución gráfica.
 
@@ -187,4 +190,4 @@ docentes, capacidades ni otros valores que la fuente no proporciona.
 
 Las tres fases ya procesan los ejemplos. Los casos semantico/aula_pendiente.hor y
 semantico/aula_ocupada.hor demuestran INCOMPLETO e INVALIDO en alcance PROPUESTA.
-La interfaz completa se construirá en la etapa 6.
+La interfaz presenta esos resultados reales y permite descargar código y JSON.

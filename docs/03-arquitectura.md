@@ -1,7 +1,8 @@
 # Arquitectura web y plan propuesto
 
-Estado: etapas 1 a 5 preparadas: estructura, modelos, contrato y motor de las tres
-fases con API. Interfaz completa pendiente. Stack confirmado por el usuario.
+Estado: etapas 1 a 6 implementadas: estructura, modelos, contrato, motor de las tres
+fases con API e interfaz local. Stack confirmado por el usuario.
+[Interfaz y pruebas de navegador](11-interfaz.md).
 [Semántica y API](10-semantica-y-api.md).
 Sin publicación. Léxico y CLI: [documentación de etapa 3](08-analisis-lexico.md).
 Sintaxis y AST: [documentación de etapa 4](09-analisis-sintactico.md).
@@ -132,8 +133,8 @@ flujo de análisis ya funcione.
 ## Interfaz propuesta
 
 La referencia visual se describe en [este documento](06-referencia-frontend.md).
-Se construirá en la etapa 6. Un espacio principal para elegir catálogo, cargar un ejemplo, editar código y
-pulsar «Analizar». El resultado ofrece vistas de tokens, árbol, símbolos,
+Implementada en la etapa 6: un espacio principal para elegir catálogo, cargar un ejemplo, editar código y
+pulsar «Compilar». El resultado ofrece vistas de tokens, árbol, símbolos,
 diagnósticos y horario semanal. Cada error del texto puede señalar su ubicación
 en el editor; los hallazgos del Excel muestran hoja y celda.
 
@@ -176,7 +177,7 @@ Esta lista resume los hitos generales. El desglose y estado por etapa están en
 [el roadmap](05-roadmap.md).
 
 1. **Base del proyecto:** análisis de fuentes, lenguaje, estructura y arranque.
-   Completada junto con el motor y su API. La interfaz sigue pendiente.
+   Completada junto con el motor, su API y la interfaz local.
 2. **Motor mínimo:** una oferta con dos sesiones produce tokens, AST y símbolos;
    duración cero y referencias incorrectas producen diagnósticos verificables.
 3. **Semántica y selección:** detectar cruces, respetar clases contiguas y analizar

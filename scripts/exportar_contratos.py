@@ -6,6 +6,12 @@ from pathlib import Path
 
 from fixtures_contrato import serialized_examples
 from schedule_compiler.api.schemas.analysis import AnalysisRequest, AnalysisResponse
+from pydantic import TypeAdapter
+from schedule_compiler.api.schemas.resources import (
+    CatalogSummaryResponse,
+    ExampleResponse,
+    ExampleSummaryResponse,
+)
 
 
 def main() -> None:
@@ -16,6 +22,9 @@ def main() -> None:
     artifacts = {
         "analysis-request.schema.json": AnalysisRequest.model_json_schema(),
         "analysis-response.schema.json": AnalysisResponse.model_json_schema(),
+        "catalog-list.schema.json": TypeAdapter(list[CatalogSummaryResponse]).json_schema(),
+        "example-list.schema.json": TypeAdapter(list[ExampleSummaryResponse]).json_schema(),
+        "example.schema.json": ExampleResponse.model_json_schema(),
     }
     for name, example in serialized_examples(root / "data").items():
         artifacts[f"examples/{name}.json"] = example

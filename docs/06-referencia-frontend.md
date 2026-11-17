@@ -2,7 +2,7 @@
 
 Referencia: imagen enviada por el usuario en la conversación el 17 de noviembre
 de 2026. No hay un archivo local de esa imagen; este documento registra sus
-características para implementarlas en la etapa 6.
+características implementadas en la etapa 6. [Uso y verificación](11-interfaz.md).
 
 ## Distribución
 
@@ -30,8 +30,9 @@ proyecto conserva OFERTA/SESION/HORARIO, DURACION en horas y ausencia de puntos 
 coma, según la especificación .hor v0.2. No se añaden ALUMNOS ni reglas de docentes
 solo porque aparezcan en la imagen.
 
-La etapa 1 ofrece una página mínima para verificar la conexión, con los colores
-base. El editor y los paneles todavía no forman parte de esa página.
+La etapa 6 reemplaza la página inicial por el editor, los paneles y la consola.
+Se usa un icono académico genérico junto al nombre UACAM; no se reproduce un
+emblema oficial sin disponer del archivo correspondiente.
 
 ## Aclaraciones confirmadas para la etapa 6
 

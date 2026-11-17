@@ -19,7 +19,7 @@ nuevas admitidas y sujetas a ocupación conocida. SIN_ASIGNAR significa pendient
 | 3. Análisis léxico | Tokens, patrones, ubicaciones y errores léxicos | Completada |
 | 4. Análisis sintáctico | Gramática ejecutable, AST y errores de estructura | Completada |
 | 5. Semántica y API de análisis | Reglas, catálogo, selección e integración HTTP | Completada |
-| 6. Interfaz del compilador | Editor, pestañas, consola y horario según referencia | Pendiente |
+| 6. Interfaz del compilador | Editor, pestañas, consola y horario según referencia | Completada |
 | 7. Verificación y entrega | Casos completos, documentación y demostración | Pendiente |
 
 ## 0. Alcance y fuentes — completada
@@ -134,9 +134,9 @@ contrato ahora provienen del motor real.
 Verificación: 221 pruebas del backend, incluyendo HTTP/CLI; petición HTTP real con
 Uvicorn desde otro cwd; contrato sincronizado y build del frontend. Carolina
 conserva 16 tramos y 29 h. [Comandos y límites](10-semantica-y-api.md).
-Etapa 6 pendiente de indicación del usuario.
+La interfaz se incorporó posteriormente en la etapa 6.
 
-## 6. Interfaz del compilador
+## 6. Interfaz del compilador — completada
 
 Construir la pantalla conforme a [la referencia visual](06-referencia-frontend.md):
 tema oscuro y violeta; editor a la izquierda; pestañas a la derecha para tokens,
@@ -151,6 +151,16 @@ ubicaciones navegables y diseño adaptable. Consumir resultados reales de la API
 Criterio: completar desde el navegador un flujo válido y otro con errores; no
 perder código ante un fallo de conexión; teclado y paneles utilizables en ventanas
 pequeñas. No duplicar reglas semánticas dentro de componentes React.
+
+Entregado: editor CodeMirror, carga UTF-8, ejemplos, borrador local, tablas reales,
+AST visual con React Flow/Dagre, navegación al código, diagnósticos separados de la
+auditoría, calendario/lista y consola. Contratos JSON y tipos TypeScript generados;
+estados de espera, errores de transporte y resultados anteriores explícitos.
+
+Verificación: 221 pruebas del backend, 7 de presentación y 17 flujos en Chromium;
+contratos/tipos sincronizados y build de producción. Inspección visual de árbol,
+calendario y pantalla pequeña. [Uso y límites](11-interfaz.md).
+Etapa 7 pendiente de indicación del usuario.
 
 ## 7. Verificación y entrega
 

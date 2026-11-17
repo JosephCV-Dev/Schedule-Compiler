@@ -1,0 +1,44 @@
+{
+  "$defs": {
+    "ExampleSummaryResponse": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "source_name": {
+          "title": "Source Name",
+          "type": "string"
+        },
+        "scope": {
+          "$ref": "#/$defs/Scope"
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "source_name",
+        "scope"
+      ],
+      "title": "ExampleSummaryResponse",
+      "type": "object"
+    },
+    "Scope": {
+      "enum": [
+        "PERSONAL",
+        "PROPUESTA"
+      ],
+      "title": "Scope",
+      "type": "string"
+    }
+  },
+  "items": {
+    "$ref": "#/$defs/ExampleSummaryResponse"
+  },
+  "type": "array"
+}

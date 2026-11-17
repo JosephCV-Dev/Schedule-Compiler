@@ -1,9 +1,10 @@
-# Editor — etapa 6
+# Editor
 
-Edición y carga de código .hor, selección de ejemplos y navegación a posiciones
-de diagnósticos. La sintaxis y la semántica pertenecen al backend.
+`SourceEditor.tsx` integra CodeMirror: edición de texto, resaltado visual,
+Ctrl/⌘+Enter y selección/desplazamiento a un rango. `positions.ts` normaliza saltos
+de línea y convierte offsets Unicode del backend a UTF-16 del editor.
 
-Requisito confirmado: recuadro para escribir/pegar y botón «Subir .hor». El archivo
-se lee como UTF-8 y su texto aparece en el mismo editor, editable antes de compilar.
-Ambos caminos envían `source` en el contrato JSON; el archivo no es obligatorio.
-Conservar el texto previo si se cancela la selección o falla la lectura.
+`app/useCompiler.ts` coordina carga UTF-8 de `.hor`, ejemplos y borrador local.
+Cancelar o fallar la lectura conserva la edición anterior. Texto y archivo
+alimentan el mismo `source` de la API. La gramática y semántica se validan en Python;
+el resaltado del editor es solo una ayuda visual.
