@@ -1,0 +1,51 @@
+{
+  "version": "0.1",
+  "fuente": "Imagen de carga académica adjunta por el usuario; transcripción manual",
+  "ciclo_escolar": "2026-2027",
+  "fase": 1,
+  "nota": "Se transcriben materias y sesiones. Las correspondencias con ofertas del Excel son propuestas; no se equiparan códigos de aula automáticamente.",
+  "cursos": [
+    {
+      "materia_original": "BASES DE DATOS II",
+      "docente_original": "HERNANDEZ CRUZ LUZ MARIA",
+      "oferta_excel_candidata": "ISC_7B_BASE_DE_DATOS_II",
+      "sesiones": [
+        {"dia": "LUNES", "inicio": "14:00", "fin": "16:00", "aula_original": "FIE2AUL032"},
+        {"dia": "VIERNES", "inicio": "14:00", "fin": "16:00", "aula_original": "FIE2AUL032"}
+      ]
+    },
+    {
+      "materia_original": "COMPILADORES",
+      "docente_original": "HERNANDEZ CRUZ LUZ MARIA",
+      "oferta_excel_candidata": "ISC_7B_COMPILADORES",
+      "sesiones": [
+        {"dia": "MARTES", "inicio": "12:00", "fin": "14:00", "aula_original": "FIE2AUL032"},
+        {"dia": "JUEVES", "inicio": "12:00", "fin": "14:00", "aula_original": "FIE2AUL032"}
+      ]
+    },
+    {
+      "materia_original": "INGENIERÍA DE SOFTWARE",
+      "docente_original": "HERNANDEZ CRUZ LUZ MARIA",
+      "oferta_excel_candidata": "ISC_7C_OPTATIVA_I_INGENIERIA_DE_SOFTWARE",
+      "sesiones": [
+        {"dia": "MIERCOLES", "inicio": "12:00", "fin": "13:00", "aula_original": "FIE1AC0001"},
+        {"dia": "VIERNES", "inicio": "09:00", "fin": "11:00", "aula_original": "FIE1AC0001"}
+      ]
+    },
+    {
+      "materia_original": "PROGRAMACIÓN DE APLICACIONES WEB",
+      "docente_original": "ESTRADA SEGOVIA GUADALUPE MANUEL",
+      "oferta_excel_candidata": "ISC_7B_PROGRAMACION_DE_APLICACIONES_WEB",
+      "sesiones": [
+        {"dia": "MARTES", "inicio": "14:00", "fin": "16:00", "aula_original": "FIE2AUL032"},
+        {"dia": "JUEVES", "inicio": "14:00", "fin": "16:00", "aula_original": "FIE2AUL032"}
+      ]
+    }
+  ],
+  "equivalencias_por_confirmar": [
+    {"tipo": "aula", "imagen": "FIE2AUL032", "excel": "FIE2-AUL32"},
+    {"tipo": "aula", "imagen": "FIE1AC0001", "excel": "CENTRO DE CÓMPUTO"},
+    {"tipo": "materia", "imagen": "BASES DE DATOS II", "excel": "BASE DE DATOS II"},
+    {"tipo": "materia", "imagen": "INGENIERÍA DE SOFTWARE", "excel": "OPTATIVA I (INGENIERIA DE SOFTWARE)"}
+  ]
+}

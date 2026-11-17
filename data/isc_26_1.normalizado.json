@@ -1,0 +1,4859 @@
+{
+  "version": "0.1",
+  "fuente": {
+    "archivo": "ISC HORARIOS 26-1.xlsx",
+    "sha256": "4f79b2508e3cad13c522acc1c7272652b9637409d0b3053a4477d391b00e7bfe",
+    "hoja": "Hoja1"
+  },
+  "resumen": {
+    "ofertas": 66,
+    "sesiones": 131,
+    "grupos": 12,
+    "materias_ids_normalizados": 34,
+    "nombres_materia_distintos_sin_espacios_extremos": 35,
+    "aulas_con_nombre_literal": 11,
+    "horas_semanales_sumadas_de_todas_las_ofertas": 249.0,
+    "sesiones_por_dia": {
+      "MIERCOLES": 24,
+      "VIERNES": 27,
+      "LUNES": 25,
+      "MARTES": 28,
+      "JUEVES": 27
+    },
+    "primera_hora_observada": "07:00",
+    "ultima_hora_observada": "20:00"
+  },
+  "catalogos": {
+    "materias": [
+      {
+        "id": "EXPRESION_GRAFICA",
+        "nombres_fuente": [
+          "EXPRESION GRAFICA"
+        ],
+        "requiere_laboratorio": null
+      },
+      {
+        "id": "CALCULO_DIFERENCIAL",
+        "nombres_fuente": [
+          "CALCULO DIFERENCIAL"
+        ],
+        "requiere_laboratorio": null
+      },
+      {
+        "id": "LOGICA_DE_LA_PROGRAMACION",
+        "nombres_fuente": [
+          "LOGICA DE LA PROGRAMACIÓN"
+        ],
+        "requiere_laboratorio": null
+      },
+      {
+        "id": "INTRODUCCION_A_LA_INGENIERIA",
+        "nombres_fuente": [
+          "INTRODUCCION A LA INGENIERIA"
+        ],
+        "requiere_laboratorio": null
+      },
+      {
+        "id": "ELABORACION_Y_PRESENTACION_DE_TEXTOS",
+        "nombres_fuente": [
+          "ELABORACION Y PRESENTACION DE TEXTOS"
+        ],
+        "requiere_laboratorio": null
+      },
+      {
+        "id": "GEOMETRIA_ANALITICA",
+        "nombres_fuente": [
+          "GEOMETRIA ANALITICA"
+        ],
+        "requiere_laboratorio": null
+      },
+      {
+        "id": "ALGEBRA_SUPERIOR",
+        "nombres_fuente": [
+          "ALGEBRA SUPERIOR",
+          "ÁLGEBRA SUPERIOR"
+        ],
+        "requiere_laboratorio": null
+      },
+      {
+        "id": "INGLES_1",
+        "nombres_fuente": [
+          "INGLES 1"
+        ],
+        "requiere_laboratorio": null
+      },
+      {
+        "id": "FUNDAMENTOS_DE_PROBABILIDAD_Y_ESTADISTICA",
+        "nombres_fuente": [
+          "FUNDAMENTOS DE PROBABILIDAD Y ESTADISTICA"
+        ],
+        "requiere_laboratorio": null
+      },
+      {
+        "id": "MATEMATICAS_PARA_LA_COMPUTACION",
+        "nombres_fuente": [
+          "MATEMÁTICAS PARA LA COMPUTACION"
+        ],
+        "requiere_laboratorio": null
+      },
+      {
+        "id": "CALCULO_VECTORIAL",
+        "nombres_fuente": [
+          "CALCULO VECTORIAL"
+        ],
+        "requiere_laboratorio": null
+      },
+      {
+        "id": "CONTABILIDAD",
+        "nombres_fuente": [
+          "CONTABILIDAD"
+        ],
+        "requiere_laboratorio": null
+      },
+      {
+        "id": "LENGUAJE_DE_PROGRAMACION_II",
+        "nombres_fuente": [
+          "LENGUAJE DE PROGRAMACION II"
+        ],
+        "requiere_laboratorio": null
+      },
+      {
+        "id": "ANALISIS_DE_CIRCUITOS_DE_C_D",
+        "nombres_fuente": [
+          "ANALISIS DE CIRCUITOS DE C.D."
+        ],
+        "requiere_laboratorio": null
+      },
+      {
+        "id": "QUIMICA",
+        "nombres_fuente": [
+          "QUÍMICA"
+        ],
+        "requiere_laboratorio": null
+      },
+      {
+        "id": "INGLES_3",
+        "nombres_fuente": [
+          "INGLES 3"
+        ],
+        "requiere_laboratorio": null
+      },
+      {
+        "id": "TELECOMUNICACIONES",
+        "nombres_fuente": [
+          "TELECOMUNICACIONES"
+        ],
+        "requiere_laboratorio": null
+      },
+      {
+        "id": "INVESTIGACION_DE_OPERACIONES_I",
+        "nombres_fuente": [
+          "INVESTIGACION DE OPERACIONES I"
+        ],
+        "requiere_laboratorio": null
+      },
+      {
+        "id": "ADMINISTRACION_DE_ARCHIVOS",
+        "nombres_fuente": [
+          "ADMINISTRACIÓN DE ARCHIVOS"
+        ],
+        "requiere_laboratorio": null
+      },
+      {
+        "id": "ESTRUCTURA_DE_DATOS_II",
+        "nombres_fuente": [
+          "ESTRUCTURA DE DATOS II"
+        ],
+        "requiere_laboratorio": null
+      },
+      {
+        "id": "BASES_DE_DATOS_I",
+        "nombres_fuente": [
+          "BASES DE DATOS I"
+        ],
+        "requiere_laboratorio": null
+      },
+      {
+        "id": "ARQUITECTURA_COMPUTACIONAL",
+        "nombres_fuente": [
+          "ARQUITECTURA COMPUTACIONAL"
+        ],
+        "requiere_laboratorio": null
+      },
+      {
+        "id": "GRAFICACION",
+        "nombres_fuente": [
+          "GRAFICACIÓN"
+        ],
+        "requiere_laboratorio": null
+      },
+      {
+        "id": "INGLES_5",
+        "nombres_fuente": [
+          "INGLES 5"
+        ],
+        "requiere_laboratorio": null
+      },
+      {
+        "id": "ADMNISTRACION_DE_ARCHIVOS",
+        "nombres_fuente": [
+          "ADMNISTRACION DE ARCHIVOS"
+        ],
+        "requiere_laboratorio": null
+      },
+      {
+        "id": "PROGRAMACION_DE_APLICACIONES_WEB",
+        "nombres_fuente": [
+          "PROGRAMACION DE APLICACIONES WEB"
+        ],
+        "requiere_laboratorio": null
+      },
+      {
+        "id": "METODOLOGIA_DE_LA_INVESTIGACION",
+        "nombres_fuente": [
+          "METODOLOGIA DE LA INVESTIGACION"
+        ],
+        "requiere_laboratorio": null
+      },
+      {
+        "id": "COMPILADORES",
+        "nombres_fuente": [
+          "COMPILADORES"
+        ],
+        "requiere_laboratorio": null
+      },
+      {
+        "id": "SISTEMAS_II",
+        "nombres_fuente": [
+          "SISTEMAS II"
+        ],
+        "requiere_laboratorio": null
+      },
+      {
+        "id": "TALLER_DE_EMPRENDEDORES",
+        "nombres_fuente": [
+          "TALLER DE EMPRENDEDORES"
+        ],
+        "requiere_laboratorio": null
+      },
+      {
+        "id": "BASE_DE_DATOS_II",
+        "nombres_fuente": [
+          "BASE DE DATOS II"
+        ],
+        "requiere_laboratorio": null
+      },
+      {
+        "id": "OPTATIVA_I_REDES_I",
+        "nombres_fuente": [
+          "OPTATIVA I (REDES I)"
+        ],
+        "requiere_laboratorio": null
+      },
+      {
+        "id": "OPTATIVA_I_INGENIERIA_DE_SOFTWARE",
+        "nombres_fuente": [
+          "OPTATIVA I (INGENIERIA DE SOFTWARE)"
+        ],
+        "requiere_laboratorio": null
+      },
+      {
+        "id": "OPTATIVA_I_SISTEMAS_INTELIGENTES_I",
+        "nombres_fuente": [
+          "OPTATIVA I (SISTEMAS INTELIGENTES I)"
+        ],
+        "requiere_laboratorio": null
+      }
+    ],
+    "grupos": [
+      {
+        "id": "ISC 1A",
+        "alumnos": null
+      },
+      {
+        "id": "ISC 1B",
+        "alumnos": null
+      },
+      {
+        "id": "ISC 1RA",
+        "alumnos": null
+      },
+      {
+        "id": "ISC 1RB",
+        "alumnos": null
+      },
+      {
+        "id": "ISC 3A",
+        "alumnos": null
+      },
+      {
+        "id": "ISC 3B",
+        "alumnos": null
+      },
+      {
+        "id": "ISC 3R",
+        "alumnos": null
+      },
+      {
+        "id": "ISC 5A",
+        "alumnos": null
+      },
+      {
+        "id": "ISC 5B",
+        "alumnos": null
+      },
+      {
+        "id": "ISC 7A",
+        "alumnos": null
+      },
+      {
+        "id": "ISC 7B",
+        "alumnos": null
+      },
+      {
+        "id": "ISC 7C",
+        "alumnos": null
+      }
+    ],
+    "aulas": [
+      {
+        "id": "FIE1-AUL25",
+        "capacidad": null,
+        "tipo": null
+      },
+      {
+        "id": "FIE1-AUL26",
+        "capacidad": null,
+        "tipo": null
+      },
+      {
+        "id": "FIE1-AUL27",
+        "capacidad": null,
+        "tipo": null
+      },
+      {
+        "id": "FIE1-AUL28",
+        "capacidad": null,
+        "tipo": null
+      },
+      {
+        "id": "FIB1-AUL02",
+        "capacidad": null,
+        "tipo": null
+      },
+      {
+        "id": "FIE1-AUL025",
+        "capacidad": null,
+        "tipo": null
+      },
+      {
+        "id": "FIE1-AUL29",
+        "capacidad": null,
+        "tipo": null
+      },
+      {
+        "id": "FIE2-AUL30",
+        "capacidad": null,
+        "tipo": null
+      },
+      {
+        "id": "FIE2-AUL31",
+        "capacidad": null,
+        "tipo": null
+      },
+      {
+        "id": "FIE2-AUL32",
+        "capacidad": null,
+        "tipo": null
+      },
+      {
+        "id": "CENTRO DE CÓMPUTO",
+        "capacidad": null,
+        "tipo": null
+      }
+    ],
+    "docentes": []
+  },
+  "ofertas": [
+    {
+      "id": "ISC_1A_EXPRESION_GRAFICA",
+      "materia_id": "EXPRESION_GRAFICA",
+      "materia": "EXPRESION GRAFICA",
+      "grupo": "ISC 1A",
+      "horas_semanales_declaradas": 3,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 2,
+        "grupo": "A2",
+        "materia": "B2",
+        "horas": "C2",
+        "materia_texto_original": "EXPRESION GRAFICA "
+      },
+      "sesiones": [
+        {
+          "id": "ISC_1A_EXPRESION_GRAFICA_MIERCOLES",
+          "oferta_id": "ISC_1A_EXPRESION_GRAFICA",
+          "grupo": "ISC 1A",
+          "materia": "EXPRESION GRAFICA",
+          "dia": "MIERCOLES",
+          "inicio": "11:00",
+          "fin": "13:00",
+          "inicio_minutos": 660,
+          "fin_minutos": 780,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL25",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 2,
+            "hora": "H2",
+            "aula": "I2",
+            "hora_texto_original": "11:00-13:00",
+            "aula_texto_original": "FIE1-AUL25"
+          }
+        },
+        {
+          "id": "ISC_1A_EXPRESION_GRAFICA_VIERNES",
+          "oferta_id": "ISC_1A_EXPRESION_GRAFICA",
+          "grupo": "ISC 1A",
+          "materia": "EXPRESION GRAFICA",
+          "dia": "VIERNES",
+          "inicio": "09:00",
+          "fin": "10:00",
+          "inicio_minutos": 540,
+          "fin_minutos": 600,
+          "duracion_minutos": 60,
+          "aula": "FIE1-AUL25",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 2,
+            "hora": "L2",
+            "aula": "M2",
+            "hora_texto_original": "09:00-10:00",
+            "aula_texto_original": "FIE1-AUL25"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_1A_CALCULO_DIFERENCIAL",
+      "materia_id": "CALCULO_DIFERENCIAL",
+      "materia": "CALCULO DIFERENCIAL",
+      "grupo": "ISC 1A",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 3,
+        "grupo": "A3",
+        "materia": "B3",
+        "horas": "C3",
+        "materia_texto_original": "CALCULO DIFERENCIAL"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_1A_CALCULO_DIFERENCIAL_LUNES",
+          "oferta_id": "ISC_1A_CALCULO_DIFERENCIAL",
+          "grupo": "ISC 1A",
+          "materia": "CALCULO DIFERENCIAL",
+          "dia": "LUNES",
+          "inicio": "13:00",
+          "fin": "15:00",
+          "inicio_minutos": 780,
+          "fin_minutos": 900,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL25",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 3,
+            "hora": "D3",
+            "aula": "E3",
+            "hora_texto_original": "13:00-15:00",
+            "aula_texto_original": "FIE1-AUL25"
+          }
+        },
+        {
+          "id": "ISC_1A_CALCULO_DIFERENCIAL_MARTES",
+          "oferta_id": "ISC_1A_CALCULO_DIFERENCIAL",
+          "grupo": "ISC 1A",
+          "materia": "CALCULO DIFERENCIAL",
+          "dia": "MARTES",
+          "inicio": "13:00",
+          "fin": "15:00",
+          "inicio_minutos": 780,
+          "fin_minutos": 900,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL25",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 3,
+            "hora": "F3",
+            "aula": "G3",
+            "hora_texto_original": "13:00-15:00",
+            "aula_texto_original": "FIE1-AUL25"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_1A_LOGICA_DE_LA_PROGRAMACION",
+      "materia_id": "LOGICA_DE_LA_PROGRAMACION",
+      "materia": "LOGICA DE LA PROGRAMACIÓN",
+      "grupo": "ISC 1A",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 4,
+        "grupo": "A4",
+        "materia": "B4",
+        "horas": "C4",
+        "materia_texto_original": "LOGICA DE LA PROGRAMACIÓN"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_1A_LOGICA_DE_LA_PROGRAMACION_MARTES",
+          "oferta_id": "ISC_1A_LOGICA_DE_LA_PROGRAMACION",
+          "grupo": "ISC 1A",
+          "materia": "LOGICA DE LA PROGRAMACIÓN",
+          "dia": "MARTES",
+          "inicio": "16:00",
+          "fin": "18:00",
+          "inicio_minutos": 960,
+          "fin_minutos": 1080,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL25",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 4,
+            "hora": "F4",
+            "aula": "G4",
+            "hora_texto_original": "16:00-18:00",
+            "aula_texto_original": "FIE1-AUL25"
+          }
+        },
+        {
+          "id": "ISC_1A_LOGICA_DE_LA_PROGRAMACION_MIERCOLES",
+          "oferta_id": "ISC_1A_LOGICA_DE_LA_PROGRAMACION",
+          "grupo": "ISC 1A",
+          "materia": "LOGICA DE LA PROGRAMACIÓN",
+          "dia": "MIERCOLES",
+          "inicio": "13:00",
+          "fin": "15:00",
+          "inicio_minutos": 780,
+          "fin_minutos": 900,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL25",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 4,
+            "hora": "H4",
+            "aula": "I4",
+            "hora_texto_original": "13:00-15:00",
+            "aula_texto_original": "FIE1-AUL25"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_1A_INTRODUCCION_A_LA_INGENIERIA",
+      "materia_id": "INTRODUCCION_A_LA_INGENIERIA",
+      "materia": "INTRODUCCION A LA INGENIERIA",
+      "grupo": "ISC 1A",
+      "horas_semanales_declaradas": 3,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 5,
+        "grupo": "A5",
+        "materia": "B5",
+        "horas": "C5",
+        "materia_texto_original": "INTRODUCCION A LA INGENIERIA"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_1A_INTRODUCCION_A_LA_INGENIERIA_JUEVES",
+          "oferta_id": "ISC_1A_INTRODUCCION_A_LA_INGENIERIA",
+          "grupo": "ISC 1A",
+          "materia": "INTRODUCCION A LA INGENIERIA",
+          "dia": "JUEVES",
+          "inicio": "09:00",
+          "fin": "11:00",
+          "inicio_minutos": 540,
+          "fin_minutos": 660,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL25",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 5,
+            "hora": "J5",
+            "aula": "K5",
+            "hora_texto_original": "09:00-11:00",
+            "aula_texto_original": "FIE1-AUL25"
+          }
+        },
+        {
+          "id": "ISC_1A_INTRODUCCION_A_LA_INGENIERIA_VIERNES",
+          "oferta_id": "ISC_1A_INTRODUCCION_A_LA_INGENIERIA",
+          "grupo": "ISC 1A",
+          "materia": "INTRODUCCION A LA INGENIERIA",
+          "dia": "VIERNES",
+          "inicio": "12:00",
+          "fin": "13:00",
+          "inicio_minutos": 720,
+          "fin_minutos": 780,
+          "duracion_minutos": 60,
+          "aula": "FIE1-AUL25",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 5,
+            "hora": "L5",
+            "aula": "M5",
+            "hora_texto_original": "12:00-13:00",
+            "aula_texto_original": "FIE1-AUL25"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_1A_ELABORACION_Y_PRESENTACION_DE_TEXTOS",
+      "materia_id": "ELABORACION_Y_PRESENTACION_DE_TEXTOS",
+      "materia": "ELABORACION Y PRESENTACION DE TEXTOS",
+      "grupo": "ISC 1A",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 6,
+        "grupo": "A6",
+        "materia": "B6",
+        "horas": "C6",
+        "materia_texto_original": "ELABORACION Y PRESENTACION DE TEXTOS"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_1A_ELABORACION_Y_PRESENTACION_DE_TEXTOS_JUEVES",
+          "oferta_id": "ISC_1A_ELABORACION_Y_PRESENTACION_DE_TEXTOS",
+          "grupo": "ISC 1A",
+          "materia": "ELABORACION Y PRESENTACION DE TEXTOS",
+          "dia": "JUEVES",
+          "inicio": "11:00",
+          "fin": "13:00",
+          "inicio_minutos": 660,
+          "fin_minutos": 780,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL25",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 6,
+            "hora": "J6",
+            "aula": "K6",
+            "hora_texto_original": "11:00-13:00",
+            "aula_texto_original": "FIE1-AUL25"
+          }
+        },
+        {
+          "id": "ISC_1A_ELABORACION_Y_PRESENTACION_DE_TEXTOS_VIERNES",
+          "oferta_id": "ISC_1A_ELABORACION_Y_PRESENTACION_DE_TEXTOS",
+          "grupo": "ISC 1A",
+          "materia": "ELABORACION Y PRESENTACION DE TEXTOS",
+          "dia": "VIERNES",
+          "inicio": "13:00",
+          "fin": "15:00",
+          "inicio_minutos": 780,
+          "fin_minutos": 900,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL25",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 6,
+            "hora": "L6",
+            "aula": "M6",
+            "hora_texto_original": "13:00-15:00",
+            "aula_texto_original": "FIE1-AUL25"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_1A_GEOMETRIA_ANALITICA",
+      "materia_id": "GEOMETRIA_ANALITICA",
+      "materia": "GEOMETRIA ANALITICA",
+      "grupo": "ISC 1A",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 7,
+        "grupo": "A7",
+        "materia": "B7",
+        "horas": "C7",
+        "materia_texto_original": "GEOMETRIA ANALITICA"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_1A_GEOMETRIA_ANALITICA_MIERCOLES",
+          "oferta_id": "ISC_1A_GEOMETRIA_ANALITICA",
+          "grupo": "ISC 1A",
+          "materia": "GEOMETRIA ANALITICA",
+          "dia": "MIERCOLES",
+          "inicio": "09:00",
+          "fin": "11:00",
+          "inicio_minutos": 540,
+          "fin_minutos": 660,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL25",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 7,
+            "hora": "H7",
+            "aula": "I7",
+            "hora_texto_original": "09:00-11:00",
+            "aula_texto_original": "FIE1-AUL25"
+          }
+        },
+        {
+          "id": "ISC_1A_GEOMETRIA_ANALITICA_VIERNES",
+          "oferta_id": "ISC_1A_GEOMETRIA_ANALITICA",
+          "grupo": "ISC 1A",
+          "materia": "GEOMETRIA ANALITICA",
+          "dia": "VIERNES",
+          "inicio": "10:00",
+          "fin": "12:00",
+          "inicio_minutos": 600,
+          "fin_minutos": 720,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL25",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 7,
+            "hora": "L7",
+            "aula": "M7",
+            "hora_texto_original": "10:00-12:00",
+            "aula_texto_original": "FIE1-AUL25"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_1A_ALGEBRA_SUPERIOR",
+      "materia_id": "ALGEBRA_SUPERIOR",
+      "materia": "ALGEBRA SUPERIOR",
+      "grupo": "ISC 1A",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 8,
+        "grupo": "A8",
+        "materia": "B8",
+        "horas": "C8",
+        "materia_texto_original": "ALGEBRA SUPERIOR"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_1A_ALGEBRA_SUPERIOR_LUNES",
+          "oferta_id": "ISC_1A_ALGEBRA_SUPERIOR",
+          "grupo": "ISC 1A",
+          "materia": "ALGEBRA SUPERIOR",
+          "dia": "LUNES",
+          "inicio": "16:00",
+          "fin": "18:00",
+          "inicio_minutos": 960,
+          "fin_minutos": 1080,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL25",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 8,
+            "hora": "D8",
+            "aula": "E8",
+            "hora_texto_original": "16:00-18:00",
+            "aula_texto_original": "FIE1-AUL25"
+          }
+        },
+        {
+          "id": "ISC_1A_ALGEBRA_SUPERIOR_MIERCOLES",
+          "oferta_id": "ISC_1A_ALGEBRA_SUPERIOR",
+          "grupo": "ISC 1A",
+          "materia": "ALGEBRA SUPERIOR",
+          "dia": "MIERCOLES",
+          "inicio": "16:00",
+          "fin": "18:00",
+          "inicio_minutos": 960,
+          "fin_minutos": 1080,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL25",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 8,
+            "hora": "H8",
+            "aula": "I8",
+            "hora_texto_original": "16:00-18:00",
+            "aula_texto_original": "FIE1-AUL25"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_1A_INGLES_1",
+      "materia_id": "INGLES_1",
+      "materia": "INGLES 1",
+      "grupo": "ISC 1A",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 9,
+        "grupo": "A9",
+        "materia": "B9",
+        "horas": "C9",
+        "materia_texto_original": "INGLES 1"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_1A_INGLES_1_MARTES",
+          "oferta_id": "ISC_1A_INGLES_1",
+          "grupo": "ISC 1A",
+          "materia": "INGLES 1",
+          "dia": "MARTES",
+          "inicio": "11:00",
+          "fin": "13:00",
+          "inicio_minutos": 660,
+          "fin_minutos": 780,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL25",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 9,
+            "hora": "F9",
+            "aula": "G9",
+            "hora_texto_original": "11:00-13:00",
+            "aula_texto_original": "FIE1-AUL25"
+          }
+        },
+        {
+          "id": "ISC_1A_INGLES_1_JUEVES",
+          "oferta_id": "ISC_1A_INGLES_1",
+          "grupo": "ISC 1A",
+          "materia": "INGLES 1",
+          "dia": "JUEVES",
+          "inicio": "07:00",
+          "fin": "09:00",
+          "inicio_minutos": 420,
+          "fin_minutos": 540,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL25",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 9,
+            "hora": "J9",
+            "aula": "K9",
+            "hora_texto_original": "07:00-09:00",
+            "aula_texto_original": "FIE1-AUL25"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_1B_EXPRESION_GRAFICA",
+      "materia_id": "EXPRESION_GRAFICA",
+      "materia": "EXPRESION GRAFICA",
+      "grupo": "ISC 1B",
+      "horas_semanales_declaradas": 3,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 10,
+        "grupo": "A10",
+        "materia": "B10",
+        "horas": "C10",
+        "materia_texto_original": "EXPRESION GRAFICA  "
+      },
+      "sesiones": [
+        {
+          "id": "ISC_1B_EXPRESION_GRAFICA_MARTES",
+          "oferta_id": "ISC_1B_EXPRESION_GRAFICA",
+          "grupo": "ISC 1B",
+          "materia": "EXPRESION GRAFICA",
+          "dia": "MARTES",
+          "inicio": "14:00",
+          "fin": "16:00",
+          "inicio_minutos": 840,
+          "fin_minutos": 960,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL26",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 10,
+            "hora": "F10",
+            "aula": "G10",
+            "hora_texto_original": "14:00-16:00",
+            "aula_texto_original": "FIE1-AUL26"
+          }
+        },
+        {
+          "id": "ISC_1B_EXPRESION_GRAFICA_VIERNES",
+          "oferta_id": "ISC_1B_EXPRESION_GRAFICA",
+          "grupo": "ISC 1B",
+          "materia": "EXPRESION GRAFICA",
+          "dia": "VIERNES",
+          "inicio": "10:00",
+          "fin": "11:00",
+          "inicio_minutos": 600,
+          "fin_minutos": 660,
+          "duracion_minutos": 60,
+          "aula": "FIE1-AUL26",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 10,
+            "hora": "L10",
+            "aula": "M10",
+            "hora_texto_original": "10:00-11:00",
+            "aula_texto_original": "FIE1-AUL26"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_1B_LOGICA_DE_LA_PROGRAMACION",
+      "materia_id": "LOGICA_DE_LA_PROGRAMACION",
+      "materia": "LOGICA DE LA PROGRAMACIÓN",
+      "grupo": "ISC 1B",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 11,
+        "grupo": "A11",
+        "materia": "B11",
+        "horas": "C11",
+        "materia_texto_original": "LOGICA DE LA PROGRAMACIÓN"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_1B_LOGICA_DE_LA_PROGRAMACION_JUEVES",
+          "oferta_id": "ISC_1B_LOGICA_DE_LA_PROGRAMACION",
+          "grupo": "ISC 1B",
+          "materia": "LOGICA DE LA PROGRAMACIÓN",
+          "dia": "JUEVES",
+          "inicio": "13:00",
+          "fin": "15:00",
+          "inicio_minutos": 780,
+          "fin_minutos": 900,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL26",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 11,
+            "hora": "J11",
+            "aula": "K11",
+            "hora_texto_original": "13:00-15:00",
+            "aula_texto_original": "FIE1-AUL26"
+          }
+        },
+        {
+          "id": "ISC_1B_LOGICA_DE_LA_PROGRAMACION_VIERNES",
+          "oferta_id": "ISC_1B_LOGICA_DE_LA_PROGRAMACION",
+          "grupo": "ISC 1B",
+          "materia": "LOGICA DE LA PROGRAMACIÓN",
+          "dia": "VIERNES",
+          "inicio": "13:00",
+          "fin": "15:00",
+          "inicio_minutos": 780,
+          "fin_minutos": 900,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL26",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 11,
+            "hora": "L11",
+            "aula": "M11",
+            "hora_texto_original": "13:00-15:00",
+            "aula_texto_original": "FIE1-AUL26"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_1B_CALCULO_DIFERENCIAL",
+      "materia_id": "CALCULO_DIFERENCIAL",
+      "materia": "CALCULO DIFERENCIAL",
+      "grupo": "ISC 1B",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 12,
+        "grupo": "A12",
+        "materia": "B12",
+        "horas": "C12",
+        "materia_texto_original": "CALCULO DIFERENCIAL"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_1B_CALCULO_DIFERENCIAL_LUNES",
+          "oferta_id": "ISC_1B_CALCULO_DIFERENCIAL",
+          "grupo": "ISC 1B",
+          "materia": "CALCULO DIFERENCIAL",
+          "dia": "LUNES",
+          "inicio": "15:00",
+          "fin": "17:00",
+          "inicio_minutos": 900,
+          "fin_minutos": 1020,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL26",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 12,
+            "hora": "D12",
+            "aula": "E12",
+            "hora_texto_original": "15:00-17:00",
+            "aula_texto_original": "FIE1-AUL26"
+          }
+        },
+        {
+          "id": "ISC_1B_CALCULO_DIFERENCIAL_MIERCOLES",
+          "oferta_id": "ISC_1B_CALCULO_DIFERENCIAL",
+          "grupo": "ISC 1B",
+          "materia": "CALCULO DIFERENCIAL",
+          "dia": "MIERCOLES",
+          "inicio": "13:00",
+          "fin": "15:00",
+          "inicio_minutos": 780,
+          "fin_minutos": 900,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL26",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 12,
+            "hora": "H12",
+            "aula": "I12",
+            "hora_texto_original": "13:00-15:00",
+            "aula_texto_original": "FIE1-AUL26"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_1B_INTRODUCCION_A_LA_INGENIERIA",
+      "materia_id": "INTRODUCCION_A_LA_INGENIERIA",
+      "materia": "INTRODUCCION A LA INGENIERIA",
+      "grupo": "ISC 1B",
+      "horas_semanales_declaradas": 3,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 13,
+        "grupo": "A13",
+        "materia": "B13",
+        "horas": "C13",
+        "materia_texto_original": "INTRODUCCION A LA INGENIERIA"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_1B_INTRODUCCION_A_LA_INGENIERIA_LUNES",
+          "oferta_id": "ISC_1B_INTRODUCCION_A_LA_INGENIERIA",
+          "grupo": "ISC 1B",
+          "materia": "INTRODUCCION A LA INGENIERIA",
+          "dia": "LUNES",
+          "inicio": "09:00",
+          "fin": "11:00",
+          "inicio_minutos": 540,
+          "fin_minutos": 660,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL26",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 13,
+            "hora": "D13",
+            "aula": "E13",
+            "hora_texto_original": "09:00-11:00",
+            "aula_texto_original": "FIE1-AUL26"
+          }
+        },
+        {
+          "id": "ISC_1B_INTRODUCCION_A_LA_INGENIERIA_MIERCOLES",
+          "oferta_id": "ISC_1B_INTRODUCCION_A_LA_INGENIERIA",
+          "grupo": "ISC 1B",
+          "materia": "INTRODUCCION A LA INGENIERIA",
+          "dia": "MIERCOLES",
+          "inicio": "10:00",
+          "fin": "11:00",
+          "inicio_minutos": 600,
+          "fin_minutos": 660,
+          "duracion_minutos": 60,
+          "aula": "FIE1-AUL26",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 13,
+            "hora": "H13",
+            "aula": "I13",
+            "hora_texto_original": "10:00-11:00",
+            "aula_texto_original": "FIE1-AUL26"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_1B_ELABORACION_Y_PRESENTACION_DE_TEXTOS",
+      "materia_id": "ELABORACION_Y_PRESENTACION_DE_TEXTOS",
+      "materia": "ELABORACION Y PRESENTACION DE TEXTOS",
+      "grupo": "ISC 1B",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 14,
+        "grupo": "A14",
+        "materia": "B14",
+        "horas": "C14",
+        "materia_texto_original": "ELABORACION Y PRESENTACION DE TEXTOS"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_1B_ELABORACION_Y_PRESENTACION_DE_TEXTOS_LUNES",
+          "oferta_id": "ISC_1B_ELABORACION_Y_PRESENTACION_DE_TEXTOS",
+          "grupo": "ISC 1B",
+          "materia": "ELABORACION Y PRESENTACION DE TEXTOS",
+          "dia": "LUNES",
+          "inicio": "11:00",
+          "fin": "13:00",
+          "inicio_minutos": 660,
+          "fin_minutos": 780,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL26",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 14,
+            "hora": "D14",
+            "aula": "E14",
+            "hora_texto_original": "11:00-13:00",
+            "aula_texto_original": "FIE1-AUL26"
+          }
+        },
+        {
+          "id": "ISC_1B_ELABORACION_Y_PRESENTACION_DE_TEXTOS_VIERNES",
+          "oferta_id": "ISC_1B_ELABORACION_Y_PRESENTACION_DE_TEXTOS",
+          "grupo": "ISC 1B",
+          "materia": "ELABORACION Y PRESENTACION DE TEXTOS",
+          "dia": "VIERNES",
+          "inicio": "11:00",
+          "fin": "13:00",
+          "inicio_minutos": 660,
+          "fin_minutos": 780,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL26",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 14,
+            "hora": "L14",
+            "aula": "M14",
+            "hora_texto_original": "11:00-13:00",
+            "aula_texto_original": "FIE1-AUL26"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_1B_GEOMETRIA_ANALITICA",
+      "materia_id": "GEOMETRIA_ANALITICA",
+      "materia": "GEOMETRIA ANALITICA",
+      "grupo": "ISC 1B",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 15,
+        "grupo": "A15",
+        "materia": "B15",
+        "horas": "C15",
+        "materia_texto_original": "GEOMETRIA ANALITICA"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_1B_GEOMETRIA_ANALITICA_MIERCOLES",
+          "oferta_id": "ISC_1B_GEOMETRIA_ANALITICA",
+          "grupo": "ISC 1B",
+          "materia": "GEOMETRIA ANALITICA",
+          "dia": "MIERCOLES",
+          "inicio": "11:00",
+          "fin": "13:00",
+          "inicio_minutos": 660,
+          "fin_minutos": 780,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL26",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 15,
+            "hora": "H15",
+            "aula": "I15",
+            "hora_texto_original": "11:00-13:00",
+            "aula_texto_original": "FIE1-AUL26"
+          }
+        },
+        {
+          "id": "ISC_1B_GEOMETRIA_ANALITICA_JUEVES",
+          "oferta_id": "ISC_1B_GEOMETRIA_ANALITICA",
+          "grupo": "ISC 1B",
+          "materia": "GEOMETRIA ANALITICA",
+          "dia": "JUEVES",
+          "inicio": "11:00",
+          "fin": "13:00",
+          "inicio_minutos": 660,
+          "fin_minutos": 780,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL26",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 15,
+            "hora": "J15",
+            "aula": "K15",
+            "hora_texto_original": "11:00-13:00",
+            "aula_texto_original": "FIE1-AUL26"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_1B_ALGEBRA_SUPERIOR",
+      "materia_id": "ALGEBRA_SUPERIOR",
+      "materia": "ALGEBRA SUPERIOR",
+      "grupo": "ISC 1B",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 16,
+        "grupo": "A16",
+        "materia": "B16",
+        "horas": "C16",
+        "materia_texto_original": "ALGEBRA SUPERIOR"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_1B_ALGEBRA_SUPERIOR_MARTES",
+          "oferta_id": "ISC_1B_ALGEBRA_SUPERIOR",
+          "grupo": "ISC 1B",
+          "materia": "ALGEBRA SUPERIOR",
+          "dia": "MARTES",
+          "inicio": "16:00",
+          "fin": "18:00",
+          "inicio_minutos": 960,
+          "fin_minutos": 1080,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL26",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 16,
+            "hora": "F16",
+            "aula": "G16",
+            "hora_texto_original": "16:00-18:00",
+            "aula_texto_original": "FIE1-AUL26"
+          }
+        },
+        {
+          "id": "ISC_1B_ALGEBRA_SUPERIOR_JUEVES",
+          "oferta_id": "ISC_1B_ALGEBRA_SUPERIOR",
+          "grupo": "ISC 1B",
+          "materia": "ALGEBRA SUPERIOR",
+          "dia": "JUEVES",
+          "inicio": "16:00",
+          "fin": "18:00",
+          "inicio_minutos": 960,
+          "fin_minutos": 1080,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL26",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 16,
+            "hora": "J16",
+            "aula": "K16",
+            "hora_texto_original": "16:00-18:00",
+            "aula_texto_original": "FIE1-AUL26"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_1B_INGLES_1",
+      "materia_id": "INGLES_1",
+      "materia": "INGLES 1",
+      "grupo": "ISC 1B",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 17,
+        "grupo": "A17",
+        "materia": "B17",
+        "horas": "C17",
+        "materia_texto_original": "INGLES 1"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_1B_INGLES_1_LUNES",
+          "oferta_id": "ISC_1B_INGLES_1",
+          "grupo": "ISC 1B",
+          "materia": "INGLES 1",
+          "dia": "LUNES",
+          "inicio": "13:00",
+          "fin": "15:00",
+          "inicio_minutos": 780,
+          "fin_minutos": 900,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL26",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 17,
+            "hora": "D17",
+            "aula": "E17",
+            "hora_texto_original": "13:00-15:00",
+            "aula_texto_original": "FIE1-AUL26"
+          }
+        },
+        {
+          "id": "ISC_1B_INGLES_1_MARTES",
+          "oferta_id": "ISC_1B_INGLES_1",
+          "grupo": "ISC 1B",
+          "materia": "INGLES 1",
+          "dia": "MARTES",
+          "inicio": "11:00",
+          "fin": "13:00",
+          "inicio_minutos": 660,
+          "fin_minutos": 780,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL26",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 17,
+            "hora": "F17",
+            "aula": "G17",
+            "hora_texto_original": "11:00-13:00",
+            "aula_texto_original": "FIE1-AUL26"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_1RA_ALGEBRA_SUPERIOR",
+      "materia_id": "ALGEBRA_SUPERIOR",
+      "materia": "ÁLGEBRA SUPERIOR",
+      "grupo": "ISC 1RA",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 18,
+        "grupo": "A18",
+        "materia": "B18",
+        "horas": "C18",
+        "materia_texto_original": "ÁLGEBRA SUPERIOR"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_1RA_ALGEBRA_SUPERIOR_JUEVES",
+          "oferta_id": "ISC_1RA_ALGEBRA_SUPERIOR",
+          "grupo": "ISC 1RA",
+          "materia": "ÁLGEBRA SUPERIOR",
+          "dia": "JUEVES",
+          "inicio": "11:00",
+          "fin": "13:00",
+          "inicio_minutos": 660,
+          "fin_minutos": 780,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL27",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 18,
+            "hora": "J18",
+            "aula": "K18",
+            "hora_texto_original": "11:00-13:00",
+            "aula_texto_original": "FIE1-AUL27"
+          }
+        },
+        {
+          "id": "ISC_1RA_ALGEBRA_SUPERIOR_VIERNES",
+          "oferta_id": "ISC_1RA_ALGEBRA_SUPERIOR",
+          "grupo": "ISC 1RA",
+          "materia": "ÁLGEBRA SUPERIOR",
+          "dia": "VIERNES",
+          "inicio": "13:00",
+          "fin": "15:00",
+          "inicio_minutos": 780,
+          "fin_minutos": 900,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL28",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 18,
+            "hora": "L18",
+            "aula": "M18",
+            "hora_texto_original": "13:00-15:00",
+            "aula_texto_original": "FIE1-AUL28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_1RB_ALGEBRA_SUPERIOR",
+      "materia_id": "ALGEBRA_SUPERIOR",
+      "materia": "ÁLGEBRA SUPERIOR",
+      "grupo": "ISC 1RB",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 19,
+        "grupo": "A19",
+        "materia": "B19",
+        "horas": "C19",
+        "materia_texto_original": "ÁLGEBRA SUPERIOR"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_1RB_ALGEBRA_SUPERIOR_MARTES",
+          "oferta_id": "ISC_1RB_ALGEBRA_SUPERIOR",
+          "grupo": "ISC 1RB",
+          "materia": "ÁLGEBRA SUPERIOR",
+          "dia": "MARTES",
+          "inicio": "14:00",
+          "fin": "16:00",
+          "inicio_minutos": 840,
+          "fin_minutos": 960,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL27",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 19,
+            "hora": "F19",
+            "aula": "G19",
+            "hora_texto_original": "14:00-16:00",
+            "aula_texto_original": "FIE1-AUL27"
+          }
+        },
+        {
+          "id": "ISC_1RB_ALGEBRA_SUPERIOR_VIERNES",
+          "oferta_id": "ISC_1RB_ALGEBRA_SUPERIOR",
+          "grupo": "ISC 1RB",
+          "materia": "ÁLGEBRA SUPERIOR",
+          "dia": "VIERNES",
+          "inicio": "15:00",
+          "fin": "17:00",
+          "inicio_minutos": 900,
+          "fin_minutos": 1020,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL27",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 19,
+            "hora": "L19",
+            "aula": "M19",
+            "hora_texto_original": "15:00-17:00",
+            "aula_texto_original": "FIE1-AUL27"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_3A_FUNDAMENTOS_DE_PROBABILIDAD_Y_ESTADISTICA",
+      "materia_id": "FUNDAMENTOS_DE_PROBABILIDAD_Y_ESTADISTICA",
+      "materia": "FUNDAMENTOS DE PROBABILIDAD Y ESTADISTICA",
+      "grupo": "ISC 3A",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 20,
+        "grupo": "A20",
+        "materia": "B20",
+        "horas": "C20",
+        "materia_texto_original": "FUNDAMENTOS DE PROBABILIDAD Y ESTADISTICA "
+      },
+      "sesiones": [
+        {
+          "id": "ISC_3A_FUNDAMENTOS_DE_PROBABILIDAD_Y_ESTADISTICA_MIERCOLES",
+          "oferta_id": "ISC_3A_FUNDAMENTOS_DE_PROBABILIDAD_Y_ESTADISTICA",
+          "grupo": "ISC 3A",
+          "materia": "FUNDAMENTOS DE PROBABILIDAD Y ESTADISTICA",
+          "dia": "MIERCOLES",
+          "inicio": "15:00",
+          "fin": "17:00",
+          "inicio_minutos": 900,
+          "fin_minutos": 1020,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL27",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 20,
+            "hora": "H20",
+            "aula": "I20",
+            "hora_texto_original": "15:00-17:00",
+            "aula_texto_original": "FIE1-AUL27"
+          }
+        },
+        {
+          "id": "ISC_3A_FUNDAMENTOS_DE_PROBABILIDAD_Y_ESTADISTICA_VIERNES",
+          "oferta_id": "ISC_3A_FUNDAMENTOS_DE_PROBABILIDAD_Y_ESTADISTICA",
+          "grupo": "ISC 3A",
+          "materia": "FUNDAMENTOS DE PROBABILIDAD Y ESTADISTICA",
+          "dia": "VIERNES",
+          "inicio": "11:00",
+          "fin": "13:00",
+          "inicio_minutos": 660,
+          "fin_minutos": 780,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL27",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 20,
+            "hora": "L20",
+            "aula": "M20",
+            "hora_texto_original": "11:00-13:00",
+            "aula_texto_original": "FIE1-AUL27"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_3A_MATEMATICAS_PARA_LA_COMPUTACION",
+      "materia_id": "MATEMATICAS_PARA_LA_COMPUTACION",
+      "materia": "MATEMÁTICAS PARA LA COMPUTACION",
+      "grupo": "ISC 3A",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 21,
+        "grupo": "A21",
+        "materia": "B21",
+        "horas": "C21",
+        "materia_texto_original": "MATEMÁTICAS PARA LA COMPUTACION"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_3A_MATEMATICAS_PARA_LA_COMPUTACION_LUNES",
+          "oferta_id": "ISC_3A_MATEMATICAS_PARA_LA_COMPUTACION",
+          "grupo": "ISC 3A",
+          "materia": "MATEMÁTICAS PARA LA COMPUTACION",
+          "dia": "LUNES",
+          "inicio": "09:00",
+          "fin": "11:00",
+          "inicio_minutos": 540,
+          "fin_minutos": 660,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL27",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 21,
+            "hora": "D21",
+            "aula": "E21",
+            "hora_texto_original": "09:00-11:00",
+            "aula_texto_original": "FIE1-AUL27"
+          }
+        },
+        {
+          "id": "ISC_3A_MATEMATICAS_PARA_LA_COMPUTACION_MIERCOLES",
+          "oferta_id": "ISC_3A_MATEMATICAS_PARA_LA_COMPUTACION",
+          "grupo": "ISC 3A",
+          "materia": "MATEMÁTICAS PARA LA COMPUTACION",
+          "dia": "MIERCOLES",
+          "inicio": "13:00",
+          "fin": "15:00",
+          "inicio_minutos": 780,
+          "fin_minutos": 900,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL27",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 21,
+            "hora": "H21",
+            "aula": "I21",
+            "hora_texto_original": "13:00-15:00",
+            "aula_texto_original": "FIE1-AUL27"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_3A_CALCULO_VECTORIAL",
+      "materia_id": "CALCULO_VECTORIAL",
+      "materia": "CALCULO VECTORIAL",
+      "grupo": "ISC 3A",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 22,
+        "grupo": "A22",
+        "materia": "B22",
+        "horas": "C22",
+        "materia_texto_original": "CALCULO VECTORIAL"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_3A_CALCULO_VECTORIAL_JUEVES",
+          "oferta_id": "ISC_3A_CALCULO_VECTORIAL",
+          "grupo": "ISC 3A",
+          "materia": "CALCULO VECTORIAL",
+          "dia": "JUEVES",
+          "inicio": "13:00",
+          "fin": "15:00",
+          "inicio_minutos": 780,
+          "fin_minutos": 900,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL27",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 22,
+            "hora": "J22",
+            "aula": "K22",
+            "hora_texto_original": "13:00-15:00",
+            "aula_texto_original": "FIE1-AUL27"
+          }
+        },
+        {
+          "id": "ISC_3A_CALCULO_VECTORIAL_VIERNES",
+          "oferta_id": "ISC_3A_CALCULO_VECTORIAL",
+          "grupo": "ISC 3A",
+          "materia": "CALCULO VECTORIAL",
+          "dia": "VIERNES",
+          "inicio": "09:00",
+          "fin": "11:00",
+          "inicio_minutos": 540,
+          "fin_minutos": 660,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL27",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 22,
+            "hora": "L22",
+            "aula": "M22",
+            "hora_texto_original": "09:00 - 11:00",
+            "aula_texto_original": "FIE1-AUL27"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_3A_CONTABILIDAD",
+      "materia_id": "CONTABILIDAD",
+      "materia": "CONTABILIDAD",
+      "grupo": "ISC 3A",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 23,
+        "grupo": "A23",
+        "materia": "B23",
+        "horas": "C23",
+        "materia_texto_original": "CONTABILIDAD"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_3A_CONTABILIDAD_MIERCOLES",
+          "oferta_id": "ISC_3A_CONTABILIDAD",
+          "grupo": "ISC 3A",
+          "materia": "CONTABILIDAD",
+          "dia": "MIERCOLES",
+          "inicio": "17:00",
+          "fin": "19:00",
+          "inicio_minutos": 1020,
+          "fin_minutos": 1140,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL27",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 23,
+            "hora": "H23",
+            "aula": "I23",
+            "hora_texto_original": "17:00-19:00",
+            "aula_texto_original": "FIE1-AUL27"
+          }
+        },
+        {
+          "id": "ISC_3A_CONTABILIDAD_JUEVES",
+          "oferta_id": "ISC_3A_CONTABILIDAD",
+          "grupo": "ISC 3A",
+          "materia": "CONTABILIDAD",
+          "dia": "JUEVES",
+          "inicio": "07:00",
+          "fin": "09:00",
+          "inicio_minutos": 420,
+          "fin_minutos": 540,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL27",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 23,
+            "hora": "J23",
+            "aula": "K23",
+            "hora_texto_original": "07:00-09:00",
+            "aula_texto_original": "FIE1-AUL27"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_3A_LENGUAJE_DE_PROGRAMACION_II",
+      "materia_id": "LENGUAJE_DE_PROGRAMACION_II",
+      "materia": "LENGUAJE DE PROGRAMACION II",
+      "grupo": "ISC 3A",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 24,
+        "grupo": "A24",
+        "materia": "B24",
+        "horas": "C24",
+        "materia_texto_original": "LENGUAJE DE PROGRAMACION II"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_3A_LENGUAJE_DE_PROGRAMACION_II_LUNES",
+          "oferta_id": "ISC_3A_LENGUAJE_DE_PROGRAMACION_II",
+          "grupo": "ISC 3A",
+          "materia": "LENGUAJE DE PROGRAMACION II",
+          "dia": "LUNES",
+          "inicio": "07:00",
+          "fin": "09:00",
+          "inicio_minutos": 420,
+          "fin_minutos": 540,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL27",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 24,
+            "hora": "D24",
+            "aula": "E24",
+            "hora_texto_original": "07:00-09:00",
+            "aula_texto_original": "FIE1-AUL27"
+          }
+        },
+        {
+          "id": "ISC_3A_LENGUAJE_DE_PROGRAMACION_II_VIERNES",
+          "oferta_id": "ISC_3A_LENGUAJE_DE_PROGRAMACION_II",
+          "grupo": "ISC 3A",
+          "materia": "LENGUAJE DE PROGRAMACION II",
+          "dia": "VIERNES",
+          "inicio": "07:00",
+          "fin": "09:00",
+          "inicio_minutos": 420,
+          "fin_minutos": 540,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL27",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 24,
+            "hora": "L24",
+            "aula": "M24",
+            "hora_texto_original": "07:00-09:00",
+            "aula_texto_original": "FIE1-AUL27"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_3A_ANALISIS_DE_CIRCUITOS_DE_C_D",
+      "materia_id": "ANALISIS_DE_CIRCUITOS_DE_C_D",
+      "materia": "ANALISIS DE CIRCUITOS DE C.D.",
+      "grupo": "ISC 3A",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 25,
+        "grupo": "A25",
+        "materia": "B25",
+        "horas": "C25",
+        "materia_texto_original": "ANALISIS DE CIRCUITOS DE C.D."
+      },
+      "sesiones": [
+        {
+          "id": "ISC_3A_ANALISIS_DE_CIRCUITOS_DE_C_D_MARTES",
+          "oferta_id": "ISC_3A_ANALISIS_DE_CIRCUITOS_DE_C_D",
+          "grupo": "ISC 3A",
+          "materia": "ANALISIS DE CIRCUITOS DE C.D.",
+          "dia": "MARTES",
+          "inicio": "11:00",
+          "fin": "13:00",
+          "inicio_minutos": 660,
+          "fin_minutos": 780,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL27",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 25,
+            "hora": "F25",
+            "aula": "G25",
+            "hora_texto_original": "11:00-13:00",
+            "aula_texto_original": "FIE1-AUL27"
+          }
+        },
+        {
+          "id": "ISC_3A_ANALISIS_DE_CIRCUITOS_DE_C_D_MIERCOLES",
+          "oferta_id": "ISC_3A_ANALISIS_DE_CIRCUITOS_DE_C_D",
+          "grupo": "ISC 3A",
+          "materia": "ANALISIS DE CIRCUITOS DE C.D.",
+          "dia": "MIERCOLES",
+          "inicio": "11:00",
+          "fin": "13:00",
+          "inicio_minutos": 660,
+          "fin_minutos": 780,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL27",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 25,
+            "hora": "H25",
+            "aula": "I25",
+            "hora_texto_original": "11:00-13:00",
+            "aula_texto_original": "FIE1-AUL27"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_3A_QUIMICA",
+      "materia_id": "QUIMICA",
+      "materia": "QUÍMICA",
+      "grupo": "ISC 3A",
+      "horas_semanales_declaradas": 3,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 26,
+        "grupo": "A26",
+        "materia": "B26",
+        "horas": "C26",
+        "materia_texto_original": "QUÍMICA"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_3A_QUIMICA_LUNES",
+          "oferta_id": "ISC_3A_QUIMICA",
+          "grupo": "ISC 3A",
+          "materia": "QUÍMICA",
+          "dia": "LUNES",
+          "inicio": "11:00",
+          "fin": "12:00",
+          "inicio_minutos": 660,
+          "fin_minutos": 720,
+          "duracion_minutos": 60,
+          "aula": "FIE1-AUL27",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 26,
+            "hora": "D26",
+            "aula": "E26",
+            "hora_texto_original": "11:00-12:00",
+            "aula_texto_original": "FIE1-AUL27"
+          }
+        },
+        {
+          "id": "ISC_3A_QUIMICA_VIERNES",
+          "oferta_id": "ISC_3A_QUIMICA",
+          "grupo": "ISC 3A",
+          "materia": "QUÍMICA",
+          "dia": "VIERNES",
+          "inicio": "13:00",
+          "fin": "15:00",
+          "inicio_minutos": 780,
+          "fin_minutos": 900,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL27",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 26,
+            "hora": "L26",
+            "aula": "M26",
+            "hora_texto_original": "13:00-15:00",
+            "aula_texto_original": "FIE1-AUL27"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_3A_INGLES_3",
+      "materia_id": "INGLES_3",
+      "materia": "INGLES 3",
+      "grupo": "ISC 3A",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 27,
+        "grupo": "A27",
+        "materia": "B27",
+        "horas": "C27",
+        "materia_texto_original": "INGLES 3"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_3A_INGLES_3_MARTES",
+          "oferta_id": "ISC_3A_INGLES_3",
+          "grupo": "ISC 3A",
+          "materia": "INGLES 3",
+          "dia": "MARTES",
+          "inicio": "13:00",
+          "fin": "15:00",
+          "inicio_minutos": 780,
+          "fin_minutos": 900,
+          "duracion_minutos": 120,
+          "aula": "FIB1-AUL02",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 27,
+            "hora": "F27",
+            "aula": "G27",
+            "hora_texto_original": "13:00-15:00",
+            "aula_texto_original": "FIB1-AUL02"
+          }
+        },
+        {
+          "id": "ISC_3A_INGLES_3_JUEVES",
+          "oferta_id": "ISC_3A_INGLES_3",
+          "grupo": "ISC 3A",
+          "materia": "INGLES 3",
+          "dia": "JUEVES",
+          "inicio": "09:00",
+          "fin": "11:00",
+          "inicio_minutos": 540,
+          "fin_minutos": 660,
+          "duracion_minutos": 120,
+          "aula": "FIB1-AUL02",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 27,
+            "hora": "J27",
+            "aula": "K27",
+            "hora_texto_original": "09:00-11:00",
+            "aula_texto_original": "FIB1-AUL02"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_3B_MATEMATICAS_PARA_LA_COMPUTACION",
+      "materia_id": "MATEMATICAS_PARA_LA_COMPUTACION",
+      "materia": "MATEMÁTICAS PARA LA COMPUTACION",
+      "grupo": "ISC 3B",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 28,
+        "grupo": "A28",
+        "materia": "B28",
+        "horas": "C28",
+        "materia_texto_original": "MATEMÁTICAS PARA LA COMPUTACION"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_3B_MATEMATICAS_PARA_LA_COMPUTACION_LUNES",
+          "oferta_id": "ISC_3B_MATEMATICAS_PARA_LA_COMPUTACION",
+          "grupo": "ISC 3B",
+          "materia": "MATEMÁTICAS PARA LA COMPUTACION",
+          "dia": "LUNES",
+          "inicio": "11:00",
+          "fin": "12:00",
+          "inicio_minutos": 660,
+          "fin_minutos": 720,
+          "duracion_minutos": 60,
+          "aula": "FIE1-AUL28",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 28,
+            "hora": "D28",
+            "aula": "E28",
+            "hora_texto_original": "11:00-12:00",
+            "aula_texto_original": "FIE1-AUL28"
+          }
+        },
+        {
+          "id": "ISC_3B_MATEMATICAS_PARA_LA_COMPUTACION_MARTES",
+          "oferta_id": "ISC_3B_MATEMATICAS_PARA_LA_COMPUTACION",
+          "grupo": "ISC 3B",
+          "materia": "MATEMÁTICAS PARA LA COMPUTACION",
+          "dia": "MARTES",
+          "inicio": "11:00",
+          "fin": "14:00",
+          "inicio_minutos": 660,
+          "fin_minutos": 840,
+          "duracion_minutos": 180,
+          "aula": "FIE1-AUL28",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 28,
+            "hora": "F28",
+            "aula": "G28",
+            "hora_texto_original": "11:00-14:00",
+            "aula_texto_original": "FIE1-AUL28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_3B_CONTABILIDAD",
+      "materia_id": "CONTABILIDAD",
+      "materia": "CONTABILIDAD",
+      "grupo": "ISC 3B",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 29,
+        "grupo": "A29",
+        "materia": "B29",
+        "horas": "C29",
+        "materia_texto_original": "CONTABILIDAD"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_3B_CONTABILIDAD_JUEVES",
+          "oferta_id": "ISC_3B_CONTABILIDAD",
+          "grupo": "ISC 3B",
+          "materia": "CONTABILIDAD",
+          "dia": "JUEVES",
+          "inicio": "17:00",
+          "fin": "19:00",
+          "inicio_minutos": 1020,
+          "fin_minutos": 1140,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL28",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 29,
+            "hora": "J29",
+            "aula": "K29",
+            "hora_texto_original": "17:00-19:00",
+            "aula_texto_original": "FIE1-AUL28"
+          }
+        },
+        {
+          "id": "ISC_3B_CONTABILIDAD_VIERNES",
+          "oferta_id": "ISC_3B_CONTABILIDAD",
+          "grupo": "ISC 3B",
+          "materia": "CONTABILIDAD",
+          "dia": "VIERNES",
+          "inicio": "07:00",
+          "fin": "09:00",
+          "inicio_minutos": 420,
+          "fin_minutos": 540,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL28",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 29,
+            "hora": "L29",
+            "aula": "M29",
+            "hora_texto_original": "07:00-09:00",
+            "aula_texto_original": "FIE1-AUL28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_3B_LENGUAJE_DE_PROGRAMACION_II",
+      "materia_id": "LENGUAJE_DE_PROGRAMACION_II",
+      "materia": "LENGUAJE DE PROGRAMACION II",
+      "grupo": "ISC 3B",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 30,
+        "grupo": "A30",
+        "materia": "B30",
+        "horas": "C30",
+        "materia_texto_original": "LENGUAJE DE PROGRAMACION II"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_3B_LENGUAJE_DE_PROGRAMACION_II_JUEVES",
+          "oferta_id": "ISC_3B_LENGUAJE_DE_PROGRAMACION_II",
+          "grupo": "ISC 3B",
+          "materia": "LENGUAJE DE PROGRAMACION II",
+          "dia": "JUEVES",
+          "inicio": "11:00",
+          "fin": "13:00",
+          "inicio_minutos": 660,
+          "fin_minutos": 780,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL28",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 30,
+            "hora": "J30",
+            "aula": "K30",
+            "hora_texto_original": "11:00-13:00",
+            "aula_texto_original": "FIE1-AUL28"
+          }
+        },
+        {
+          "id": "ISC_3B_LENGUAJE_DE_PROGRAMACION_II_VIERNES",
+          "oferta_id": "ISC_3B_LENGUAJE_DE_PROGRAMACION_II",
+          "grupo": "ISC 3B",
+          "materia": "LENGUAJE DE PROGRAMACION II",
+          "dia": "VIERNES",
+          "inicio": "09:00",
+          "fin": "11:00",
+          "inicio_minutos": 540,
+          "fin_minutos": 660,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL28",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 30,
+            "hora": "L30",
+            "aula": "M30",
+            "hora_texto_original": "09:00-11:00",
+            "aula_texto_original": "FIE1-AUL28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_3B_CALCULO_VECTORIAL",
+      "materia_id": "CALCULO_VECTORIAL",
+      "materia": "CALCULO VECTORIAL",
+      "grupo": "ISC 3B",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 31,
+        "grupo": "A31",
+        "materia": "B31",
+        "horas": "C31",
+        "materia_texto_original": "CALCULO VECTORIAL"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_3B_CALCULO_VECTORIAL_LUNES",
+          "oferta_id": "ISC_3B_CALCULO_VECTORIAL",
+          "grupo": "ISC 3B",
+          "materia": "CALCULO VECTORIAL",
+          "dia": "LUNES",
+          "inicio": "12:00",
+          "fin": "14:00",
+          "inicio_minutos": 720,
+          "fin_minutos": 840,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL28",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 31,
+            "hora": "D31",
+            "aula": "E31",
+            "hora_texto_original": "12:00-14:00",
+            "aula_texto_original": "FIE1-AUL28"
+          }
+        },
+        {
+          "id": "ISC_3B_CALCULO_VECTORIAL_VIERNES",
+          "oferta_id": "ISC_3B_CALCULO_VECTORIAL",
+          "grupo": "ISC 3B",
+          "materia": "CALCULO VECTORIAL",
+          "dia": "VIERNES",
+          "inicio": "13:00",
+          "fin": "15:00",
+          "inicio_minutos": 780,
+          "fin_minutos": 900,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL28",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 31,
+            "hora": "L31",
+            "aula": "M31",
+            "hora_texto_original": "13:00-15:00",
+            "aula_texto_original": "FIE1-AUL28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_3B_FUNDAMENTOS_DE_PROBABILIDAD_Y_ESTADISTICA",
+      "materia_id": "FUNDAMENTOS_DE_PROBABILIDAD_Y_ESTADISTICA",
+      "materia": "FUNDAMENTOS DE PROBABILIDAD Y ESTADISTICA",
+      "grupo": "ISC 3B",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 32,
+        "grupo": "A32",
+        "materia": "B32",
+        "horas": "C32",
+        "materia_texto_original": "FUNDAMENTOS DE PROBABILIDAD Y ESTADISTICA"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_3B_FUNDAMENTOS_DE_PROBABILIDAD_Y_ESTADISTICA_JUEVES",
+          "oferta_id": "ISC_3B_FUNDAMENTOS_DE_PROBABILIDAD_Y_ESTADISTICA",
+          "grupo": "ISC 3B",
+          "materia": "FUNDAMENTOS DE PROBABILIDAD Y ESTADISTICA",
+          "dia": "JUEVES",
+          "inicio": "13:00",
+          "fin": "15:00",
+          "inicio_minutos": 780,
+          "fin_minutos": 900,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL28",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 32,
+            "hora": "J32",
+            "aula": "K32",
+            "hora_texto_original": "13:00-15:00",
+            "aula_texto_original": "FIE1-AUL28"
+          }
+        },
+        {
+          "id": "ISC_3B_FUNDAMENTOS_DE_PROBABILIDAD_Y_ESTADISTICA_VIERNES",
+          "oferta_id": "ISC_3B_FUNDAMENTOS_DE_PROBABILIDAD_Y_ESTADISTICA",
+          "grupo": "ISC 3B",
+          "materia": "FUNDAMENTOS DE PROBABILIDAD Y ESTADISTICA",
+          "dia": "VIERNES",
+          "inicio": "11:00",
+          "fin": "13:00",
+          "inicio_minutos": 660,
+          "fin_minutos": 780,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL28",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 32,
+            "hora": "L32",
+            "aula": "M32",
+            "hora_texto_original": "11:00-13:00",
+            "aula_texto_original": "FIE1-AUL28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_3B_ANALISIS_DE_CIRCUITOS_DE_C_D",
+      "materia_id": "ANALISIS_DE_CIRCUITOS_DE_C_D",
+      "materia": "ANALISIS DE CIRCUITOS DE C.D.",
+      "grupo": "ISC 3B",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 33,
+        "grupo": "A33",
+        "materia": "B33",
+        "horas": "C33",
+        "materia_texto_original": "ANALISIS DE CIRCUITOS DE C.D."
+      },
+      "sesiones": [
+        {
+          "id": "ISC_3B_ANALISIS_DE_CIRCUITOS_DE_C_D_MARTES",
+          "oferta_id": "ISC_3B_ANALISIS_DE_CIRCUITOS_DE_C_D",
+          "grupo": "ISC 3B",
+          "materia": "ANALISIS DE CIRCUITOS DE C.D.",
+          "dia": "MARTES",
+          "inicio": "09:00",
+          "fin": "11:00",
+          "inicio_minutos": 540,
+          "fin_minutos": 660,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL28",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 33,
+            "hora": "F33",
+            "aula": "G33",
+            "hora_texto_original": "09:00-11:00",
+            "aula_texto_original": "FIE1-AUL28"
+          }
+        },
+        {
+          "id": "ISC_3B_ANALISIS_DE_CIRCUITOS_DE_C_D_MIERCOLES",
+          "oferta_id": "ISC_3B_ANALISIS_DE_CIRCUITOS_DE_C_D",
+          "grupo": "ISC 3B",
+          "materia": "ANALISIS DE CIRCUITOS DE C.D.",
+          "dia": "MIERCOLES",
+          "inicio": "09:00",
+          "fin": "11:00",
+          "inicio_minutos": 540,
+          "fin_minutos": 660,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL28",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 33,
+            "hora": "H33",
+            "aula": "I33",
+            "hora_texto_original": "09:00-11:00",
+            "aula_texto_original": "FIE1-AUL28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_3B_QUIMICA",
+      "materia_id": "QUIMICA",
+      "materia": "QUÍMICA",
+      "grupo": "ISC 3B",
+      "horas_semanales_declaradas": 3,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 34,
+        "grupo": "A34",
+        "materia": "B34",
+        "horas": "C34",
+        "materia_texto_original": "QUÍMICA"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_3B_QUIMICA_LUNES",
+          "oferta_id": "ISC_3B_QUIMICA",
+          "grupo": "ISC 3B",
+          "materia": "QUÍMICA",
+          "dia": "LUNES",
+          "inicio": "10:00",
+          "fin": "11:00",
+          "inicio_minutos": 600,
+          "fin_minutos": 660,
+          "duracion_minutos": 60,
+          "aula": "FIE1-AUL28",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 34,
+            "hora": "D34",
+            "aula": "E34",
+            "hora_texto_original": "10:00-11:00",
+            "aula_texto_original": "FIE1-AUL28"
+          }
+        },
+        {
+          "id": "ISC_3B_QUIMICA_MIERCOLES",
+          "oferta_id": "ISC_3B_QUIMICA",
+          "grupo": "ISC 3B",
+          "materia": "QUÍMICA",
+          "dia": "MIERCOLES",
+          "inicio": "11:00",
+          "fin": "13:00",
+          "inicio_minutos": 660,
+          "fin_minutos": 780,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL28",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 34,
+            "hora": "H34",
+            "aula": "I34",
+            "hora_texto_original": "11:00-13:00",
+            "aula_texto_original": "FIE1-AUL28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_3B_INGLES_3",
+      "materia_id": "INGLES_3",
+      "materia": "INGLES 3",
+      "grupo": "ISC 3B",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 35,
+        "grupo": "A35",
+        "materia": "B35",
+        "horas": "C35",
+        "materia_texto_original": "INGLES 3"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_3B_INGLES_3_MARTES",
+          "oferta_id": "ISC_3B_INGLES_3",
+          "grupo": "ISC 3B",
+          "materia": "INGLES 3",
+          "dia": "MARTES",
+          "inicio": "07:00",
+          "fin": "09:00",
+          "inicio_minutos": 420,
+          "fin_minutos": 540,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL28",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 35,
+            "hora": "F35",
+            "aula": "G35",
+            "hora_texto_original": "07:00-09:00",
+            "aula_texto_original": "FIE1-AUL28"
+          }
+        },
+        {
+          "id": "ISC_3B_INGLES_3_JUEVES",
+          "oferta_id": "ISC_3B_INGLES_3",
+          "grupo": "ISC 3B",
+          "materia": "INGLES 3",
+          "dia": "JUEVES",
+          "inicio": "15:00",
+          "fin": "17:00",
+          "inicio_minutos": 900,
+          "fin_minutos": 1020,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL28",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 35,
+            "hora": "J35",
+            "aula": "K35",
+            "hora_texto_original": "15:00-17:00",
+            "aula_texto_original": "FIE1-AUL28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_3R_CONTABILIDAD",
+      "materia_id": "CONTABILIDAD",
+      "materia": "CONTABILIDAD",
+      "grupo": "ISC 3R",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 36,
+        "grupo": "A36",
+        "materia": "B36",
+        "horas": "C36",
+        "materia_texto_original": "CONTABILIDAD"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_3R_CONTABILIDAD_MARTES",
+          "oferta_id": "ISC_3R_CONTABILIDAD",
+          "grupo": "ISC 3R",
+          "materia": "CONTABILIDAD",
+          "dia": "MARTES",
+          "inicio": "07:00",
+          "fin": "09:00",
+          "inicio_minutos": 420,
+          "fin_minutos": 540,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL025",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 36,
+            "hora": "F36",
+            "aula": "G36",
+            "hora_texto_original": "07:00-09:00",
+            "aula_texto_original": "FIE1-AUL025"
+          }
+        },
+        {
+          "id": "ISC_3R_CONTABILIDAD_VIERNES",
+          "oferta_id": "ISC_3R_CONTABILIDAD",
+          "grupo": "ISC 3R",
+          "materia": "CONTABILIDAD",
+          "dia": "VIERNES",
+          "inicio": "15:00",
+          "fin": "17:00",
+          "inicio_minutos": 900,
+          "fin_minutos": 1020,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL025",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 36,
+            "hora": "L36",
+            "aula": "M36",
+            "hora_texto_original": "15:00-17:00",
+            "aula_texto_original": "FIE1-AUL025"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_5A_TELECOMUNICACIONES",
+      "materia_id": "TELECOMUNICACIONES",
+      "materia": "TELECOMUNICACIONES",
+      "grupo": "ISC 5A",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 37,
+        "grupo": "A37",
+        "materia": "B37",
+        "horas": "C37",
+        "materia_texto_original": "TELECOMUNICACIONES"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_5A_TELECOMUNICACIONES_MIERCOLES",
+          "oferta_id": "ISC_5A_TELECOMUNICACIONES",
+          "grupo": "ISC 5A",
+          "materia": "TELECOMUNICACIONES",
+          "dia": "MIERCOLES",
+          "inicio": "07:00",
+          "fin": "09:00",
+          "inicio_minutos": 420,
+          "fin_minutos": 540,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL29",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 37,
+            "hora": "H37",
+            "aula": "I37",
+            "hora_texto_original": "07:00-09:00",
+            "aula_texto_original": "FIE1-AUL29"
+          }
+        },
+        {
+          "id": "ISC_5A_TELECOMUNICACIONES_VIERNES",
+          "oferta_id": "ISC_5A_TELECOMUNICACIONES",
+          "grupo": "ISC 5A",
+          "materia": "TELECOMUNICACIONES",
+          "dia": "VIERNES",
+          "inicio": "07:00",
+          "fin": "09:00",
+          "inicio_minutos": 420,
+          "fin_minutos": 540,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL29",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 37,
+            "hora": "L37",
+            "aula": "M37",
+            "hora_texto_original": "07:00-09:00",
+            "aula_texto_original": "FIE1-AUL29"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_5A_INVESTIGACION_DE_OPERACIONES_I",
+      "materia_id": "INVESTIGACION_DE_OPERACIONES_I",
+      "materia": "INVESTIGACION DE OPERACIONES I",
+      "grupo": "ISC 5A",
+      "horas_semanales_declaradas": 3,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 38,
+        "grupo": "A38",
+        "materia": "B38",
+        "horas": "C38",
+        "materia_texto_original": "INVESTIGACION DE OPERACIONES I"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_5A_INVESTIGACION_DE_OPERACIONES_I_MARTES",
+          "oferta_id": "ISC_5A_INVESTIGACION_DE_OPERACIONES_I",
+          "grupo": "ISC 5A",
+          "materia": "INVESTIGACION DE OPERACIONES I",
+          "dia": "MARTES",
+          "inicio": "15:00",
+          "fin": "16:00",
+          "inicio_minutos": 900,
+          "fin_minutos": 960,
+          "duracion_minutos": 60,
+          "aula": "FIE1-AUL29",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 38,
+            "hora": "F38",
+            "aula": "G38",
+            "hora_texto_original": "15:00-16:00",
+            "aula_texto_original": "FIE1-AUL29"
+          }
+        },
+        {
+          "id": "ISC_5A_INVESTIGACION_DE_OPERACIONES_I_JUEVES",
+          "oferta_id": "ISC_5A_INVESTIGACION_DE_OPERACIONES_I",
+          "grupo": "ISC 5A",
+          "materia": "INVESTIGACION DE OPERACIONES I",
+          "dia": "JUEVES",
+          "inicio": "15:00",
+          "fin": "17:00",
+          "inicio_minutos": 900,
+          "fin_minutos": 1020,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL29",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 38,
+            "hora": "J38",
+            "aula": "K38",
+            "hora_texto_original": "15:00-17:00",
+            "aula_texto_original": "FIE1-AUL29"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_5A_ADMINISTRACION_DE_ARCHIVOS",
+      "materia_id": "ADMINISTRACION_DE_ARCHIVOS",
+      "materia": "ADMINISTRACIÓN DE ARCHIVOS",
+      "grupo": "ISC 5A",
+      "horas_semanales_declaradas": 3,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 39,
+        "grupo": "A39",
+        "materia": "B39",
+        "horas": "C39",
+        "materia_texto_original": "ADMINISTRACIÓN DE ARCHIVOS"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_5A_ADMINISTRACION_DE_ARCHIVOS_MARTES",
+          "oferta_id": "ISC_5A_ADMINISTRACION_DE_ARCHIVOS",
+          "grupo": "ISC 5A",
+          "materia": "ADMINISTRACIÓN DE ARCHIVOS",
+          "dia": "MARTES",
+          "inicio": "11:00",
+          "fin": "13:00",
+          "inicio_minutos": 660,
+          "fin_minutos": 780,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL29",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 39,
+            "hora": "F39",
+            "aula": "G39",
+            "hora_texto_original": "11:00-13:00",
+            "aula_texto_original": "FIE1-AUL29"
+          }
+        },
+        {
+          "id": "ISC_5A_ADMINISTRACION_DE_ARCHIVOS_VIERNES",
+          "oferta_id": "ISC_5A_ADMINISTRACION_DE_ARCHIVOS",
+          "grupo": "ISC 5A",
+          "materia": "ADMINISTRACIÓN DE ARCHIVOS",
+          "dia": "VIERNES",
+          "inicio": "11:00",
+          "fin": "12:00",
+          "inicio_minutos": 660,
+          "fin_minutos": 720,
+          "duracion_minutos": 60,
+          "aula": "FIE1-AUL29",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 39,
+            "hora": "L39",
+            "aula": "M39",
+            "hora_texto_original": "11:00-12:00",
+            "aula_texto_original": "FIE1-AUL29"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_5A_ESTRUCTURA_DE_DATOS_II",
+      "materia_id": "ESTRUCTURA_DE_DATOS_II",
+      "materia": "ESTRUCTURA DE DATOS II",
+      "grupo": "ISC 5A",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 40,
+        "grupo": "A40",
+        "materia": "B40",
+        "horas": "C40",
+        "materia_texto_original": "ESTRUCTURA DE DATOS II"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_5A_ESTRUCTURA_DE_DATOS_II_MARTES",
+          "oferta_id": "ISC_5A_ESTRUCTURA_DE_DATOS_II",
+          "grupo": "ISC 5A",
+          "materia": "ESTRUCTURA DE DATOS II",
+          "dia": "MARTES",
+          "inicio": "09:00",
+          "fin": "11:00",
+          "inicio_minutos": 540,
+          "fin_minutos": 660,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL29",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 40,
+            "hora": "F40",
+            "aula": "G40",
+            "hora_texto_original": "09:00-11:00",
+            "aula_texto_original": "FIE1-AUL29"
+          }
+        },
+        {
+          "id": "ISC_5A_ESTRUCTURA_DE_DATOS_II_VIERNES",
+          "oferta_id": "ISC_5A_ESTRUCTURA_DE_DATOS_II",
+          "grupo": "ISC 5A",
+          "materia": "ESTRUCTURA DE DATOS II",
+          "dia": "VIERNES",
+          "inicio": "09:00",
+          "fin": "11:00",
+          "inicio_minutos": 540,
+          "fin_minutos": 660,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL29",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 40,
+            "hora": "L40",
+            "aula": "M40",
+            "hora_texto_original": "09:00-11:00",
+            "aula_texto_original": "FIE1-AUL29"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_5A_BASES_DE_DATOS_I",
+      "materia_id": "BASES_DE_DATOS_I",
+      "materia": "BASES DE DATOS I",
+      "grupo": "ISC 5A",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 41,
+        "grupo": "A41",
+        "materia": "B41",
+        "horas": "C41",
+        "materia_texto_original": "BASES DE DATOS I"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_5A_BASES_DE_DATOS_I_LUNES",
+          "oferta_id": "ISC_5A_BASES_DE_DATOS_I",
+          "grupo": "ISC 5A",
+          "materia": "BASES DE DATOS I",
+          "dia": "LUNES",
+          "inicio": "09:00",
+          "fin": "11:00",
+          "inicio_minutos": 540,
+          "fin_minutos": 660,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL29",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 41,
+            "hora": "D41",
+            "aula": "E41",
+            "hora_texto_original": "09:00-11:00",
+            "aula_texto_original": "FIE1-AUL29"
+          }
+        },
+        {
+          "id": "ISC_5A_BASES_DE_DATOS_I_JUEVES",
+          "oferta_id": "ISC_5A_BASES_DE_DATOS_I",
+          "grupo": "ISC 5A",
+          "materia": "BASES DE DATOS I",
+          "dia": "JUEVES",
+          "inicio": "09:00",
+          "fin": "11:00",
+          "inicio_minutos": 540,
+          "fin_minutos": 660,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL29",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 41,
+            "hora": "J41",
+            "aula": "K41",
+            "hora_texto_original": "09:00-11:00",
+            "aula_texto_original": "FIE1-AUL29"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_5A_ARQUITECTURA_COMPUTACIONAL",
+      "materia_id": "ARQUITECTURA_COMPUTACIONAL",
+      "materia": "ARQUITECTURA COMPUTACIONAL",
+      "grupo": "ISC 5A",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 42,
+        "grupo": "A42",
+        "materia": "B42",
+        "horas": "C42",
+        "materia_texto_original": "ARQUITECTURA COMPUTACIONAL"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_5A_ARQUITECTURA_COMPUTACIONAL_LUNES",
+          "oferta_id": "ISC_5A_ARQUITECTURA_COMPUTACIONAL",
+          "grupo": "ISC 5A",
+          "materia": "ARQUITECTURA COMPUTACIONAL",
+          "dia": "LUNES",
+          "inicio": "07:00",
+          "fin": "09:00",
+          "inicio_minutos": 420,
+          "fin_minutos": 540,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL29",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 42,
+            "hora": "D42",
+            "aula": "E42",
+            "hora_texto_original": "07:00-09:00",
+            "aula_texto_original": "FIE1-AUL29"
+          }
+        },
+        {
+          "id": "ISC_5A_ARQUITECTURA_COMPUTACIONAL_MIERCOLES",
+          "oferta_id": "ISC_5A_ARQUITECTURA_COMPUTACIONAL",
+          "grupo": "ISC 5A",
+          "materia": "ARQUITECTURA COMPUTACIONAL",
+          "dia": "MIERCOLES",
+          "inicio": "09:00",
+          "fin": "11:00",
+          "inicio_minutos": 540,
+          "fin_minutos": 660,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL29",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 42,
+            "hora": "H42",
+            "aula": "I42",
+            "hora_texto_original": "09:00-11:00",
+            "aula_texto_original": "FIE1-AUL29"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_5A_GRAFICACION",
+      "materia_id": "GRAFICACION",
+      "materia": "GRAFICACIÓN",
+      "grupo": "ISC 5A",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 43,
+        "grupo": "A43",
+        "materia": "B43",
+        "horas": "C43",
+        "materia_texto_original": "GRAFICACIÓN"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_5A_GRAFICACION_MIERCOLES",
+          "oferta_id": "ISC_5A_GRAFICACION",
+          "grupo": "ISC 5A",
+          "materia": "GRAFICACIÓN",
+          "dia": "MIERCOLES",
+          "inicio": "11:00",
+          "fin": "13:00",
+          "inicio_minutos": 660,
+          "fin_minutos": 780,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL29",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 43,
+            "hora": "H43",
+            "aula": "I43",
+            "hora_texto_original": "11:00-13:00",
+            "aula_texto_original": "FIE1-AUL29"
+          }
+        },
+        {
+          "id": "ISC_5A_GRAFICACION_JUEVES",
+          "oferta_id": "ISC_5A_GRAFICACION",
+          "grupo": "ISC 5A",
+          "materia": "GRAFICACIÓN",
+          "dia": "JUEVES",
+          "inicio": "11:00",
+          "fin": "13:00",
+          "inicio_minutos": 660,
+          "fin_minutos": 780,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL29",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 43,
+            "hora": "J43",
+            "aula": "K43",
+            "hora_texto_original": "11:00-13:00",
+            "aula_texto_original": "FIE1-AUL29"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_5A_INGLES_5",
+      "materia_id": "INGLES_5",
+      "materia": "INGLES 5",
+      "grupo": "ISC 5A",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 44,
+        "grupo": "A44",
+        "materia": "B44",
+        "horas": "C44",
+        "materia_texto_original": "INGLES 5"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_5A_INGLES_5_LUNES",
+          "oferta_id": "ISC_5A_INGLES_5",
+          "grupo": "ISC 5A",
+          "materia": "INGLES 5",
+          "dia": "LUNES",
+          "inicio": "11:00",
+          "fin": "13:00",
+          "inicio_minutos": 660,
+          "fin_minutos": 780,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL29",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 44,
+            "hora": "D44",
+            "aula": "E44",
+            "hora_texto_original": "11:00-13:00",
+            "aula_texto_original": "FIE1-AUL29"
+          }
+        },
+        {
+          "id": "ISC_5A_INGLES_5_MARTES",
+          "oferta_id": "ISC_5A_INGLES_5",
+          "grupo": "ISC 5A",
+          "materia": "INGLES 5",
+          "dia": "MARTES",
+          "inicio": "13:00",
+          "fin": "15:00",
+          "inicio_minutos": 780,
+          "fin_minutos": 900,
+          "duracion_minutos": 120,
+          "aula": "FIE1-AUL29",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 44,
+            "hora": "F44",
+            "aula": "G44",
+            "hora_texto_original": "13:00-15:00",
+            "aula_texto_original": "FIE1-AUL29"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_5B_INGLES_5",
+      "materia_id": "INGLES_5",
+      "materia": "INGLES 5",
+      "grupo": "ISC 5B",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 45,
+        "grupo": "A45",
+        "materia": "B45",
+        "horas": "C45",
+        "materia_texto_original": "INGLES 5"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_5B_INGLES_5_MARTES",
+          "oferta_id": "ISC_5B_INGLES_5",
+          "grupo": "ISC 5B",
+          "materia": "INGLES 5",
+          "dia": "MARTES",
+          "inicio": "08:00",
+          "fin": "10:00",
+          "inicio_minutos": 480,
+          "fin_minutos": 600,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL30",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 45,
+            "hora": "F45",
+            "aula": "G45",
+            "hora_texto_original": "08:00-10:00",
+            "aula_texto_original": "FIE2-AUL30"
+          }
+        },
+        {
+          "id": "ISC_5B_INGLES_5_JUEVES",
+          "oferta_id": "ISC_5B_INGLES_5",
+          "grupo": "ISC 5B",
+          "materia": "INGLES 5",
+          "dia": "JUEVES",
+          "inicio": "11:00",
+          "fin": "13:00",
+          "inicio_minutos": 660,
+          "fin_minutos": 780,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL30",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 45,
+            "hora": "J45",
+            "aula": "K45",
+            "hora_texto_original": "11:00-13:00",
+            "aula_texto_original": "FIE2-AUL30"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_5B_GRAFICACION",
+      "materia_id": "GRAFICACION",
+      "materia": "GRAFICACIÓN",
+      "grupo": "ISC 5B",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 46,
+        "grupo": "A46",
+        "materia": "B46",
+        "horas": "C46",
+        "materia_texto_original": "GRAFICACIÓN"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_5B_GRAFICACION_LUNES",
+          "oferta_id": "ISC_5B_GRAFICACION",
+          "grupo": "ISC 5B",
+          "materia": "GRAFICACIÓN",
+          "dia": "LUNES",
+          "inicio": "12:00",
+          "fin": "14:00",
+          "inicio_minutos": 720,
+          "fin_minutos": 840,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL30",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 46,
+            "hora": "D46",
+            "aula": "E46",
+            "hora_texto_original": "12:00-14:00",
+            "aula_texto_original": "FIE2-AUL30"
+          }
+        },
+        {
+          "id": "ISC_5B_GRAFICACION_MARTES",
+          "oferta_id": "ISC_5B_GRAFICACION",
+          "grupo": "ISC 5B",
+          "materia": "GRAFICACIÓN",
+          "dia": "MARTES",
+          "inicio": "14:00",
+          "fin": "16:00",
+          "inicio_minutos": 840,
+          "fin_minutos": 960,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL30",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 46,
+            "hora": "F46",
+            "aula": "G46",
+            "hora_texto_original": "14:00-16:00",
+            "aula_texto_original": "FIE2-AUL30"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_5B_TELECOMUNICACIONES",
+      "materia_id": "TELECOMUNICACIONES",
+      "materia": "TELECOMUNICACIONES",
+      "grupo": "ISC 5B",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 47,
+        "grupo": "A47",
+        "materia": "B47",
+        "horas": "C47",
+        "materia_texto_original": "TELECOMUNICACIONES"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_5B_TELECOMUNICACIONES_MIERCOLES",
+          "oferta_id": "ISC_5B_TELECOMUNICACIONES",
+          "grupo": "ISC 5B",
+          "materia": "TELECOMUNICACIONES",
+          "dia": "MIERCOLES",
+          "inicio": "10:00",
+          "fin": "12:00",
+          "inicio_minutos": 600,
+          "fin_minutos": 720,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL30",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 47,
+            "hora": "H47",
+            "aula": "I47",
+            "hora_texto_original": "10:00-12:00",
+            "aula_texto_original": "FIE2-AUL30"
+          }
+        },
+        {
+          "id": "ISC_5B_TELECOMUNICACIONES_JUEVES",
+          "oferta_id": "ISC_5B_TELECOMUNICACIONES",
+          "grupo": "ISC 5B",
+          "materia": "TELECOMUNICACIONES",
+          "dia": "JUEVES",
+          "inicio": "13:00",
+          "fin": "15:00",
+          "inicio_minutos": 780,
+          "fin_minutos": 900,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL30",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 47,
+            "hora": "J47",
+            "aula": "K47",
+            "hora_texto_original": "13:00-15:00",
+            "aula_texto_original": "FIE2-AUL30"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_5B_ADMNISTRACION_DE_ARCHIVOS",
+      "materia_id": "ADMNISTRACION_DE_ARCHIVOS",
+      "materia": "ADMNISTRACION DE ARCHIVOS",
+      "grupo": "ISC 5B",
+      "horas_semanales_declaradas": 3,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 48,
+        "grupo": "A48",
+        "materia": "B48",
+        "horas": "C48",
+        "materia_texto_original": "ADMNISTRACION DE ARCHIVOS"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_5B_ADMNISTRACION_DE_ARCHIVOS_LUNES",
+          "oferta_id": "ISC_5B_ADMNISTRACION_DE_ARCHIVOS",
+          "grupo": "ISC 5B",
+          "materia": "ADMNISTRACION DE ARCHIVOS",
+          "dia": "LUNES",
+          "inicio": "08:00",
+          "fin": "10:00",
+          "inicio_minutos": 480,
+          "fin_minutos": 600,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL30",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 48,
+            "hora": "D48",
+            "aula": "E48",
+            "hora_texto_original": "08:00-10:00",
+            "aula_texto_original": "FIE2-AUL30"
+          }
+        },
+        {
+          "id": "ISC_5B_ADMNISTRACION_DE_ARCHIVOS_MIERCOLES",
+          "oferta_id": "ISC_5B_ADMNISTRACION_DE_ARCHIVOS",
+          "grupo": "ISC 5B",
+          "materia": "ADMNISTRACION DE ARCHIVOS",
+          "dia": "MIERCOLES",
+          "inicio": "09:00",
+          "fin": "10:00",
+          "inicio_minutos": 540,
+          "fin_minutos": 600,
+          "duracion_minutos": 60,
+          "aula": "FIE2-AUL30",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 48,
+            "hora": "H48",
+            "aula": "I48",
+            "hora_texto_original": "09:00-10:00",
+            "aula_texto_original": "FIE2-AUL30"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_5B_ESTRUCTURA_DE_DATOS_II",
+      "materia_id": "ESTRUCTURA_DE_DATOS_II",
+      "materia": "ESTRUCTURA DE DATOS II",
+      "grupo": "ISC 5B",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 49,
+        "grupo": "A49",
+        "materia": "B49",
+        "horas": "C49",
+        "materia_texto_original": "ESTRUCTURA DE DATOS II"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_5B_ESTRUCTURA_DE_DATOS_II_LUNES",
+          "oferta_id": "ISC_5B_ESTRUCTURA_DE_DATOS_II",
+          "grupo": "ISC 5B",
+          "materia": "ESTRUCTURA DE DATOS II",
+          "dia": "LUNES",
+          "inicio": "10:00",
+          "fin": "12:00",
+          "inicio_minutos": 600,
+          "fin_minutos": 720,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL30",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 49,
+            "hora": "D49",
+            "aula": "E49",
+            "hora_texto_original": "10:00-12:00",
+            "aula_texto_original": "FIE2-AUL30"
+          }
+        },
+        {
+          "id": "ISC_5B_ESTRUCTURA_DE_DATOS_II_VIERNES",
+          "oferta_id": "ISC_5B_ESTRUCTURA_DE_DATOS_II",
+          "grupo": "ISC 5B",
+          "materia": "ESTRUCTURA DE DATOS II",
+          "dia": "VIERNES",
+          "inicio": "09:00",
+          "fin": "11:00",
+          "inicio_minutos": 540,
+          "fin_minutos": 660,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL30",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 49,
+            "hora": "L49",
+            "aula": "M49",
+            "hora_texto_original": "09:00-11:00",
+            "aula_texto_original": "FIE2-AUL30"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_5B_INVESTIGACION_DE_OPERACIONES_I",
+      "materia_id": "INVESTIGACION_DE_OPERACIONES_I",
+      "materia": "INVESTIGACION DE OPERACIONES I",
+      "grupo": "ISC 5B",
+      "horas_semanales_declaradas": 3,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 50,
+        "grupo": "A50",
+        "materia": "B50",
+        "horas": "C50",
+        "materia_texto_original": "INVESTIGACION DE OPERACIONES I"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_5B_INVESTIGACION_DE_OPERACIONES_I_JUEVES",
+          "oferta_id": "ISC_5B_INVESTIGACION_DE_OPERACIONES_I",
+          "grupo": "ISC 5B",
+          "materia": "INVESTIGACION DE OPERACIONES I",
+          "dia": "JUEVES",
+          "inicio": "15:00",
+          "fin": "16:00",
+          "inicio_minutos": 900,
+          "fin_minutos": 960,
+          "duracion_minutos": 60,
+          "aula": "FIE2-AUL30",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 50,
+            "hora": "J50",
+            "aula": "K50",
+            "hora_texto_original": "15:00-16:00",
+            "aula_texto_original": "FIE2-AUL30"
+          }
+        },
+        {
+          "id": "ISC_5B_INVESTIGACION_DE_OPERACIONES_I_VIERNES",
+          "oferta_id": "ISC_5B_INVESTIGACION_DE_OPERACIONES_I",
+          "grupo": "ISC 5B",
+          "materia": "INVESTIGACION DE OPERACIONES I",
+          "dia": "VIERNES",
+          "inicio": "11:00",
+          "fin": "13:00",
+          "inicio_minutos": 660,
+          "fin_minutos": 780,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL30",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 50,
+            "hora": "L50",
+            "aula": "M50",
+            "hora_texto_original": "11:00-13:00",
+            "aula_texto_original": "FIE2-AUL30"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_5B_ARQUITECTURA_COMPUTACIONAL",
+      "materia_id": "ARQUITECTURA_COMPUTACIONAL",
+      "materia": "ARQUITECTURA COMPUTACIONAL",
+      "grupo": "ISC 5B",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 51,
+        "grupo": "A51",
+        "materia": "B51",
+        "horas": "C51",
+        "materia_texto_original": "ARQUITECTURA COMPUTACIONAL"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_5B_ARQUITECTURA_COMPUTACIONAL_MARTES",
+          "oferta_id": "ISC_5B_ARQUITECTURA_COMPUTACIONAL",
+          "grupo": "ISC 5B",
+          "materia": "ARQUITECTURA COMPUTACIONAL",
+          "dia": "MARTES",
+          "inicio": "12:00",
+          "fin": "14:00",
+          "inicio_minutos": 720,
+          "fin_minutos": 840,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL30",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 51,
+            "hora": "F51",
+            "aula": "G51",
+            "hora_texto_original": "12:00-14:00",
+            "aula_texto_original": "FIE2-AUL30"
+          }
+        },
+        {
+          "id": "ISC_5B_ARQUITECTURA_COMPUTACIONAL_MIERCOLES",
+          "oferta_id": "ISC_5B_ARQUITECTURA_COMPUTACIONAL",
+          "grupo": "ISC 5B",
+          "materia": "ARQUITECTURA COMPUTACIONAL",
+          "dia": "MIERCOLES",
+          "inicio": "12:00",
+          "fin": "14:00",
+          "inicio_minutos": 720,
+          "fin_minutos": 840,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL30",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 51,
+            "hora": "H51",
+            "aula": "I51",
+            "hora_texto_original": "12:00-14:00",
+            "aula_texto_original": "FIE2-AUL30"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_5B_BASES_DE_DATOS_I",
+      "materia_id": "BASES_DE_DATOS_I",
+      "materia": "BASES DE DATOS I",
+      "grupo": "ISC 5B",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 52,
+        "grupo": "A52",
+        "materia": "B52",
+        "horas": "C52",
+        "materia_texto_original": "BASES DE DATOS I"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_5B_BASES_DE_DATOS_I_MARTES",
+          "oferta_id": "ISC_5B_BASES_DE_DATOS_I",
+          "grupo": "ISC 5B",
+          "materia": "BASES DE DATOS I",
+          "dia": "MARTES",
+          "inicio": "10:00",
+          "fin": "12:00",
+          "inicio_minutos": 600,
+          "fin_minutos": 720,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL30",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 52,
+            "hora": "F52",
+            "aula": "G52",
+            "hora_texto_original": "10:00-12:00",
+            "aula_texto_original": "FIE2-AUL30"
+          }
+        },
+        {
+          "id": "ISC_5B_BASES_DE_DATOS_I_MIERCOLES",
+          "oferta_id": "ISC_5B_BASES_DE_DATOS_I",
+          "grupo": "ISC 5B",
+          "materia": "BASES DE DATOS I",
+          "dia": "MIERCOLES",
+          "inicio": "14:00",
+          "fin": "16:00",
+          "inicio_minutos": 840,
+          "fin_minutos": 960,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL30",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 52,
+            "hora": "H52",
+            "aula": "I52",
+            "hora_texto_original": "14:00-16:00",
+            "aula_texto_original": "FIE2-AUL30"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_7A_PROGRAMACION_DE_APLICACIONES_WEB",
+      "materia_id": "PROGRAMACION_DE_APLICACIONES_WEB",
+      "materia": "PROGRAMACION DE APLICACIONES WEB",
+      "grupo": "ISC 7A",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 53,
+        "grupo": "A53",
+        "materia": "B53",
+        "horas": "C53",
+        "materia_texto_original": "PROGRAMACION DE APLICACIONES WEB"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_7A_PROGRAMACION_DE_APLICACIONES_WEB_MARTES",
+          "oferta_id": "ISC_7A_PROGRAMACION_DE_APLICACIONES_WEB",
+          "grupo": "ISC 7A",
+          "materia": "PROGRAMACION DE APLICACIONES WEB",
+          "dia": "MARTES",
+          "inicio": "09:00",
+          "fin": "11:00",
+          "inicio_minutos": 540,
+          "fin_minutos": 660,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL31",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 53,
+            "hora": "F53",
+            "aula": "G53",
+            "hora_texto_original": "09:00-11:00",
+            "aula_texto_original": "FIE2-AUL31"
+          }
+        },
+        {
+          "id": "ISC_7A_PROGRAMACION_DE_APLICACIONES_WEB_JUEVES",
+          "oferta_id": "ISC_7A_PROGRAMACION_DE_APLICACIONES_WEB",
+          "grupo": "ISC 7A",
+          "materia": "PROGRAMACION DE APLICACIONES WEB",
+          "dia": "JUEVES",
+          "inicio": "09:00",
+          "fin": "11:00",
+          "inicio_minutos": 540,
+          "fin_minutos": 660,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL31",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 53,
+            "hora": "J53",
+            "aula": "K53",
+            "hora_texto_original": "09:00-11:00",
+            "aula_texto_original": "FIE2-AUL31"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_7A_METODOLOGIA_DE_LA_INVESTIGACION",
+      "materia_id": "METODOLOGIA_DE_LA_INVESTIGACION",
+      "materia": "METODOLOGIA DE LA INVESTIGACION",
+      "grupo": "ISC 7A",
+      "horas_semanales_declaradas": 3,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 54,
+        "grupo": "A54",
+        "materia": "B54",
+        "horas": "C54",
+        "materia_texto_original": "METODOLOGIA DE LA INVESTIGACION"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_7A_METODOLOGIA_DE_LA_INVESTIGACION_LUNES",
+          "oferta_id": "ISC_7A_METODOLOGIA_DE_LA_INVESTIGACION",
+          "grupo": "ISC 7A",
+          "materia": "METODOLOGIA DE LA INVESTIGACION",
+          "dia": "LUNES",
+          "inicio": "11:00",
+          "fin": "13:00",
+          "inicio_minutos": 660,
+          "fin_minutos": 780,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL31",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 54,
+            "hora": "D54",
+            "aula": "E54",
+            "hora_texto_original": "11:00-13:00",
+            "aula_texto_original": "FIE2-AUL31"
+          }
+        },
+        {
+          "id": "ISC_7A_METODOLOGIA_DE_LA_INVESTIGACION_MARTES",
+          "oferta_id": "ISC_7A_METODOLOGIA_DE_LA_INVESTIGACION",
+          "grupo": "ISC 7A",
+          "materia": "METODOLOGIA DE LA INVESTIGACION",
+          "dia": "MARTES",
+          "inicio": "08:00",
+          "fin": "09:00",
+          "inicio_minutos": 480,
+          "fin_minutos": 540,
+          "duracion_minutos": 60,
+          "aula": "FIE2-AUL31",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 54,
+            "hora": "F54",
+            "aula": "G54",
+            "hora_texto_original": "8:00-9:00",
+            "aula_texto_original": "FIE2-AUL31"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_7A_COMPILADORES",
+      "materia_id": "COMPILADORES",
+      "materia": "COMPILADORES",
+      "grupo": "ISC 7A",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 55,
+        "grupo": "A55",
+        "materia": "B55",
+        "horas": "C55",
+        "materia_texto_original": "COMPILADORES"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_7A_COMPILADORES_MIERCOLES",
+          "oferta_id": "ISC_7A_COMPILADORES",
+          "grupo": "ISC 7A",
+          "materia": "COMPILADORES",
+          "dia": "MIERCOLES",
+          "inicio": "13:00",
+          "fin": "15:00",
+          "inicio_minutos": 780,
+          "fin_minutos": 900,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL31",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 55,
+            "hora": "H55",
+            "aula": "I55",
+            "hora_texto_original": "13:00-15:00",
+            "aula_texto_original": "FIE2-AUL31"
+          }
+        },
+        {
+          "id": "ISC_7A_COMPILADORES_JUEVES",
+          "oferta_id": "ISC_7A_COMPILADORES",
+          "grupo": "ISC 7A",
+          "materia": "COMPILADORES",
+          "dia": "JUEVES",
+          "inicio": "11:00",
+          "fin": "13:00",
+          "inicio_minutos": 660,
+          "fin_minutos": 780,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL31",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 55,
+            "hora": "J55",
+            "aula": "K55",
+            "hora_texto_original": "11:00-13:00",
+            "aula_texto_original": "FIE2-AUL31"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_7A_SISTEMAS_II",
+      "materia_id": "SISTEMAS_II",
+      "materia": "SISTEMAS II",
+      "grupo": "ISC 7A",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 56,
+        "grupo": "A56",
+        "materia": "B56",
+        "horas": "C56",
+        "materia_texto_original": "SISTEMAS II"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_7A_SISTEMAS_II_LUNES",
+          "oferta_id": "ISC_7A_SISTEMAS_II",
+          "grupo": "ISC 7A",
+          "materia": "SISTEMAS II",
+          "dia": "LUNES",
+          "inicio": "15:00",
+          "fin": "17:00",
+          "inicio_minutos": 900,
+          "fin_minutos": 1020,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL31",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 56,
+            "hora": "D56",
+            "aula": "E56",
+            "hora_texto_original": "15:00-17:00",
+            "aula_texto_original": "FIE2-AUL31"
+          }
+        },
+        {
+          "id": "ISC_7A_SISTEMAS_II_VIERNES",
+          "oferta_id": "ISC_7A_SISTEMAS_II",
+          "grupo": "ISC 7A",
+          "materia": "SISTEMAS II",
+          "dia": "VIERNES",
+          "inicio": "07:00",
+          "fin": "09:00",
+          "inicio_minutos": 420,
+          "fin_minutos": 540,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL31",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 56,
+            "hora": "L56",
+            "aula": "M56",
+            "hora_texto_original": "07:00-09:00",
+            "aula_texto_original": "FIE2-AUL31"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_7A_TALLER_DE_EMPRENDEDORES",
+      "materia_id": "TALLER_DE_EMPRENDEDORES",
+      "materia": "TALLER DE EMPRENDEDORES",
+      "grupo": "ISC 7A",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 57,
+        "grupo": "A57",
+        "materia": "B57",
+        "horas": "C57",
+        "materia_texto_original": "TALLER DE EMPRENDEDORES"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_7A_TALLER_DE_EMPRENDEDORES_LUNES",
+          "oferta_id": "ISC_7A_TALLER_DE_EMPRENDEDORES",
+          "grupo": "ISC 7A",
+          "materia": "TALLER DE EMPRENDEDORES",
+          "dia": "LUNES",
+          "inicio": "18:00",
+          "fin": "20:00",
+          "inicio_minutos": 1080,
+          "fin_minutos": 1200,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL31",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 57,
+            "hora": "D57",
+            "aula": "E57",
+            "hora_texto_original": "18:00-20:00",
+            "aula_texto_original": "FIE2-AUL31"
+          }
+        },
+        {
+          "id": "ISC_7A_TALLER_DE_EMPRENDEDORES_MIERCOLES",
+          "oferta_id": "ISC_7A_TALLER_DE_EMPRENDEDORES",
+          "grupo": "ISC 7A",
+          "materia": "TALLER DE EMPRENDEDORES",
+          "dia": "MIERCOLES",
+          "inicio": "18:00",
+          "fin": "20:00",
+          "inicio_minutos": 1080,
+          "fin_minutos": 1200,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL31",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 57,
+            "hora": "H57",
+            "aula": "I57",
+            "hora_texto_original": "18:00-20:00",
+            "aula_texto_original": "FIE2-AUL31"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_7A_BASE_DE_DATOS_II",
+      "materia_id": "BASE_DE_DATOS_II",
+      "materia": "BASE DE DATOS II",
+      "grupo": "ISC 7A",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 58,
+        "grupo": "A58",
+        "materia": "B58",
+        "horas": "C58",
+        "materia_texto_original": "BASE DE DATOS II"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_7A_BASE_DE_DATOS_II_LUNES",
+          "oferta_id": "ISC_7A_BASE_DE_DATOS_II",
+          "grupo": "ISC 7A",
+          "materia": "BASE DE DATOS II",
+          "dia": "LUNES",
+          "inicio": "13:00",
+          "fin": "15:00",
+          "inicio_minutos": 780,
+          "fin_minutos": 900,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL31",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 58,
+            "hora": "D58",
+            "aula": "E58",
+            "hora_texto_original": "13:00-15:00",
+            "aula_texto_original": "FIE2-AUL31"
+          }
+        },
+        {
+          "id": "ISC_7A_BASE_DE_DATOS_II_JUEVES",
+          "oferta_id": "ISC_7A_BASE_DE_DATOS_II",
+          "grupo": "ISC 7A",
+          "materia": "BASE DE DATOS II",
+          "dia": "JUEVES",
+          "inicio": "13:00",
+          "fin": "15:00",
+          "inicio_minutos": 780,
+          "fin_minutos": 900,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL31",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 58,
+            "hora": "J58",
+            "aula": "K58",
+            "hora_texto_original": "13:00-15:00",
+            "aula_texto_original": "FIE2-AUL31"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_7B_SISTEMAS_II",
+      "materia_id": "SISTEMAS_II",
+      "materia": "SISTEMAS II",
+      "grupo": "ISC 7B",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 59,
+        "grupo": "A59",
+        "materia": "B59",
+        "horas": "C59",
+        "materia_texto_original": "SISTEMAS II"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_7B_SISTEMAS_II_LUNES",
+          "oferta_id": "ISC_7B_SISTEMAS_II",
+          "grupo": "ISC 7B",
+          "materia": "SISTEMAS II",
+          "dia": "LUNES",
+          "inicio": "12:00",
+          "fin": "14:00",
+          "inicio_minutos": 720,
+          "fin_minutos": 840,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL32",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 59,
+            "hora": "D59",
+            "aula": "E59",
+            "hora_texto_original": "12:00-14:00",
+            "aula_texto_original": "FIE2-AUL32"
+          }
+        },
+        {
+          "id": "ISC_7B_SISTEMAS_II_MARTES",
+          "oferta_id": "ISC_7B_SISTEMAS_II",
+          "grupo": "ISC 7B",
+          "materia": "SISTEMAS II",
+          "dia": "MARTES",
+          "inicio": "16:00",
+          "fin": "18:00",
+          "inicio_minutos": 960,
+          "fin_minutos": 1080,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL32",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 59,
+            "hora": "F59",
+            "aula": "G59",
+            "hora_texto_original": "16:00-18:00",
+            "aula_texto_original": "FIE2-AUL32"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_7B_PROGRAMACION_DE_APLICACIONES_WEB",
+      "materia_id": "PROGRAMACION_DE_APLICACIONES_WEB",
+      "materia": "PROGRAMACION DE APLICACIONES WEB",
+      "grupo": "ISC 7B",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 60,
+        "grupo": "A60",
+        "materia": "B60",
+        "horas": "C60",
+        "materia_texto_original": "PROGRAMACION DE APLICACIONES WEB"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_7B_PROGRAMACION_DE_APLICACIONES_WEB_MARTES",
+          "oferta_id": "ISC_7B_PROGRAMACION_DE_APLICACIONES_WEB",
+          "grupo": "ISC 7B",
+          "materia": "PROGRAMACION DE APLICACIONES WEB",
+          "dia": "MARTES",
+          "inicio": "14:00",
+          "fin": "16:00",
+          "inicio_minutos": 840,
+          "fin_minutos": 960,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL32",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 60,
+            "hora": "F60",
+            "aula": "G60",
+            "hora_texto_original": "14:00-16:00",
+            "aula_texto_original": "FIE2-AUL32"
+          }
+        },
+        {
+          "id": "ISC_7B_PROGRAMACION_DE_APLICACIONES_WEB_JUEVES",
+          "oferta_id": "ISC_7B_PROGRAMACION_DE_APLICACIONES_WEB",
+          "grupo": "ISC 7B",
+          "materia": "PROGRAMACION DE APLICACIONES WEB",
+          "dia": "JUEVES",
+          "inicio": "14:00",
+          "fin": "16:00",
+          "inicio_minutos": 840,
+          "fin_minutos": 960,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL32",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 60,
+            "hora": "J60",
+            "aula": "K60",
+            "hora_texto_original": "14:00-16:00",
+            "aula_texto_original": "FIE2-AUL32"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_7B_BASE_DE_DATOS_II",
+      "materia_id": "BASE_DE_DATOS_II",
+      "materia": "BASE DE DATOS II",
+      "grupo": "ISC 7B",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 61,
+        "grupo": "A61",
+        "materia": "B61",
+        "horas": "C61",
+        "materia_texto_original": "BASE DE DATOS II"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_7B_BASE_DE_DATOS_II_LUNES",
+          "oferta_id": "ISC_7B_BASE_DE_DATOS_II",
+          "grupo": "ISC 7B",
+          "materia": "BASE DE DATOS II",
+          "dia": "LUNES",
+          "inicio": "14:00",
+          "fin": "16:00",
+          "inicio_minutos": 840,
+          "fin_minutos": 960,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL32",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 61,
+            "hora": "D61",
+            "aula": "E61",
+            "hora_texto_original": "14:00-16:00",
+            "aula_texto_original": "FIE2-AUL32"
+          }
+        },
+        {
+          "id": "ISC_7B_BASE_DE_DATOS_II_VIERNES",
+          "oferta_id": "ISC_7B_BASE_DE_DATOS_II",
+          "grupo": "ISC 7B",
+          "materia": "BASE DE DATOS II",
+          "dia": "VIERNES",
+          "inicio": "14:00",
+          "fin": "16:00",
+          "inicio_minutos": 840,
+          "fin_minutos": 960,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL32",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 61,
+            "hora": "L61",
+            "aula": "M61",
+            "hora_texto_original": "14:00-16:00",
+            "aula_texto_original": "FIE2-AUL32"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_7B_COMPILADORES",
+      "materia_id": "COMPILADORES",
+      "materia": "COMPILADORES",
+      "grupo": "ISC 7B",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 62,
+        "grupo": "A62",
+        "materia": "B62",
+        "horas": "C62",
+        "materia_texto_original": "COMPILADORES"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_7B_COMPILADORES_MARTES",
+          "oferta_id": "ISC_7B_COMPILADORES",
+          "grupo": "ISC 7B",
+          "materia": "COMPILADORES",
+          "dia": "MARTES",
+          "inicio": "12:00",
+          "fin": "14:00",
+          "inicio_minutos": 720,
+          "fin_minutos": 840,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL32",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 62,
+            "hora": "F62",
+            "aula": "G62",
+            "hora_texto_original": "12:00-14:00",
+            "aula_texto_original": "FIE2-AUL32"
+          }
+        },
+        {
+          "id": "ISC_7B_COMPILADORES_JUEVES",
+          "oferta_id": "ISC_7B_COMPILADORES",
+          "grupo": "ISC 7B",
+          "materia": "COMPILADORES",
+          "dia": "JUEVES",
+          "inicio": "12:00",
+          "fin": "14:00",
+          "inicio_minutos": 720,
+          "fin_minutos": 840,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL32",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 62,
+            "hora": "J62",
+            "aula": "K62",
+            "hora_texto_original": "12:00-14:00",
+            "aula_texto_original": "FIE2-AUL32"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_7B_METODOLOGIA_DE_LA_INVESTIGACION",
+      "materia_id": "METODOLOGIA_DE_LA_INVESTIGACION",
+      "materia": "METODOLOGIA DE LA INVESTIGACION",
+      "grupo": "ISC 7B",
+      "horas_semanales_declaradas": 3,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 63,
+        "grupo": "A63",
+        "materia": "B63",
+        "horas": "C63",
+        "materia_texto_original": "METODOLOGIA DE LA INVESTIGACION"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_7B_METODOLOGIA_DE_LA_INVESTIGACION_VIERNES",
+          "oferta_id": "ISC_7B_METODOLOGIA_DE_LA_INVESTIGACION",
+          "grupo": "ISC 7B",
+          "materia": "METODOLOGIA DE LA INVESTIGACION",
+          "dia": "VIERNES",
+          "inicio": "16:00",
+          "fin": "19:00",
+          "inicio_minutos": 960,
+          "fin_minutos": 1140,
+          "duracion_minutos": 180,
+          "aula": "FIE2-AUL32",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 63,
+            "hora": "L63",
+            "aula": "M63",
+            "hora_texto_original": "16:00-19:00",
+            "aula_texto_original": "FIE2-AUL32"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_7B_TALLER_DE_EMPRENDEDORES",
+      "materia_id": "TALLER_DE_EMPRENDEDORES",
+      "materia": "TALLER DE EMPRENDEDORES",
+      "grupo": "ISC 7B",
+      "horas_semanales_declaradas": 4,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 64,
+        "grupo": "A64",
+        "materia": "B64",
+        "horas": "C64",
+        "materia_texto_original": "TALLER DE EMPRENDEDORES"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_7B_TALLER_DE_EMPRENDEDORES_MARTES",
+          "oferta_id": "ISC_7B_TALLER_DE_EMPRENDEDORES",
+          "grupo": "ISC 7B",
+          "materia": "TALLER DE EMPRENDEDORES",
+          "dia": "MARTES",
+          "inicio": "18:00",
+          "fin": "20:00",
+          "inicio_minutos": 1080,
+          "fin_minutos": 1200,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL32",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 64,
+            "hora": "F64",
+            "aula": "G64",
+            "hora_texto_original": "18:00-20:00",
+            "aula_texto_original": "FIE2-AUL32"
+          }
+        },
+        {
+          "id": "ISC_7B_TALLER_DE_EMPRENDEDORES_JUEVES",
+          "oferta_id": "ISC_7B_TALLER_DE_EMPRENDEDORES",
+          "grupo": "ISC 7B",
+          "materia": "TALLER DE EMPRENDEDORES",
+          "dia": "JUEVES",
+          "inicio": "18:00",
+          "fin": "20:00",
+          "inicio_minutos": 1080,
+          "fin_minutos": 1200,
+          "duracion_minutos": 120,
+          "aula": "FIE2-AUL32",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 64,
+            "hora": "J64",
+            "aula": "K64",
+            "hora_texto_original": "18:00-20:00",
+            "aula_texto_original": "FIE2-AUL32"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_7C_OPTATIVA_I_REDES_I",
+      "materia_id": "OPTATIVA_I_REDES_I",
+      "materia": "OPTATIVA I (REDES I)",
+      "grupo": "ISC 7C",
+      "horas_semanales_declaradas": 3,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 65,
+        "grupo": "A65",
+        "materia": "B65",
+        "horas": "C65",
+        "materia_texto_original": "OPTATIVA I (REDES I)"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_7C_OPTATIVA_I_REDES_I_MARTES",
+          "oferta_id": "ISC_7C_OPTATIVA_I_REDES_I",
+          "grupo": "ISC 7C",
+          "materia": "OPTATIVA I (REDES I)",
+          "dia": "MARTES",
+          "inicio": "11:00",
+          "fin": "12:00",
+          "inicio_minutos": 660,
+          "fin_minutos": 720,
+          "duracion_minutos": 60,
+          "aula": "CENTRO DE CÓMPUTO",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 65,
+            "hora": "F65",
+            "aula": "G65",
+            "hora_texto_original": "11:00-12:00",
+            "aula_texto_original": "CENTRO DE CÓMPUTO"
+          }
+        },
+        {
+          "id": "ISC_7C_OPTATIVA_I_REDES_I_MIERCOLES",
+          "oferta_id": "ISC_7C_OPTATIVA_I_REDES_I",
+          "grupo": "ISC 7C",
+          "materia": "OPTATIVA I (REDES I)",
+          "dia": "MIERCOLES",
+          "inicio": "15:00",
+          "fin": "17:00",
+          "inicio_minutos": 900,
+          "fin_minutos": 1020,
+          "duracion_minutos": 120,
+          "aula": "CENTRO DE CÓMPUTO",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 65,
+            "hora": "H65",
+            "aula": "I65",
+            "hora_texto_original": "15:00-17:00",
+            "aula_texto_original": "CENTRO DE CÓMPUTO"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_7C_OPTATIVA_I_INGENIERIA_DE_SOFTWARE",
+      "materia_id": "OPTATIVA_I_INGENIERIA_DE_SOFTWARE",
+      "materia": "OPTATIVA I (INGENIERIA DE SOFTWARE)",
+      "grupo": "ISC 7C",
+      "horas_semanales_declaradas": 3,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 66,
+        "grupo": "A66",
+        "materia": "B66",
+        "horas": "C66",
+        "materia_texto_original": "OPTATIVA I (INGENIERIA DE SOFTWARE)"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_7C_OPTATIVA_I_INGENIERIA_DE_SOFTWARE_MIERCOLES",
+          "oferta_id": "ISC_7C_OPTATIVA_I_INGENIERIA_DE_SOFTWARE",
+          "grupo": "ISC 7C",
+          "materia": "OPTATIVA I (INGENIERIA DE SOFTWARE)",
+          "dia": "MIERCOLES",
+          "inicio": "12:00",
+          "fin": "13:00",
+          "inicio_minutos": 720,
+          "fin_minutos": 780,
+          "duracion_minutos": 60,
+          "aula": "CENTRO DE CÓMPUTO",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 66,
+            "hora": "H66",
+            "aula": "I66",
+            "hora_texto_original": "12:00-13:00",
+            "aula_texto_original": "CENTRO DE CÓMPUTO"
+          }
+        },
+        {
+          "id": "ISC_7C_OPTATIVA_I_INGENIERIA_DE_SOFTWARE_VIERNES",
+          "oferta_id": "ISC_7C_OPTATIVA_I_INGENIERIA_DE_SOFTWARE",
+          "grupo": "ISC 7C",
+          "materia": "OPTATIVA I (INGENIERIA DE SOFTWARE)",
+          "dia": "VIERNES",
+          "inicio": "09:00",
+          "fin": "11:00",
+          "inicio_minutos": 540,
+          "fin_minutos": 660,
+          "duracion_minutos": 120,
+          "aula": "CENTRO DE CÓMPUTO",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 66,
+            "hora": "L66",
+            "aula": "M66",
+            "hora_texto_original": "09:00-11:00",
+            "aula_texto_original": "CENTRO DE CÓMPUTO"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ISC_7C_OPTATIVA_I_SISTEMAS_INTELIGENTES_I",
+      "materia_id": "OPTATIVA_I_SISTEMAS_INTELIGENTES_I",
+      "materia": "OPTATIVA I (SISTEMAS INTELIGENTES I)",
+      "grupo": "ISC 7C",
+      "horas_semanales_declaradas": 3,
+      "docente_id": null,
+      "origen": {
+        "hoja": "Hoja1",
+        "fila": 67,
+        "grupo": "A67",
+        "materia": "B67",
+        "horas": "C67",
+        "materia_texto_original": "OPTATIVA I (SISTEMAS INTELIGENTES I)"
+      },
+      "sesiones": [
+        {
+          "id": "ISC_7C_OPTATIVA_I_SISTEMAS_INTELIGENTES_I_LUNES",
+          "oferta_id": "ISC_7C_OPTATIVA_I_SISTEMAS_INTELIGENTES_I",
+          "grupo": "ISC 7C",
+          "materia": "OPTATIVA I (SISTEMAS INTELIGENTES I)",
+          "dia": "LUNES",
+          "inicio": "17:00",
+          "fin": "18:00",
+          "inicio_minutos": 1020,
+          "fin_minutos": 1080,
+          "duracion_minutos": 60,
+          "aula": "CENTRO DE CÓMPUTO",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 67,
+            "hora": "D67",
+            "aula": "E67",
+            "hora_texto_original": "17:00-18:00",
+            "aula_texto_original": "CENTRO DE CÓMPUTO"
+          }
+        },
+        {
+          "id": "ISC_7C_OPTATIVA_I_SISTEMAS_INTELIGENTES_I_JUEVES",
+          "oferta_id": "ISC_7C_OPTATIVA_I_SISTEMAS_INTELIGENTES_I",
+          "grupo": "ISC 7C",
+          "materia": "OPTATIVA I (SISTEMAS INTELIGENTES I)",
+          "dia": "JUEVES",
+          "inicio": "16:00",
+          "fin": "18:00",
+          "inicio_minutos": 960,
+          "fin_minutos": 1080,
+          "duracion_minutos": 120,
+          "aula": "CENTRO DE CÓMPUTO",
+          "origen": {
+            "hoja": "Hoja1",
+            "fila": 67,
+            "hora": "J67",
+            "aula": "K67",
+            "hora_texto_original": "16:00-18:00",
+            "aula_texto_original": "CENTRO DE CÓMPUTO"
+          }
+        }
+      ]
+    }
+  ],
+  "auditoria": {
+    "advertencias_importacion": [
+      {
+        "codigo": "AULA_SIN_INTERVALO",
+        "fila": 11,
+        "hora": "F11",
+        "aula": "G11",
+        "valor_original": "FIE1-AUL26",
+        "accion": "No crear una sesión ni inventar una hora."
+      },
+      {
+        "codigo": "FORMATO_HORA_NORMALIZADO",
+        "celda": "L22",
+        "original": "09:00 - 11:00",
+        "normalizado": "09:00-11:00"
+      },
+      {
+        "codigo": "AULA_SIN_INTERVALO",
+        "fila": 41,
+        "hora": "F41",
+        "aula": "G41",
+        "valor_original": "FIE1-AUL29",
+        "accion": "No crear una sesión ni inventar una hora."
+      },
+      {
+        "codigo": "CELDA_CON_ESPACIOS",
+        "celda": "G43",
+        "valor_original": " "
+      },
+      {
+        "codigo": "FORMATO_HORA_NORMALIZADO",
+        "celda": "F54",
+        "original": "8:00-9:00",
+        "normalizado": "08:00-09:00"
+      }
+    ],
+    "carga_semanal": [
+      {
+        "oferta_id": "ISC_1A_EXPRESION_GRAFICA",
+        "fila": 2,
+        "horas_declaradas": 3,
+        "minutos_observados": 180,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_1A_CALCULO_DIFERENCIAL",
+        "fila": 3,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_1A_LOGICA_DE_LA_PROGRAMACION",
+        "fila": 4,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_1A_INTRODUCCION_A_LA_INGENIERIA",
+        "fila": 5,
+        "horas_declaradas": 3,
+        "minutos_observados": 180,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_1A_ELABORACION_Y_PRESENTACION_DE_TEXTOS",
+        "fila": 6,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_1A_GEOMETRIA_ANALITICA",
+        "fila": 7,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_1A_ALGEBRA_SUPERIOR",
+        "fila": 8,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_1A_INGLES_1",
+        "fila": 9,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_1B_EXPRESION_GRAFICA",
+        "fila": 10,
+        "horas_declaradas": 3,
+        "minutos_observados": 180,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_1B_LOGICA_DE_LA_PROGRAMACION",
+        "fila": 11,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_1B_CALCULO_DIFERENCIAL",
+        "fila": 12,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_1B_INTRODUCCION_A_LA_INGENIERIA",
+        "fila": 13,
+        "horas_declaradas": 3,
+        "minutos_observados": 180,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_1B_ELABORACION_Y_PRESENTACION_DE_TEXTOS",
+        "fila": 14,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_1B_GEOMETRIA_ANALITICA",
+        "fila": 15,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_1B_ALGEBRA_SUPERIOR",
+        "fila": 16,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_1B_INGLES_1",
+        "fila": 17,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_1RA_ALGEBRA_SUPERIOR",
+        "fila": 18,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_1RB_ALGEBRA_SUPERIOR",
+        "fila": 19,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_3A_FUNDAMENTOS_DE_PROBABILIDAD_Y_ESTADISTICA",
+        "fila": 20,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_3A_MATEMATICAS_PARA_LA_COMPUTACION",
+        "fila": 21,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_3A_CALCULO_VECTORIAL",
+        "fila": 22,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_3A_CONTABILIDAD",
+        "fila": 23,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_3A_LENGUAJE_DE_PROGRAMACION_II",
+        "fila": 24,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_3A_ANALISIS_DE_CIRCUITOS_DE_C_D",
+        "fila": 25,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_3A_QUIMICA",
+        "fila": 26,
+        "horas_declaradas": 3,
+        "minutos_observados": 180,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_3A_INGLES_3",
+        "fila": 27,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_3B_MATEMATICAS_PARA_LA_COMPUTACION",
+        "fila": 28,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_3B_CONTABILIDAD",
+        "fila": 29,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_3B_LENGUAJE_DE_PROGRAMACION_II",
+        "fila": 30,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_3B_CALCULO_VECTORIAL",
+        "fila": 31,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_3B_FUNDAMENTOS_DE_PROBABILIDAD_Y_ESTADISTICA",
+        "fila": 32,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_3B_ANALISIS_DE_CIRCUITOS_DE_C_D",
+        "fila": 33,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_3B_QUIMICA",
+        "fila": 34,
+        "horas_declaradas": 3,
+        "minutos_observados": 180,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_3B_INGLES_3",
+        "fila": 35,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_3R_CONTABILIDAD",
+        "fila": 36,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_5A_TELECOMUNICACIONES",
+        "fila": 37,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_5A_INVESTIGACION_DE_OPERACIONES_I",
+        "fila": 38,
+        "horas_declaradas": 3,
+        "minutos_observados": 180,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_5A_ADMINISTRACION_DE_ARCHIVOS",
+        "fila": 39,
+        "horas_declaradas": 3,
+        "minutos_observados": 180,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_5A_ESTRUCTURA_DE_DATOS_II",
+        "fila": 40,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_5A_BASES_DE_DATOS_I",
+        "fila": 41,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_5A_ARQUITECTURA_COMPUTACIONAL",
+        "fila": 42,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_5A_GRAFICACION",
+        "fila": 43,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_5A_INGLES_5",
+        "fila": 44,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_5B_INGLES_5",
+        "fila": 45,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_5B_GRAFICACION",
+        "fila": 46,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_5B_TELECOMUNICACIONES",
+        "fila": 47,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_5B_ADMNISTRACION_DE_ARCHIVOS",
+        "fila": 48,
+        "horas_declaradas": 3,
+        "minutos_observados": 180,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_5B_ESTRUCTURA_DE_DATOS_II",
+        "fila": 49,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_5B_INVESTIGACION_DE_OPERACIONES_I",
+        "fila": 50,
+        "horas_declaradas": 3,
+        "minutos_observados": 180,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_5B_ARQUITECTURA_COMPUTACIONAL",
+        "fila": 51,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_5B_BASES_DE_DATOS_I",
+        "fila": 52,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_7A_PROGRAMACION_DE_APLICACIONES_WEB",
+        "fila": 53,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_7A_METODOLOGIA_DE_LA_INVESTIGACION",
+        "fila": 54,
+        "horas_declaradas": 3,
+        "minutos_observados": 180,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_7A_COMPILADORES",
+        "fila": 55,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_7A_SISTEMAS_II",
+        "fila": 56,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_7A_TALLER_DE_EMPRENDEDORES",
+        "fila": 57,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_7A_BASE_DE_DATOS_II",
+        "fila": 58,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_7B_SISTEMAS_II",
+        "fila": 59,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_7B_PROGRAMACION_DE_APLICACIONES_WEB",
+        "fila": 60,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_7B_BASE_DE_DATOS_II",
+        "fila": 61,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_7B_COMPILADORES",
+        "fila": 62,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_7B_METODOLOGIA_DE_LA_INVESTIGACION",
+        "fila": 63,
+        "horas_declaradas": 3,
+        "minutos_observados": 180,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_7B_TALLER_DE_EMPRENDEDORES",
+        "fila": 64,
+        "horas_declaradas": 4,
+        "minutos_observados": 240,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_7C_OPTATIVA_I_REDES_I",
+        "fila": 65,
+        "horas_declaradas": 3,
+        "minutos_observados": 180,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_7C_OPTATIVA_I_INGENIERIA_DE_SOFTWARE",
+        "fila": 66,
+        "horas_declaradas": 3,
+        "minutos_observados": 180,
+        "coincide": true
+      },
+      {
+        "oferta_id": "ISC_7C_OPTATIVA_I_SISTEMAS_INTELIGENTES_I",
+        "fila": 67,
+        "horas_declaradas": 3,
+        "minutos_observados": 180,
+        "coincide": true
+      }
+    ],
+    "conflictos_aula_por_nombre_literal": [
+      {
+        "recurso": "FIE1-AUL28",
+        "dia": "VIERNES",
+        "inicio": "13:00",
+        "fin": "15:00",
+        "sesiones": [
+          "ISC_1RA_ALGEBRA_SUPERIOR_VIERNES",
+          "ISC_3B_CALCULO_VECTORIAL_VIERNES"
+        ],
+        "filas": [
+          18,
+          31
+        ],
+        "celdas_hora": [
+          "L18",
+          "L31"
+        ],
+        "celdas_aula": [
+          "M18",
+          "M31"
+        ]
+      }
+    ],
+    "conflictos_grupo_por_etiqueta": [],
+    "posibles_alias_aula_por_confirmar": [
+      [
+        "FIE1-AUL25",
+        "FIE1-AUL025"
+      ]
+    ],
+    "datos_no_disponibles": [
+      "Docentes y sus disponibilidades.",
+      "Capacidades y tipos de aulas.",
+      "Matrícula por grupo u oferta.",
+      "Requisitos de laboratorio.",
+      "Reglamento de horarios permitidos.",
+      "Ocupación de recursos por otras carreras o actividades."
+    ],
+    "nota": "Los datos ausentes son desconocidos, no asignaciones inválidas demostradas."
+  }
+}

@@ -1,0 +1,22 @@
+# Propuesta de lenguaje, todavía sin compilador implementado.
+# Horas y aula: Excel, fila 62. Docente: imagen de carga académica.
+# El docente complementa un dato que el Excel no proporciona.
+OFERTA "ISC_7B_COMPILADORES" {
+    MATERIA "COMPILADORES"
+    GRUPO "ISC 7B"
+    DOCENTE "HERNANDEZ CRUZ LUZ MARIA"
+
+    SESION {
+        AULA "FIE2-AUL32"
+        DIA MARTES
+        HORA 12:00
+        DURACION 2
+    }
+
+    SESION {
+        AULA "FIE2-AUL32"
+        DIA JUEVES
+        HORA 12:00
+        DURACION 2
+    }
+}

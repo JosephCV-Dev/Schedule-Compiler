@@ -1,0 +1,20 @@
+{
+  "version": "0.2",
+  "docente": {
+    "modo": "TEXTO_LIBRE",
+    "validar_catalogo": false,
+    "validar_asignacion": false,
+    "validar_disponibilidad": false,
+    "validar_cruces": false
+  },
+  "aula": {
+    "admitir_nombre_nuevo": true,
+    "comprobar_ocupacion": true,
+    "sin_asignar": "PENDIENTE",
+    "asignar_automaticamente": false
+  },
+  "capacidad": "NO_CONFIGURADA",
+  "laboratorio": "NO_CONFIGURADA",
+  "horario_permitido": "NO_CONFIGURADO",
+  "nota": "Configuración de diseño; aún sin motor que la ejecute. Las reglas desactivadas se muestran en el reporte."
+}

@@ -1,0 +1,9 @@
+# Propuesta de lenguaje, todavía sin compilador implementado.
+# Las ofertas se resuelven contra el catálogo del Excel.
+# Las correspondencias con la imagen personal son candidatas documentadas.
+HORARIO "Ejemplo personal" {
+    INSCRIBIR "ISC_7B_BASE_DE_DATOS_II"
+    INSCRIBIR "ISC_7B_COMPILADORES"
+    INSCRIBIR "ISC_7C_OPTATIVA_I_INGENIERIA_DE_SOFTWARE"
+    INSCRIBIR "ISC_7B_PROGRAMACION_DE_APLICACIONES_WEB"
+}
