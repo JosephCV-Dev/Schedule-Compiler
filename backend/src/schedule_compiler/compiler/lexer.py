@@ -8,6 +8,7 @@ from lark import Lark
 from lark.exceptions import UnexpectedCharacters
 
 from schedule_compiler.compiler.models import LexicalResult, Pattern, Token
+from schedule_compiler.compiler.positions import source_span
 from schedule_compiler.domain.diagnostics import Diagnostic, Severity
 from schedule_compiler.domain.models import Origin, Position, Span
 
@@ -36,17 +37,11 @@ def lexical_patterns() -> tuple[Pattern, ...]:
     ) for terminal in _engine().terminals if terminal.name not in {"ESPACIO", "COMENTARIO"})
 
 
-def _position(source: str, offset: int) -> Position:
-    line = source.count("\n", 0, offset) + 1
-    column = offset - source.rfind("\n", 0, offset)
-    return Position(offset, line, column)
-
-
 def _diagnostic(source: str, source_name: str, start: int, end: int,
                 code: str, message: str) -> Diagnostic:
     return Diagnostic(
         code=code, stage="LEXICO", severity=Severity.ERROR, message=message,
-        origin=Origin("TEXTO", source_name, span=Span(_position(source, start), _position(source, end))),
+        origin=Origin("TEXTO", source_name, span=source_span(source, start, end)),
     )
 
 

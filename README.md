@@ -5,13 +5,36 @@ con análisis léxico, sintáctico y semántico e interfaz web.
 
 ## Estado
 
-Etapa 3: analizador léxico disponible por Python y terminal. Reconoce los tokens
-de .hor v0.2 y devuelve patrones, posiciones y errores. Se conservan los modelos,
-catálogos y contrato de la etapa 2. El parser, la semántica y la interfaz completa
-siguen pendientes. La API ofrece solo salud; el léxico se prueba mediante CLI.
+Etapa 4: lexer y parser disponibles por Python y terminal. Reconocen .hor v0.2 y
+entregan tokens, AST propio y diagnósticos con posiciones. Se conservan los modelos,
+catálogos y contrato previos. La semántica y la interfaz completa siguen pendientes.
+La API ofrece solo salud; ambas fases se prueban mediante CLI.
 
 Stack confirmado: frontend React con TypeScript y Vite, API en Python con FastAPI
-y modelos del núcleo independientes del framework; el lexer utiliza Lark basic.
+y modelos del núcleo independientes del framework; lexer basic y parser LALR de Lark.
+
+## Probar la sintaxis y ver el árbol
+
+Desde la raíz, con las dependencias del backend instaladas:
+
+```sh
+backend/.venv/bin/python -m schedule_compiler.cli.parse examples/horario_carolina.hor
+backend/.venv/bin/python -m schedule_compiler.cli.parse examples/horario_carolina.hor --json
+```
+
+La primera salida dibuja el AST con ramas y nodos. JSON incluye hijos, etiquetas,
+rangos y diagnósticos. Los cuatro ejemplos principales completan sintaxis.
+Esto todavía no valida cruces, referencias ni otras reglas de horarios.
+
+Para probar un error sintáctico intencional:
+
+```sh
+backend/.venv/bin/python -m schedule_compiler.cli.parse examples/sintactico/error_tipo.hor
+```
+
+Los errores léxicos bloquean el parser; un fallo de sintaxis conserva los tokens
+pero no produce AST. Código 0 indica éxito de sintaxis, 1 error de programa y 2
+problema de lectura/argumentos.
 
 ## Probar el analizador léxico
 
@@ -23,7 +46,7 @@ backend/.venv/bin/python -m schedule_compiler.cli.lex examples/horario_carolina.
 ```
 
 La tabla muestra token, lexema, patrón, línea y columna. Los cuatro ejemplos
-principales pasan léxico. Esto no acredita todavía sintaxis ni validez del horario.
+principales pasan léxico. Probar solo esta fase no acredita sintaxis ni validez.
 Para provocar un error intencional:
 
 ```sh
@@ -91,6 +114,7 @@ adicionales en [backend](backend/README.md) y [frontend](frontend/README.md).
 - [Referencia visual de la interfaz](docs/06-referencia-frontend.md).
 - [Contrato de análisis y modelos de la etapa 2](docs/07-contrato-analisis.md).
 - [Analizador léxico y comandos de prueba](docs/08-analisis-lexico.md).
+- [Analizador sintáctico y árbol AST](docs/09-analisis-sintactico.md).
 
 ## Verificar modelos y contrato
 
@@ -143,5 +167,5 @@ docentes, capacidades ni otros valores que la fuente no proporciona.
   conocido sin aula asignada; fuente original conservada.
 - `data/politica_proyecto.json`: profesores libres y ocupación de aulas activa.
 
-El lexer ya procesa sus tokens. La interpretación de la estructura y las reglas
-de horarios se incorporará en las etapas 4 y 5.
+Lexer y parser ya procesan los ejemplos. Las reglas de horarios se incorporarán
+en la etapa 5; la interfaz completa se construirá en la 6.

@@ -1,0 +1,11 @@
+OFERTA "EJEMPLO" {
+    MATERIA "Compiladores"
+    GRUPO DESCONOCIDO
+    DOCENTE "Docente libre"
+    SESION {
+        AULA SIN_ASIGNAR
+        DIA MARTES
+        HORA 12:00
+        DURACION "dos"
+    }
+}

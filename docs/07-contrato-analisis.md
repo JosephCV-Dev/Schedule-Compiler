@@ -2,7 +2,8 @@
 
 Estado: implementados los modelos, carga de fuentes y adaptadores de datos.
 El reconocimiento léxico se incorporó posteriormente en la
-[etapa 3](08-analisis-lexico.md); parser y validación de horarios están pendientes.
+[etapa 3](08-analisis-lexico.md) y el parser/AST en la
+[etapa 4](09-analisis-sintactico.md). La validación de horarios está pendiente.
 El endpoint POST se implementará en la etapa 5; la API actual solo ofrece salud.
 
 ## Entrada única para editor y archivo

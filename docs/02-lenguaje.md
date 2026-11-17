@@ -1,7 +1,7 @@
 # Lenguaje de horarios: propuesta v0.2
 
-Estado: especificación y ejemplos, con analizador léxico implementado en etapa 3.
-El parser y las reglas semánticas todavía están pendientes.
+Estado: especificación y ejemplos, con lexer de etapa 3 y parser/AST de etapa 4
+implementados. Las reglas semánticas todavía están pendientes.
 Actualización solicitada por el usuario el 17 de noviembre de 2026: profesor como
 texto libre sin reglas semánticas de profesores; aulas arbitrarias sujetas a
 ocupación; sesiones del choque conocido liberadas en una copia de trabajo.

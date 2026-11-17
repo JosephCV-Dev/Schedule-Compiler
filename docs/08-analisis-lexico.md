@@ -1,7 +1,8 @@
 # Etapa 3: analizador léxico
 
 Implementado con Lark basic y parser=None: solo reconoce terminales. El parser
-corresponde a la etapa 4, la semántica a la 5 y el editor web a la 6.
+se incorporó en la [etapa 4](09-analisis-sintactico.md), usando esos mismos tokens.
+La semántica corresponde a la etapa 5 y el editor web a la 6.
 
 ## Probarlo
 

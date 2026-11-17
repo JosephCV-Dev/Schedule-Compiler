@@ -1,0 +1,20 @@
+// Estructura .hor v0.2. Los terminales se leen de terminals.lark.
+program: declaration+
+?declaration: offer | schedule
+
+offer: KW_OFERTA CADENA LLAVE_APERTURA _subject_field _group_field _teacher_field session+ LLAVE_CIERRE
+_subject_field: KW_MATERIA CADENA
+_group_field: KW_GRUPO group_value
+_teacher_field: KW_DOCENTE optional_value
+group_value: CADENA | KW_DESCONOCIDO
+optional_value: CADENA | KW_DESCONOCIDO | KW_SIN_ASIGNAR
+
+session: KW_SESION LLAVE_APERTURA _room_field _day_field _hour_field _duration_field LLAVE_CIERRE
+_room_field: KW_AULA optional_value
+_day_field: KW_DIA day
+_hour_field: KW_HORA HORA_LITERAL
+_duration_field: KW_DURACION ENTERO
+?day: KW_LUNES | KW_MARTES | KW_MIERCOLES | KW_JUEVES | KW_VIERNES | KW_SABADO | KW_DOMINGO
+
+schedule: KW_HORARIO CADENA LLAVE_APERTURA enrollment+ LLAVE_CIERRE
+enrollment: KW_INSCRIBIR CADENA

@@ -93,3 +93,24 @@ class Program:
 
 
 AstNode = Program | OfferDeclaration | SessionDeclaration | ScheduleDeclaration | EnrollmentDeclaration
+
+
+@dataclass(frozen=True)
+class ParseResult:
+    lexical: LexicalResult
+    ast: Program | None = None
+    diagnostics: tuple[Diagnostic, ...] = ()
+
+    @property
+    def executed(self) -> bool:
+        return self.lexical.success
+
+    @property
+    def success(self) -> bool:
+        return self.executed and self.ast is not None and not self.diagnostics
+
+    def __post_init__(self) -> None:
+        if not self.executed and (self.ast is not None or self.diagnostics):
+            raise ValueError("Si falla el léxico no se ejecuta la sintaxis ni se genera AST.")
+        if self.executed and (self.ast is not None) == bool(self.diagnostics):
+            raise ValueError("La sintaxis debe entregar un AST o diagnósticos, nunca ambos.")

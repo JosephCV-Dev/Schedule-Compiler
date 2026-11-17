@@ -1,8 +1,9 @@
 # Arquitectura web y plan propuesto
 
-Estado: etapas 1 a 3 preparadas: estructura, modelos, contrato y lexer. Parser,
-semántica e interfaz completa pendientes. Stack confirmado por el usuario.
+Estado: etapas 1 a 4 preparadas: estructura, modelos, contrato, lexer y parser/AST.
+Semántica e interfaz completa pendientes. Stack confirmado por el usuario.
 Sin publicación. Léxico y CLI: [documentación de etapa 3](08-analisis-lexico.md).
+Sintaxis y AST: [documentación de etapa 4](09-analisis-sintactico.md).
 El seguimiento vigente de etapas está en [el roadmap](05-roadmap.md).
 
 ## Orden de trabajo

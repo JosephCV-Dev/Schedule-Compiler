@@ -1,4 +1,4 @@
-// Solo terminales. La estructura OFERTA/SESION/HORARIO se añadirá en etapa 4.
+// Terminales compartidos por el lexer basic y la gramática de grammar.lark.
 KW_OFERTA.30: /OFERTA(?!\w)/
 KW_MATERIA.30: /MATERIA(?!\w)/
 KW_GRUPO.30: /GRUPO(?!\w)/

@@ -1,0 +1,12 @@
+# Sintaxis válida; los valores de hora y duración deben fallar en etapa 5.
+OFERTA "EJEMPLO" {
+    MATERIA "Compiladores"
+    GRUPO DESCONOCIDO
+    DOCENTE "Cualquier docente"
+    SESION {
+        AULA SIN_ASIGNAR
+        DIA MARTES
+        HORA 25:00
+        DURACION 0
+    }
+}

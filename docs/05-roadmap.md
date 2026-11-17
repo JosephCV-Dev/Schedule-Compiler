@@ -17,7 +17,7 @@ nuevas admitidas y sujetas a ocupación conocida. SIN_ASIGNAR significa pendient
 | 1. Estructura y arranque | Carpetas, dependencias, API de salud y página inicial | Completada |
 | 2. Modelos y contrato | Tipos de tokens, AST, diagnósticos, resultados y catálogo | Completada |
 | 3. Análisis léxico | Tokens, patrones, ubicaciones y errores léxicos | Completada |
-| 4. Análisis sintáctico | Gramática ejecutable, AST y errores de estructura | Pendiente |
+| 4. Análisis sintáctico | Gramática ejecutable, AST y errores de estructura | Completada |
 | 5. Semántica y API de análisis | Reglas, catálogo, selección e integración HTTP | Pendiente |
 | 6. Interfaz del compilador | Editor, pestañas, consola y horario según referencia | Pendiente |
 | 7. Verificación y entrega | Casos completos, documentación y demostración | Pendiente |
@@ -85,9 +85,9 @@ posiciones y tokens previos al primer error; no se repara el código.
 Verificación: 85 pruebas del backend, cuatro ejemplos principales sin errores
 léxicos, contrato final sincronizado y paquete wheel con los terminales incluidos.
 El ejemplo completo de Carolina produce 276 tokens. Comandos y límites en
-[la documentación de etapa 3](08-analisis-lexico.md). Etapa 4 pendiente de indicación.
+[la documentación de etapa 3](08-analisis-lexico.md).
 
-## 4. Análisis sintáctico
+## 4. Análisis sintáctico — completada
 
 Completar reglas LALR de OFERTA, SESION, HORARIO e INSCRIBIR. Transformar el árbol
 de Lark a un AST propio. Interpretar marcadores DESCONOCIDO y SIN_ASIGNAR conforme
@@ -96,6 +96,16 @@ a v0.2; no realizar búsquedas ni reglas de horarios en el parser.
 Criterio: ejemplos personales generan AST; `DURACION "dos"`, campos omitidos o
 llaves faltantes producen diagnósticos sintácticos. `DURACION 0` pasa sintaxis y
 queda para semántica. Si una fase falla, las dependientes no simulan éxito.
+
+Entregado: gramática LALR, consumo de los tokens existentes, AST propio con rangos
+y decodificación de literales. CLI con árbol de nodos/ramas o JSON compatible con
+el adaptador visual. Fallos léxicos bloquean sintaxis; fallos sintácticos no producen
+AST parcial. El parser no aplica reglas de horarios ni consulta catálogos.
+
+Verificación: 141 pruebas del backend, cuatro ejemplos principales con AST,
+contrato sincronizado y wheel que incluye gramática/terminales y ejecuta el parser.
+Carolina conserva ocho ofertas, 16 sesiones y su horario personal. Detalles y
+comandos en [etapa 4](09-analisis-sintactico.md). Etapa 5 pendiente de indicación.
 
 ## 5. Semántica y API de análisis
 
