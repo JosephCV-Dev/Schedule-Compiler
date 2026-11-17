@@ -43,17 +43,17 @@ export function App() {
       </header>
       <main>
         <section className="foundation" aria-labelledby="foundation-title">
-          <p className="eyebrow">Etapa 2 · Modelos y contrato</p>
-          <h1 id="foundation-title">Los modelos del proyecto están listos.</h1>
+          <p className="eyebrow">Etapa 3 · Análisis léxico</p>
+          <h1 id="foundation-title">El analizador léxico está listo.</h1>
           <p>
-            Este espacio se convertirá en el editor de horarios. El análisis
-            léxico, sintáctico y semántico se construirá en las siguientes etapas.
+            La tokenización ya se puede probar desde la terminal. Aquí se
+            incorporarán el editor y las vistas de resultados en la etapa de interfaz.
           </p>
           <div className={`connection connection--${connection}`} role="status">
             <span className="status-dot" aria-hidden="true" />
             {connectionText}
           </div>
-          <p className="next-step">Siguiente etapa: análisis léxico.</p>
+          <p className="next-step">Siguiente etapa: análisis sintáctico y AST.</p>
         </section>
       </main>
       <footer>Proyecto académico de Compiladores · Desarrollo por etapas</footer>

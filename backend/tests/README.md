@@ -1,10 +1,12 @@
 # Pruebas del backend
 
-Pruebas actuales de la etapa 2, usando pytest:
+Pruebas actuales hasta la etapa 3, usando pytest:
 
 - `test_models.py`: invariantes, fases dependientes y núcleo sin frameworks.
 - `test_catalogs.py`: carga real, procedencia, política, identidad y reemplazo.
 - `test_contract.py`: transporte, fixtures y árbol visual.
+- `test_lexer.py`: ejemplos, límites de tokens, cadenas, errores y posiciones.
+- `test_lexer_cli.py`: entrada de archivo/stdin, tabla/JSON y códigos de salida.
 
 Se ampliarán con las siguientes etapas:
 
@@ -13,5 +15,5 @@ Se ampliarán con las siguientes etapas:
 - application: integración con catálogo y política, sin HTTP.
 - api: contrato de análisis y errores de transporte.
 
-Todavía no hay pruebas de reconocimiento léxico, parsing ni reglas semánticas de
-horarios: esas implementaciones comienzan en las etapas 3, 4 y 5.
+Todavía no hay pruebas de parsing ni reglas semánticas de horarios: esas
+implementaciones comienzan en las etapas 4 y 5.

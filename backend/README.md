@@ -1,8 +1,9 @@
 # Backend
 
-Python 3.12 o superior. FastAPI adapta HTTP; Lark se utilizará para el lenguaje.
-Hay modelos del núcleo, cargadores y contrato; las fases de análisis todavía no
-están implementadas. El contrato se documenta en `docs/07-contrato-analisis.md`.
+Python 3.12 o superior. FastAPI adapta HTTP; Lark basic reconoce los tokens.
+Hay modelos, cargadores, contrato y lexer. El parser y la semántica están pendientes.
+Contrato: `docs/07-contrato-analisis.md`; léxico: `docs/08-analisis-lexico.md`, en la
+raíz del repositorio.
 
 ## Instalación
 
@@ -31,7 +32,23 @@ Si cambian dependencias, regenerar el lock desde un entorno limpio instalado con
 - OpenAPI: `http://127.0.0.1:8000/openapi.json`.
 
 Por ahora solo existe la ruta de salud. `compiler_available: false` indica que el
-motor aún no está construido. No se expone una compilación de muestra.
+motor completo aún no está construido. El lexer se prueba por terminal; no se
+expone una compilación de muestra.
+
+## Probar el léxico
+
+Desde esta carpeta, con el entorno activado:
+
+```sh
+python -m schedule_compiler.cli.lex ../examples/horario_carolina.hor
+python -m schedule_compiler.cli.lex ../examples/horario_carolina.hor --json
+python -m schedule_compiler.cli.lex ../examples/lexico/error_caracter.hor
+```
+
+El último ejemplo es inválido intencionalmente y termina con código 1. Se muestran
+los tokens anteriores al primer error con su ubicación. Código 0 significa éxito
+léxico; código 2, error de lectura/argumentos. Sin archivo, se puede recibir texto
+por stdin. La salida por defecto es una tabla; --json muestra el resultado de fase.
 
 ## Módulos
 
@@ -42,7 +59,8 @@ motor aún no está construido. No se expone una compilación de muestra.
 - `infrastructure`: lectura de catálogos y políticas.
 
 Los módulos ya contienen modelos, contrato, carga de catálogos y normalización
-de identidad de aulas. Las fases del compilador se añadirán según el roadmap.
+de identidad de aulas. El lexer ya está implementado; las fases posteriores se
+añadirán según el roadmap. Los terminales .lark se incluyen en el paquete Python.
 No hay base de datos ni autenticación en esta etapa.
 
 ## Pruebas
@@ -54,6 +72,8 @@ No hay base de datos ni autenticación en esta etapa.
 Se comprueban invariantes de modelos y resultados, lectura sin modificar fuentes,
 procedencia de las dos sesiones sin aula, reemplazo temporal de ofertas, claves
 de aula, política de profesores libres y conversión del AST a nodos visuales.
+Se comprueban además el léxico de los ejemplos, límites de tokens, cadenas,
+errores, posiciones Unicode/LF/CRLF, reuso del lexer y salidas CLI.
 
 El generador `scripts/exportar_contratos.py`, ejecutado desde la raíz con este
 entorno, exporta el JSON Schema y fixtures de resultados. Su modo `--check`

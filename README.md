@@ -5,14 +5,33 @@ con análisis léxico, sintáctico y semántico e interfaz web.
 
 ## Estado
 
-Etapa 2: modelos y contrato preparados. Hay tipos propios del núcleo, carga de
-catálogos/política, esquemas JSON y ejemplos de resultados. La API sigue ofreciendo
-solo salud y la página inicial comprueba su conexión. El lexer, parser, motor
-semántico y la interfaz completa se construirán por etapas; los archivos `.hor`
-todavía no se ejecutan.
+Etapa 3: analizador léxico disponible por Python y terminal. Reconoce los tokens
+de .hor v0.2 y devuelve patrones, posiciones y errores. Se conservan los modelos,
+catálogos y contrato de la etapa 2. El parser, la semántica y la interfaz completa
+siguen pendientes. La API ofrece solo salud; el léxico se prueba mediante CLI.
 
 Stack confirmado: frontend React con TypeScript y Vite, API en Python con FastAPI
-y núcleo de compilación independiente del framework que utilizará Lark.
+y modelos del núcleo independientes del framework; el lexer utiliza Lark basic.
+
+## Probar el analizador léxico
+
+Desde la raíz, con las dependencias del backend instaladas:
+
+```sh
+backend/.venv/bin/python -m schedule_compiler.cli.lex examples/horario_carolina.hor
+backend/.venv/bin/python -m schedule_compiler.cli.lex examples/horario_carolina.hor --json
+```
+
+La tabla muestra token, lexema, patrón, línea y columna. Los cuatro ejemplos
+principales pasan léxico. Esto no acredita todavía sintaxis ni validez del horario.
+Para provocar un error intencional:
+
+```sh
+backend/.venv/bin/python -m schedule_compiler.cli.lex examples/lexico/error_caracter.hor
+```
+
+Ese ejemplo devuelve código 1, con los tokens previos y la ubicación del primer
+error. El código 0 indica éxito léxico y el 2 un problema de lectura o argumentos.
 
 ## Empezar en desarrollo local
 
@@ -71,6 +90,7 @@ adicionales en [backend](backend/README.md) y [frontend](frontend/README.md).
 - [Roadmap y criterios por etapa](docs/05-roadmap.md).
 - [Referencia visual de la interfaz](docs/06-referencia-frontend.md).
 - [Contrato de análisis y modelos de la etapa 2](docs/07-contrato-analisis.md).
+- [Analizador léxico y comandos de prueba](docs/08-analisis-lexico.md).
 
 ## Verificar modelos y contrato
 
@@ -123,4 +143,5 @@ docentes, capacidades ni otros valores que la fuente no proporciona.
   conocido sin aula asignada; fuente original conservada.
 - `data/politica_proyecto.json`: profesores libres y ocupación de aulas activa.
 
-Son especificaciones y ejemplos; todavía no hay un motor que los ejecute.
+El lexer ya procesa sus tokens. La interpretación de la estructura y las reglas
+de horarios se incorporará en las etapas 4 y 5.

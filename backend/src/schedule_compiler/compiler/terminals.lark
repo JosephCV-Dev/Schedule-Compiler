@@ -1,0 +1,32 @@
+// Solo terminales. La estructura OFERTA/SESION/HORARIO se añadirá en etapa 4.
+KW_OFERTA.30: /OFERTA(?!\w)/
+KW_MATERIA.30: /MATERIA(?!\w)/
+KW_GRUPO.30: /GRUPO(?!\w)/
+KW_DOCENTE.30: /DOCENTE(?!\w)/
+KW_SESION.30: /SESION(?!\w)/
+KW_AULA.30: /AULA(?!\w)/
+KW_DIA.30: /DIA(?!\w)/
+KW_HORA.30: /HORA(?!\w)/
+KW_DURACION.30: /DURACION(?!\w)/
+KW_HORARIO.30: /HORARIO(?!\w)/
+KW_INSCRIBIR.30: /INSCRIBIR(?!\w)/
+KW_DESCONOCIDO.30: /DESCONOCIDO(?!\w)/
+KW_SIN_ASIGNAR.30: /SIN_ASIGNAR(?!\w)/
+KW_LUNES.30: /LUNES(?!\w)/
+KW_MARTES.30: /MARTES(?!\w)/
+KW_MIERCOLES.30: /MIERCOLES(?!\w)/
+KW_JUEVES.30: /JUEVES(?!\w)/
+KW_VIERNES.30: /VIERNES(?!\w)/
+KW_SABADO.30: /SABADO(?!\w)/
+KW_DOMINGO.30: /DOMINGO(?!\w)/
+
+HORA_LITERAL.20: /[0-9]{2}:[0-9]{2}(?![\w:])/
+ENTERO.10: /[0-9]+(?![\w:])/
+CADENA: /"(?:[^"\\\r\n]|\\["\\])*"/
+LLAVE_APERTURA: "{"
+LLAVE_CIERRE: "}"
+
+ESPACIO: /[ \t\r\n]+/
+COMENTARIO: /#[^\r\n]*/
+%ignore ESPACIO
+%ignore COMENTARIO

@@ -2,6 +2,7 @@
 
 from dataclasses import dataclass
 
+from schedule_compiler.domain.diagnostics import Diagnostic, Severity
 from schedule_compiler.domain.models import FieldValue, Span
 
 
@@ -18,6 +19,19 @@ class Token:
     lexeme: str
     pattern_id: str
     span: Span
+
+
+@dataclass(frozen=True)
+class LexicalResult:
+    source_name: str
+    patterns: tuple[Pattern, ...]
+    tokens: tuple[Token, ...]
+    diagnostics: tuple[Diagnostic, ...] = ()
+
+    @property
+    def success(self) -> bool:
+        """Solo indica éxito léxico, nunca validez del horario."""
+        return not any(d.severity == Severity.ERROR for d in self.diagnostics)
 
 
 @dataclass(frozen=True)

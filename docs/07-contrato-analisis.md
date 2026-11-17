@@ -1,8 +1,9 @@
 # Etapa 2: modelos y contrato de análisis v1
 
 Estado: implementados los modelos, carga de fuentes y adaptadores de datos.
-Todavía no hay reconocimiento léxico, parser ni validación de horarios. El endpoint
-POST descrito aquí se implementará en la etapa 5; la API actual solo ofrece salud.
+El reconocimiento léxico se incorporó posteriormente en la
+[etapa 3](08-analisis-lexico.md); parser y validación de horarios están pendientes.
+El endpoint POST se implementará en la etapa 5; la API actual solo ofrece salud.
 
 ## Entrada única para editor y archivo
 
@@ -51,7 +52,8 @@ ejecución del compilador sin léxico ni parser.
 | --- | --- |
 | `domain/models.py` | Valores conocidos/desconocidos, procedencia, intervalos, sesiones, ofertas, catálogos y política |
 | `compiler/models.py` | Patrones, tokens y AST tipado independiente de Lark |
-| `application/contracts.py` | Fases, comprobaciones, símbolos, diagnósticos y resultado interno |
+| `application/contracts.py` | Fases, comprobaciones, símbolos y resultado interno |
+| `domain/diagnostics.py` | Diagnósticos compartidos sin dependencias de aplicación |
 | `api/schemas/analysis.py` | Modelos Pydantic de transporte y JSON Schema |
 | `api/tree.py` | Conversión del AST existente a nodos dibujables |
 | `infrastructure/catalogs.py` | Carga de archivos permitidos a modelos del dominio |

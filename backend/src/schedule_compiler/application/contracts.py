@@ -4,6 +4,7 @@ from dataclasses import dataclass
 from enum import StrEnum
 
 from schedule_compiler.compiler.models import Pattern, Program, Token
+from schedule_compiler.domain.diagnostics import Diagnostic, Severity
 from schedule_compiler.domain.models import FieldValue, Origin, Session
 
 
@@ -30,12 +31,6 @@ class PhaseState(StrEnum):
     NOT_RUN = "NO_EJECUTADA"
 
 
-class Severity(StrEnum):
-    ERROR = "ERROR"
-    WARNING = "ADVERTENCIA"
-    INFO = "INFO"
-
-
 class CheckState(StrEnum):
     PASSED = "CUMPLE"
     FAILED = "INCUMPLE"
@@ -48,16 +43,6 @@ class CheckState(StrEnum):
 class PhaseReport:
     stage: Stage
     state: PhaseState
-
-
-@dataclass(frozen=True)
-class Diagnostic:
-    code: str
-    stage: str
-    severity: Severity
-    message: str
-    origin: Origin | None = None
-    related: tuple[Origin, ...] = ()
 
 
 @dataclass(frozen=True)

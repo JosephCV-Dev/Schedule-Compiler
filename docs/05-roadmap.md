@@ -16,7 +16,7 @@ nuevas admitidas y sujetas a ocupación conocida. SIN_ASIGNAR significa pendient
 | 0. Alcance y fuentes | Análisis del Excel, lenguaje v0.2 y ejemplos personales | Completada |
 | 1. Estructura y arranque | Carpetas, dependencias, API de salud y página inicial | Completada |
 | 2. Modelos y contrato | Tipos de tokens, AST, diagnósticos, resultados y catálogo | Completada |
-| 3. Análisis léxico | Tokens, patrones, ubicaciones y errores léxicos | Pendiente |
+| 3. Análisis léxico | Tokens, patrones, ubicaciones y errores léxicos | Completada |
 | 4. Análisis sintáctico | Gramática ejecutable, AST y errores de estructura | Pendiente |
 | 5. Semántica y API de análisis | Reglas, catálogo, selección e integración HTTP | Pendiente |
 | 6. Interfaz del compilador | Editor, pestañas, consola y horario según referencia | Pendiente |
@@ -46,7 +46,7 @@ decir que el motor aún no está disponible.
 Verificación realizada: instalación del paquete, consistencia de dependencias,
 build de React/TypeScript y comprobaciones HTTP de salud, OpenAPI, documentación,
 página de desarrollo y proxy Vite → FastAPI. No se realizó inspección visual en
-un navegador. La siguiente etapa permanece pendiente de indicación del usuario.
+un navegador.
 
 ## 2. Modelos y contrato — completada
 
@@ -65,10 +65,10 @@ Contrato Pydantic separado, JSON Schema exportado y tres fixtures ilustrativos.
 El AST se adapta a nodos con hijos, etiquetas y rangos para dibujarlo en la interfaz.
 Documentación: [contrato de análisis](07-contrato-analisis.md).
 
-Verificación: 32 pruebas del backend, sincronización de esquemas/fixtures y build
-del frontend. La etapa 3 permanece pendiente de indicación del usuario.
+Verificación de esa entrega: 32 pruebas del backend, sincronización de
+esquemas/fixtures y build del frontend.
 
-## 3. Análisis léxico
+## 3. Análisis léxico — completada
 
 Definir terminales en Lark con lexer basic; reconocer palabras completas, cadenas,
 horas, enteros, llaves y comentarios. Conservar lexema y posición, con patrones
@@ -77,6 +77,15 @@ identificables para la tabla de tokens.
 Criterio: tokenizar los ejemplos .hor y señalar caracteres desconocidos y cadenas
 sin cierre con línea y columna. `12:00` debe ser una hora, no un entero parcial.
 La comprobación se ejecuta sin navegador.
+
+Entregado: terminales .lark, lexer basic sin parser, LexicalResult y diagnósticos
+compartidos. CLI para archivo .hor o stdin con tabla o JSON. Se preservan lexemas,
+posiciones y tokens previos al primer error; no se repara el código.
+
+Verificación: 85 pruebas del backend, cuatro ejemplos principales sin errores
+léxicos, contrato final sincronizado y paquete wheel con los terminales incluidos.
+El ejemplo completo de Carolina produce 276 tokens. Comandos y límites en
+[la documentación de etapa 3](08-analisis-lexico.md). Etapa 4 pendiente de indicación.
 
 ## 4. Análisis sintáctico
 

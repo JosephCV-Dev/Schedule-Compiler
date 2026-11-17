@@ -1,6 +1,6 @@
 """Ejemplos construidos a mano del contrato, NO resultados de un analizador.
 
-Se usan para revisar el JSON antes de implementar las etapas 3, 4 y 5.
+Se usan para revisar el JSON; no invocan el lexer ni simulan un parser o semántica.
 """
 
 from pathlib import Path
