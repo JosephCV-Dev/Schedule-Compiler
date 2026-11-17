@@ -3,8 +3,8 @@
 Estado: implementados los modelos, carga de fuentes y adaptadores de datos.
 El reconocimiento léxico se incorporó posteriormente en la
 [etapa 3](08-analisis-lexico.md) y el parser/AST en la
-[etapa 4](09-analisis-sintactico.md). La validación de horarios está pendiente.
-El endpoint POST se implementará en la etapa 5; la API actual solo ofrece salud.
+[etapa 4](09-analisis-sintactico.md). La semántica y el endpoint POST están
+implementados en [etapa 5](10-semantica-y-api.md), con consultas de recursos.
 
 ## Entrada única para editor y archivo
 
@@ -13,7 +13,7 @@ o pegarlo en el recuadro, o pulsar «Subir .hor» para cargarlo en el mismo edit
 El frontend leerá el archivo en UTF-8, permitirá editarlo y enviará el contenido.
 No se necesita un archivo para compilar texto escrito directamente.
 
-Propuesta para `POST /api/v1/analyses`:
+Cuerpo de `POST /api/v1/analyses`:
 
 ```json
 {
@@ -33,7 +33,7 @@ su diagnóstico de programa vacío corresponde al analizador, no a HTTP.
 
 El catálogo y la política usan IDs de una lista explícita, no rutas del cliente.
 Catálogos disponibles: `isc-26-1-trabajo` e `isc-26-1-original`. Política:
-`proyecto-v0.2`. En el despliegue futuro se inyectará la carpeta de datos al
+`proyecto-v0.2`. La aplicación inyecta la carpeta de datos al
 repositorio; su lectura no depende del directorio de trabajo del servidor.
 
 Alcances del endpoint de análisis:
@@ -41,10 +41,10 @@ Alcances del endpoint de análisis:
 - PERSONAL: revisar las selecciones HORARIO del texto y sus ofertas referenciadas.
 - PROPUESTA: revisar las OFERTA declaradas contra el resto de ocupaciones conocidas.
 
-Si el alcance no tiene las declaraciones necesarias, el motor futuro devolverá
+Si el alcance no tiene las declaraciones necesarias, el motor devuelve
 un diagnóstico explícito. Con varios HORARIO, se entregará una vista por selección
 y el estado general reflejará los incumplimientos de las selecciones analizadas.
-La auditoría global del catálogo tendrá un flujo separado; no se trata como una
+La auditoría global del catálogo tiene un flujo separado; no se trata como una
 ejecución del compilador sin léxico ni parser.
 
 ## Separación de modelos
@@ -160,8 +160,8 @@ entre campos se comprueban en el modelo interno de resultado.
 - [Ejemplo inválido](../contracts/examples/invalido.json).
 - [Ejemplo incompleto](../contracts/examples/incompleto.json).
 
-Son fixtures construidos a mano: no prueban que el compilador ya analice esos
-textos. No se publican como una compilación exitosa en la interfaz. El ejemplo
+Desde etapa 5 estos casos se generan con el motor real y se comprueba que el
+endpoint HTTP entregue la misma respuesta para cada solicitud. El ejemplo
 incompleto usa una oferta que efectivamente tiene una sesión pendiente en la copia
 de trabajo. El inválido ilustra una cadena sin cierre y fases dependientes no
 ejecutadas.

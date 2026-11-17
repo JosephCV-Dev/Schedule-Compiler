@@ -16,5 +16,5 @@
   "capacidad": "NO_CONFIGURADA",
   "laboratorio": "NO_CONFIGURADA",
   "horario_permitido": "NO_CONFIGURADO",
-  "nota": "Configuración de diseño; aún sin motor que la ejecute. Las reglas desactivadas se muestran en el reporte."
+  "nota": "Política aplicada por el motor de la etapa 5. Las reglas desactivadas o no configuradas se muestran en el reporte."
 }

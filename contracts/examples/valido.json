@@ -1,6 +1,6 @@
 {
   "request": {
-    "source": "HORARIO \"Ejemplo\" {\n    INSCRIBIR \"ISC_7B_COMPILADORES\"\n}\n",
+    "source": "HORARIO \"Ejemplo\" { INSCRIBIR \"ISC_7B_COMPILADORES\" }",
     "source_name": "valido.hor",
     "language_version": "0.2",
     "catalog_id": "isc-26-1-trabajo",
@@ -35,28 +35,128 @@
     ],
     "patterns": [
       {
+        "id": "kw_oferta",
+        "description": "Palabra reservada OFERTA.",
+        "expression": "OFERTA(?!\\w)"
+      },
+      {
+        "id": "kw_materia",
+        "description": "Palabra reservada MATERIA.",
+        "expression": "MATERIA(?!\\w)"
+      },
+      {
+        "id": "kw_grupo",
+        "description": "Palabra reservada GRUPO.",
+        "expression": "GRUPO(?!\\w)"
+      },
+      {
+        "id": "kw_docente",
+        "description": "Palabra reservada DOCENTE.",
+        "expression": "DOCENTE(?!\\w)"
+      },
+      {
+        "id": "kw_sesion",
+        "description": "Palabra reservada SESION.",
+        "expression": "SESION(?!\\w)"
+      },
+      {
+        "id": "kw_aula",
+        "description": "Palabra reservada AULA.",
+        "expression": "AULA(?!\\w)"
+      },
+      {
+        "id": "kw_dia",
+        "description": "Palabra reservada DIA.",
+        "expression": "DIA(?!\\w)"
+      },
+      {
+        "id": "kw_hora",
+        "description": "Palabra reservada HORA.",
+        "expression": "HORA(?!\\w)"
+      },
+      {
+        "id": "kw_duracion",
+        "description": "Palabra reservada DURACION.",
+        "expression": "DURACION(?!\\w)"
+      },
+      {
         "id": "kw_horario",
-        "description": "Palabra HORARIO",
-        "expression": "HORARIO"
+        "description": "Palabra reservada HORARIO.",
+        "expression": "HORARIO(?!\\w)"
       },
       {
         "id": "kw_inscribir",
-        "description": "Palabra INSCRIBIR",
-        "expression": "INSCRIBIR"
+        "description": "Palabra reservada INSCRIBIR.",
+        "expression": "INSCRIBIR(?!\\w)"
+      },
+      {
+        "id": "kw_desconocido",
+        "description": "Palabra reservada DESCONOCIDO.",
+        "expression": "DESCONOCIDO(?!\\w)"
+      },
+      {
+        "id": "kw_sin_asignar",
+        "description": "Palabra reservada SIN_ASIGNAR.",
+        "expression": "SIN_ASIGNAR(?!\\w)"
+      },
+      {
+        "id": "kw_lunes",
+        "description": "Palabra reservada LUNES.",
+        "expression": "LUNES(?!\\w)"
+      },
+      {
+        "id": "kw_martes",
+        "description": "Palabra reservada MARTES.",
+        "expression": "MARTES(?!\\w)"
+      },
+      {
+        "id": "kw_miercoles",
+        "description": "Palabra reservada MIERCOLES.",
+        "expression": "MIERCOLES(?!\\w)"
+      },
+      {
+        "id": "kw_jueves",
+        "description": "Palabra reservada JUEVES.",
+        "expression": "JUEVES(?!\\w)"
+      },
+      {
+        "id": "kw_viernes",
+        "description": "Palabra reservada VIERNES.",
+        "expression": "VIERNES(?!\\w)"
+      },
+      {
+        "id": "kw_sabado",
+        "description": "Palabra reservada SABADO.",
+        "expression": "SABADO(?!\\w)"
+      },
+      {
+        "id": "kw_domingo",
+        "description": "Palabra reservada DOMINGO.",
+        "expression": "DOMINGO(?!\\w)"
+      },
+      {
+        "id": "hora_literal",
+        "description": "Hora HH:MM; el rango numérico se revisa en semántica.",
+        "expression": "[0-9]{2}:[0-9]{2}(?![\\w:])"
+      },
+      {
+        "id": "entero",
+        "description": "Entero sin signo; su valor se revisa según el campo.",
+        "expression": "[0-9]+(?![\\w:])"
       },
       {
         "id": "cadena",
-        "description": "Texto entre comillas",
-        "expression": "\"(?:[^\"\\\\\\r\\n]|\\\\[\"\\\\])*\""
+        "description": "Texto entre comillas; escapes permitidos: comilla y barra inversa.",
+        "expression": "\"(?:[^\"\\\\\r\n]|\\\\[\"\\\\])*\""
       },
       {
-        "id": "abrir",
-        "description": "Llave de apertura",
+        "id": "llave_apertura",
+        "description": "Inicio de bloque.",
         "expression": "\\{"
       },
       {
-        "id": "cerrar",
-        "description": "Llave de cierre",
+        "id": "llave_cierre",
+        "description": "Fin de bloque.",
         "expression": "\\}"
       }
     ],
@@ -98,7 +198,7 @@
       {
         "kind": "LLAVE_APERTURA",
         "lexeme": "{",
-        "pattern_id": "abrir",
+        "pattern_id": "llave_apertura",
         "span": {
           "start": {
             "offset": 18,
@@ -118,14 +218,14 @@
         "pattern_id": "kw_inscribir",
         "span": {
           "start": {
-            "offset": 24,
-            "line": 2,
-            "column": 5
+            "offset": 20,
+            "line": 1,
+            "column": 21
           },
           "end": {
-            "offset": 33,
-            "line": 2,
-            "column": 14
+            "offset": 29,
+            "line": 1,
+            "column": 30
           }
         }
       },
@@ -135,31 +235,31 @@
         "pattern_id": "cadena",
         "span": {
           "start": {
-            "offset": 34,
-            "line": 2,
-            "column": 15
+            "offset": 30,
+            "line": 1,
+            "column": 31
           },
           "end": {
-            "offset": 55,
-            "line": 2,
-            "column": 36
+            "offset": 51,
+            "line": 1,
+            "column": 52
           }
         }
       },
       {
         "kind": "LLAVE_CIERRE",
         "lexeme": "}",
-        "pattern_id": "cerrar",
+        "pattern_id": "llave_cierre",
         "span": {
           "start": {
-            "offset": 56,
-            "line": 3,
-            "column": 1
+            "offset": 52,
+            "line": 1,
+            "column": 53
           },
           "end": {
-            "offset": 57,
-            "line": 3,
-            "column": 2
+            "offset": 53,
+            "line": 1,
+            "column": 54
           }
         }
       }
@@ -177,9 +277,9 @@
           "column": 1
         },
         "end": {
-          "offset": 58,
-          "line": 4,
-          "column": 1
+          "offset": 53,
+          "line": 1,
+          "column": 54
         }
       },
       "children": [
@@ -196,9 +296,9 @@
               "column": 1
             },
             "end": {
-              "offset": 57,
-              "line": 3,
-              "column": 2
+              "offset": 53,
+              "line": 1,
+              "column": 54
             }
           },
           "children": [
@@ -230,14 +330,14 @@
               "value_state": null,
               "span": {
                 "start": {
-                  "offset": 24,
-                  "line": 2,
-                  "column": 5
+                  "offset": 20,
+                  "line": 1,
+                  "column": 21
                 },
                 "end": {
-                  "offset": 55,
-                  "line": 2,
-                  "column": 36
+                  "offset": 51,
+                  "line": 1,
+                  "column": 52
                 }
               },
               "children": [
@@ -249,14 +349,14 @@
                   "value_state": null,
                   "span": {
                     "start": {
-                      "offset": 34,
-                      "line": 2,
-                      "column": 15
+                      "offset": 30,
+                      "line": 1,
+                      "column": 31
                     },
                     "end": {
-                      "offset": 55,
-                      "line": 2,
-                      "column": 36
+                      "offset": 51,
+                      "line": 1,
+                      "column": 52
                     }
                   },
                   "children": []
@@ -269,10 +369,39 @@
     },
     "symbols": [
       {
-        "id": "ISC_7B_COMPILADORES",
+        "id": "oferta:ISC_7B_COMPILADORES",
         "kind": "OFERTA",
         "label": "COMPILADORES",
-        "attributes": [],
+        "attributes": [
+          {
+            "name": "identificador",
+            "value": {
+              "state": "CONOCIDO",
+              "value": "ISC_7B_COMPILADORES"
+            }
+          },
+          {
+            "name": "grupo",
+            "value": {
+              "state": "CONOCIDO",
+              "value": "ISC 7B"
+            }
+          },
+          {
+            "name": "docente",
+            "value": {
+              "state": "DESCONOCIDO",
+              "value": null
+            }
+          },
+          {
+            "name": "horas_semanales_catalogo",
+            "value": {
+              "state": "CONOCIDO",
+              "value": "4"
+            }
+          }
+        ],
         "origins": [
           {
             "kind": "EXCEL",
@@ -287,24 +416,504 @@
             "pointer": null
           }
         ]
+      },
+      {
+        "id": "materia:COMPILADORES",
+        "kind": "MATERIA",
+        "label": "COMPILADORES",
+        "attributes": [
+          {
+            "name": "nombre",
+            "value": {
+              "state": "CONOCIDO",
+              "value": "COMPILADORES"
+            }
+          }
+        ],
+        "origins": [
+          {
+            "kind": "EXCEL",
+            "source_id": "ISC HORARIOS 26-1.xlsx",
+            "span": null,
+            "sheet": "Hoja1",
+            "cells": [
+              "A62",
+              "B62",
+              "C62"
+            ],
+            "pointer": null
+          }
+        ]
+      },
+      {
+        "id": "grupo:ISC 7B",
+        "kind": "GRUPO",
+        "label": "ISC 7B",
+        "attributes": [
+          {
+            "name": "alumnos",
+            "value": {
+              "state": "DESCONOCIDO",
+              "value": null
+            }
+          }
+        ],
+        "origins": [
+          {
+            "kind": "EXCEL",
+            "source_id": "ISC HORARIOS 26-1.xlsx",
+            "span": null,
+            "sheet": "Hoja1",
+            "cells": [
+              "A62",
+              "B62",
+              "C62"
+            ],
+            "pointer": null
+          }
+        ]
+      },
+      {
+        "id": "sesion:ISC_7B_COMPILADORES_MARTES",
+        "kind": "SESION",
+        "label": "ISC_7B_COMPILADORES_MARTES",
+        "attributes": [
+          {
+            "name": "oferta",
+            "value": {
+              "state": "CONOCIDO",
+              "value": "ISC_7B_COMPILADORES"
+            }
+          },
+          {
+            "name": "dia",
+            "value": {
+              "state": "CONOCIDO",
+              "value": "MARTES"
+            }
+          },
+          {
+            "name": "inicio_minutos",
+            "value": {
+              "state": "CONOCIDO",
+              "value": "720"
+            }
+          },
+          {
+            "name": "fin_minutos",
+            "value": {
+              "state": "CONOCIDO",
+              "value": "840"
+            }
+          },
+          {
+            "name": "aula",
+            "value": {
+              "state": "CONOCIDO",
+              "value": "FIE2-AUL32"
+            }
+          }
+        ],
+        "origins": [
+          {
+            "kind": "EXCEL",
+            "source_id": "ISC HORARIOS 26-1.xlsx",
+            "span": null,
+            "sheet": "Hoja1",
+            "cells": [
+              "F62",
+              "G62"
+            ],
+            "pointer": null
+          },
+          {
+            "kind": "JSON",
+            "source_id": "isc_26_1.trabajo.json",
+            "span": null,
+            "sheet": null,
+            "cells": [],
+            "pointer": "/ofertas/60/sesiones/0"
+          }
+        ]
+      },
+      {
+        "id": "aula:AUL:FIE2:32",
+        "kind": "AULA",
+        "label": "FIE2-AUL32",
+        "attributes": [
+          {
+            "name": "clave_comparacion",
+            "value": {
+              "state": "CONOCIDO",
+              "value": "AUL:FIE2:32"
+            }
+          },
+          {
+            "name": "capacidad",
+            "value": {
+              "state": "DESCONOCIDO",
+              "value": null
+            }
+          },
+          {
+            "name": "tipo",
+            "value": {
+              "state": "DESCONOCIDO",
+              "value": null
+            }
+          }
+        ],
+        "origins": [
+          {
+            "kind": "EXCEL",
+            "source_id": "ISC HORARIOS 26-1.xlsx",
+            "span": null,
+            "sheet": "Hoja1",
+            "cells": [
+              "F62",
+              "G62"
+            ],
+            "pointer": null
+          },
+          {
+            "kind": "JSON",
+            "source_id": "isc_26_1.trabajo.json",
+            "span": null,
+            "sheet": null,
+            "cells": [],
+            "pointer": "/ofertas/60/sesiones/0"
+          }
+        ]
+      },
+      {
+        "id": "sesion:ISC_7B_COMPILADORES_JUEVES",
+        "kind": "SESION",
+        "label": "ISC_7B_COMPILADORES_JUEVES",
+        "attributes": [
+          {
+            "name": "oferta",
+            "value": {
+              "state": "CONOCIDO",
+              "value": "ISC_7B_COMPILADORES"
+            }
+          },
+          {
+            "name": "dia",
+            "value": {
+              "state": "CONOCIDO",
+              "value": "JUEVES"
+            }
+          },
+          {
+            "name": "inicio_minutos",
+            "value": {
+              "state": "CONOCIDO",
+              "value": "720"
+            }
+          },
+          {
+            "name": "fin_minutos",
+            "value": {
+              "state": "CONOCIDO",
+              "value": "840"
+            }
+          },
+          {
+            "name": "aula",
+            "value": {
+              "state": "CONOCIDO",
+              "value": "FIE2-AUL32"
+            }
+          }
+        ],
+        "origins": [
+          {
+            "kind": "EXCEL",
+            "source_id": "ISC HORARIOS 26-1.xlsx",
+            "span": null,
+            "sheet": "Hoja1",
+            "cells": [
+              "J62",
+              "K62"
+            ],
+            "pointer": null
+          },
+          {
+            "kind": "JSON",
+            "source_id": "isc_26_1.trabajo.json",
+            "span": null,
+            "sheet": null,
+            "cells": [],
+            "pointer": "/ofertas/60/sesiones/1"
+          }
+        ]
+      },
+      {
+        "id": "horario:0",
+        "kind": "HORARIO",
+        "label": "Ejemplo",
+        "attributes": [
+          {
+            "name": "sesiones",
+            "value": {
+              "state": "CONOCIDO",
+              "value": "2"
+            }
+          }
+        ],
+        "origins": []
       }
     ],
     "diagnostics": [],
-    "catalog_diagnostics": [],
-    "checks": [
+    "catalog_diagnostics": [
       {
-        "code": "OCUPACION_AULA",
-        "state": "CUMPLE",
-        "required": true,
-        "message": "Ejemplo de comprobación cumplida.",
-        "origins": []
+        "code": "AULA_PENDIENTE",
+        "stage": "CATALOGO",
+        "severity": "ADVERTENCIA",
+        "message": "ISC_1RA_ALGEBRA_SUPERIOR, VIERNES: aula pendiente; no reserva un espacio.",
+        "origin": {
+          "kind": "EXCEL",
+          "source_id": "ISC HORARIOS 26-1.xlsx",
+          "span": null,
+          "sheet": "Hoja1",
+          "cells": [
+            "L18",
+            "M18"
+          ],
+          "pointer": null
+        },
+        "related": [
+          {
+            "kind": "JSON",
+            "source_id": "isc_26_1.trabajo.json",
+            "span": null,
+            "sheet": null,
+            "cells": [],
+            "pointer": "/ofertas/16/sesiones/1"
+          }
+        ]
       },
+      {
+        "code": "AULA_PENDIENTE",
+        "stage": "CATALOGO",
+        "severity": "ADVERTENCIA",
+        "message": "ISC_3B_CALCULO_VECTORIAL, VIERNES: aula pendiente; no reserva un espacio.",
+        "origin": {
+          "kind": "EXCEL",
+          "source_id": "ISC HORARIOS 26-1.xlsx",
+          "span": null,
+          "sheet": "Hoja1",
+          "cells": [
+            "L31",
+            "M31"
+          ],
+          "pointer": null
+        },
+        "related": [
+          {
+            "kind": "JSON",
+            "source_id": "isc_26_1.trabajo.json",
+            "span": null,
+            "sheet": null,
+            "cells": [],
+            "pointer": "/ofertas/29/sesiones/1"
+          }
+        ]
+      },
+      {
+        "code": "AJUSTE_CATALOGO",
+        "stage": "CATALOGO",
+        "severity": "INFO",
+        "message": "ISC_1RA_ALGEBRA_SUPERIOR_VIERNES: aula anterior 'FIE1-AUL28'; sigue sin asignación resuelta. Conflicto de aula del viernes 13:00–15:00; liberada por solicitud del usuario.",
+        "origin": {
+          "kind": "JSON",
+          "source_id": "isc_26_1.trabajo.json",
+          "span": null,
+          "sheet": null,
+          "cells": [],
+          "pointer": "/ajustes_proyecto/cambios/0"
+        },
+        "related": []
+      },
+      {
+        "code": "AJUSTE_CATALOGO",
+        "stage": "CATALOGO",
+        "severity": "INFO",
+        "message": "ISC_3B_CALCULO_VECTORIAL_VIERNES: aula anterior 'FIE1-AUL28'; sigue sin asignación resuelta. Conflicto de aula del viernes 13:00–15:00; liberada por solicitud del usuario.",
+        "origin": {
+          "kind": "JSON",
+          "source_id": "isc_26_1.trabajo.json",
+          "span": null,
+          "sheet": null,
+          "cells": [],
+          "pointer": "/ajustes_proyecto/cambios/1"
+        },
+        "related": []
+      }
+    ],
+    "checks": [
       {
         "code": "REGLAS_DOCENTES",
         "state": "DESACTIVADA",
         "required": false,
-        "message": "Profesor como texto libre.",
+        "message": "Docente como texto libre: sin catálogo, asignación ni cruces de profesores.",
         "origins": []
+      },
+      {
+        "code": "CAPACIDAD",
+        "state": "NO_EVALUABLE",
+        "required": false,
+        "message": "No configurada; fuera del alcance de la política actual.",
+        "origins": []
+      },
+      {
+        "code": "LABORATORIO",
+        "state": "NO_EVALUABLE",
+        "required": false,
+        "message": "No configurada; fuera del alcance de la política actual.",
+        "origins": []
+      },
+      {
+        "code": "HORARIO_PERMITIDO",
+        "state": "NO_EVALUABLE",
+        "required": false,
+        "message": "No configurada; fuera del alcance de la política actual.",
+        "origins": []
+      },
+      {
+        "code": "REFERENCIA_RESUELTA",
+        "state": "CUMPLE",
+        "required": true,
+        "message": "Oferta 'ISC_7B_COMPILADORES' resuelta.",
+        "origins": [
+          {
+            "kind": "TEXTO",
+            "source_id": "valido.hor",
+            "span": {
+              "start": {
+                "offset": 30,
+                "line": 1,
+                "column": 31
+              },
+              "end": {
+                "offset": 51,
+                "line": 1,
+                "column": 52
+              }
+            },
+            "sheet": null,
+            "cells": [],
+            "pointer": null
+          }
+        ]
+      },
+      {
+        "code": "CRUCES_PERSONALES",
+        "state": "CUMPLE",
+        "required": true,
+        "message": "Sin cruces personales detectados en 'Ejemplo'.",
+        "origins": [
+          {
+            "kind": "TEXTO",
+            "source_id": "valido.hor",
+            "span": {
+              "start": {
+                "offset": 0,
+                "line": 1,
+                "column": 1
+              },
+              "end": {
+                "offset": 53,
+                "line": 1,
+                "column": 54
+              }
+            },
+            "sheet": null,
+            "cells": [],
+            "pointer": null
+          }
+        ]
+      },
+      {
+        "code": "ASIGNACION_AULA",
+        "state": "CUMPLE",
+        "required": true,
+        "message": "Aula indicada: 'FIE2-AUL32'.",
+        "origins": [
+          {
+            "kind": "EXCEL",
+            "source_id": "ISC HORARIOS 26-1.xlsx",
+            "span": null,
+            "sheet": "Hoja1",
+            "cells": [
+              "F62",
+              "G62"
+            ],
+            "pointer": null
+          },
+          {
+            "kind": "JSON",
+            "source_id": "isc_26_1.trabajo.json",
+            "span": null,
+            "sheet": null,
+            "cells": [],
+            "pointer": "/ofertas/60/sesiones/0"
+          }
+        ]
+      },
+      {
+        "code": "ASIGNACION_AULA",
+        "state": "CUMPLE",
+        "required": true,
+        "message": "Aula indicada: 'FIE2-AUL32'.",
+        "origins": [
+          {
+            "kind": "EXCEL",
+            "source_id": "ISC HORARIOS 26-1.xlsx",
+            "span": null,
+            "sheet": "Hoja1",
+            "cells": [
+              "J62",
+              "K62"
+            ],
+            "pointer": null
+          },
+          {
+            "kind": "JSON",
+            "source_id": "isc_26_1.trabajo.json",
+            "span": null,
+            "sheet": null,
+            "cells": [],
+            "pointer": "/ofertas/60/sesiones/1"
+          }
+        ]
+      },
+      {
+        "code": "OCUPACION_AULA",
+        "state": "CUMPLE",
+        "required": true,
+        "message": "0 choques de aula; 0 equivalencias pendientes; 0 sesiones sin aula conocida. Solo ocupaciones cargadas.",
+        "origins": []
+      },
+      {
+        "code": "CARGA_SEMANAL",
+        "state": "CUMPLE",
+        "required": false,
+        "message": "ISC_7B_COMPILADORES: 240 minutos observados; 240 declarados.",
+        "origins": [
+          {
+            "kind": "EXCEL",
+            "source_id": "ISC HORARIOS 26-1.xlsx",
+            "span": null,
+            "sheet": "Hoja1",
+            "cells": [
+              "A62",
+              "B62",
+              "C62"
+            ],
+            "pointer": null
+          }
+        ]
       }
     ],
     "schedules": [

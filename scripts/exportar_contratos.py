@@ -1,4 +1,4 @@
-"""Exporta esquemas y fixtures ilustrativos; --check comprueba sincronización."""
+"""Exporta esquemas y casos reales del motor; --check comprueba sincronización."""
 
 import argparse
 import json

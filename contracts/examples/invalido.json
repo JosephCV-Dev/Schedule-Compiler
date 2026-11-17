@@ -33,8 +33,152 @@
         "state": "NO_EJECUTADA"
       }
     ],
-    "patterns": [],
-    "tokens": [],
+    "patterns": [
+      {
+        "id": "kw_oferta",
+        "description": "Palabra reservada OFERTA.",
+        "expression": "OFERTA(?!\\w)"
+      },
+      {
+        "id": "kw_materia",
+        "description": "Palabra reservada MATERIA.",
+        "expression": "MATERIA(?!\\w)"
+      },
+      {
+        "id": "kw_grupo",
+        "description": "Palabra reservada GRUPO.",
+        "expression": "GRUPO(?!\\w)"
+      },
+      {
+        "id": "kw_docente",
+        "description": "Palabra reservada DOCENTE.",
+        "expression": "DOCENTE(?!\\w)"
+      },
+      {
+        "id": "kw_sesion",
+        "description": "Palabra reservada SESION.",
+        "expression": "SESION(?!\\w)"
+      },
+      {
+        "id": "kw_aula",
+        "description": "Palabra reservada AULA.",
+        "expression": "AULA(?!\\w)"
+      },
+      {
+        "id": "kw_dia",
+        "description": "Palabra reservada DIA.",
+        "expression": "DIA(?!\\w)"
+      },
+      {
+        "id": "kw_hora",
+        "description": "Palabra reservada HORA.",
+        "expression": "HORA(?!\\w)"
+      },
+      {
+        "id": "kw_duracion",
+        "description": "Palabra reservada DURACION.",
+        "expression": "DURACION(?!\\w)"
+      },
+      {
+        "id": "kw_horario",
+        "description": "Palabra reservada HORARIO.",
+        "expression": "HORARIO(?!\\w)"
+      },
+      {
+        "id": "kw_inscribir",
+        "description": "Palabra reservada INSCRIBIR.",
+        "expression": "INSCRIBIR(?!\\w)"
+      },
+      {
+        "id": "kw_desconocido",
+        "description": "Palabra reservada DESCONOCIDO.",
+        "expression": "DESCONOCIDO(?!\\w)"
+      },
+      {
+        "id": "kw_sin_asignar",
+        "description": "Palabra reservada SIN_ASIGNAR.",
+        "expression": "SIN_ASIGNAR(?!\\w)"
+      },
+      {
+        "id": "kw_lunes",
+        "description": "Palabra reservada LUNES.",
+        "expression": "LUNES(?!\\w)"
+      },
+      {
+        "id": "kw_martes",
+        "description": "Palabra reservada MARTES.",
+        "expression": "MARTES(?!\\w)"
+      },
+      {
+        "id": "kw_miercoles",
+        "description": "Palabra reservada MIERCOLES.",
+        "expression": "MIERCOLES(?!\\w)"
+      },
+      {
+        "id": "kw_jueves",
+        "description": "Palabra reservada JUEVES.",
+        "expression": "JUEVES(?!\\w)"
+      },
+      {
+        "id": "kw_viernes",
+        "description": "Palabra reservada VIERNES.",
+        "expression": "VIERNES(?!\\w)"
+      },
+      {
+        "id": "kw_sabado",
+        "description": "Palabra reservada SABADO.",
+        "expression": "SABADO(?!\\w)"
+      },
+      {
+        "id": "kw_domingo",
+        "description": "Palabra reservada DOMINGO.",
+        "expression": "DOMINGO(?!\\w)"
+      },
+      {
+        "id": "hora_literal",
+        "description": "Hora HH:MM; el rango numérico se revisa en semántica.",
+        "expression": "[0-9]{2}:[0-9]{2}(?![\\w:])"
+      },
+      {
+        "id": "entero",
+        "description": "Entero sin signo; su valor se revisa según el campo.",
+        "expression": "[0-9]+(?![\\w:])"
+      },
+      {
+        "id": "cadena",
+        "description": "Texto entre comillas; escapes permitidos: comilla y barra inversa.",
+        "expression": "\"(?:[^\"\\\\\r\n]|\\\\[\"\\\\])*\""
+      },
+      {
+        "id": "llave_apertura",
+        "description": "Inicio de bloque.",
+        "expression": "\\{"
+      },
+      {
+        "id": "llave_cierre",
+        "description": "Fin de bloque.",
+        "expression": "\\}"
+      }
+    ],
+    "tokens": [
+      {
+        "kind": "KW_HORARIO",
+        "lexeme": "HORARIO",
+        "pattern_id": "kw_horario",
+        "span": {
+          "start": {
+            "offset": 0,
+            "line": 1,
+            "column": 1
+          },
+          "end": {
+            "offset": 7,
+            "line": 1,
+            "column": 8
+          }
+        }
+      }
+    ],
     "ast": null,
     "symbols": [],
     "diagnostics": [
@@ -65,7 +209,92 @@
         "related": []
       }
     ],
-    "catalog_diagnostics": [],
+    "catalog_diagnostics": [
+      {
+        "code": "AULA_PENDIENTE",
+        "stage": "CATALOGO",
+        "severity": "ADVERTENCIA",
+        "message": "ISC_1RA_ALGEBRA_SUPERIOR, VIERNES: aula pendiente; no reserva un espacio.",
+        "origin": {
+          "kind": "EXCEL",
+          "source_id": "ISC HORARIOS 26-1.xlsx",
+          "span": null,
+          "sheet": "Hoja1",
+          "cells": [
+            "L18",
+            "M18"
+          ],
+          "pointer": null
+        },
+        "related": [
+          {
+            "kind": "JSON",
+            "source_id": "isc_26_1.trabajo.json",
+            "span": null,
+            "sheet": null,
+            "cells": [],
+            "pointer": "/ofertas/16/sesiones/1"
+          }
+        ]
+      },
+      {
+        "code": "AULA_PENDIENTE",
+        "stage": "CATALOGO",
+        "severity": "ADVERTENCIA",
+        "message": "ISC_3B_CALCULO_VECTORIAL, VIERNES: aula pendiente; no reserva un espacio.",
+        "origin": {
+          "kind": "EXCEL",
+          "source_id": "ISC HORARIOS 26-1.xlsx",
+          "span": null,
+          "sheet": "Hoja1",
+          "cells": [
+            "L31",
+            "M31"
+          ],
+          "pointer": null
+        },
+        "related": [
+          {
+            "kind": "JSON",
+            "source_id": "isc_26_1.trabajo.json",
+            "span": null,
+            "sheet": null,
+            "cells": [],
+            "pointer": "/ofertas/29/sesiones/1"
+          }
+        ]
+      },
+      {
+        "code": "AJUSTE_CATALOGO",
+        "stage": "CATALOGO",
+        "severity": "INFO",
+        "message": "ISC_1RA_ALGEBRA_SUPERIOR_VIERNES: aula anterior 'FIE1-AUL28'; sigue sin asignación resuelta. Conflicto de aula del viernes 13:00–15:00; liberada por solicitud del usuario.",
+        "origin": {
+          "kind": "JSON",
+          "source_id": "isc_26_1.trabajo.json",
+          "span": null,
+          "sheet": null,
+          "cells": [],
+          "pointer": "/ajustes_proyecto/cambios/0"
+        },
+        "related": []
+      },
+      {
+        "code": "AJUSTE_CATALOGO",
+        "stage": "CATALOGO",
+        "severity": "INFO",
+        "message": "ISC_3B_CALCULO_VECTORIAL_VIERNES: aula anterior 'FIE1-AUL28'; sigue sin asignación resuelta. Conflicto de aula del viernes 13:00–15:00; liberada por solicitud del usuario.",
+        "origin": {
+          "kind": "JSON",
+          "source_id": "isc_26_1.trabajo.json",
+          "span": null,
+          "sheet": null,
+          "cells": [],
+          "pointer": "/ajustes_proyecto/cambios/1"
+        },
+        "related": []
+      }
+    ],
     "checks": [],
     "schedules": []
   }

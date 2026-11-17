@@ -101,6 +101,9 @@ class DataRepository:
                 raise ValueError(f"La configuración {key} requiere un booleano.")
         if room["asignar_automaticamente"] or room["sin_asignar"] != "PENDIENTE":
             raise ValueError("v0.2 no asigna aulas automáticamente y conserva los pendientes.")
+        if (data["capacidad"] != "NO_CONFIGURADA" or data["laboratorio"] != "NO_CONFIGURADA"
+                or data["horario_permitido"] != "NO_CONFIGURADO"):
+            raise ValueError("Capacidad, laboratorio y límites horarios requieren ampliar la política y sus datos.")
         return ValidationPolicy(
             id=policy_id, version=data["version"], teacher_rules_enabled=False,
             allow_new_rooms=room["admitir_nombre_nuevo"],

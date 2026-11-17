@@ -43,17 +43,17 @@ export function App() {
       </header>
       <main>
         <section className="foundation" aria-labelledby="foundation-title">
-          <p className="eyebrow">Etapa 4 · Sintaxis y AST</p>
-          <h1 id="foundation-title">El analizador sintáctico está listo.</h1>
+          <p className="eyebrow">Etapa 5 · Semántica y API</p>
+          <h1 id="foundation-title">El motor de análisis está listo.</h1>
           <p>
-            Los tokens y el árbol ya se pueden inspeccionar desde la terminal. Aquí se
-            incorporarán el editor y las vistas de resultados en la etapa de interfaz.
+            El análisis completo ya funciona desde la API y la terminal. El editor,
+            el árbol visual y las pestañas se incorporarán en la siguiente etapa.
           </p>
           <div className={`connection connection--${connection}`} role="status">
             <span className="status-dot" aria-hidden="true" />
             {connectionText}
           </div>
-          <p className="next-step">Siguiente etapa: semántica y API de análisis.</p>
+          <p className="next-step">Siguiente etapa: interfaz del compilador.</p>
         </section>
       </main>
       <footer>Proyecto académico de Compiladores · Desarrollo por etapas</footer>

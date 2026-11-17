@@ -6,6 +6,7 @@ from enum import StrEnum
 from schedule_compiler.compiler.models import Pattern, Program, Token
 from schedule_compiler.domain.diagnostics import Diagnostic, Severity
 from schedule_compiler.domain.models import FieldValue, Origin, Session
+from schedule_compiler.domain.validation import Check, CheckState
 
 
 class AnalysisStatus(StrEnum):
@@ -31,27 +32,10 @@ class PhaseState(StrEnum):
     NOT_RUN = "NO_EJECUTADA"
 
 
-class CheckState(StrEnum):
-    PASSED = "CUMPLE"
-    FAILED = "INCUMPLE"
-    UNKNOWN = "NO_EVALUABLE"
-    NOT_APPLICABLE = "NO_APLICA"
-    DISABLED = "DESACTIVADA"
-
-
 @dataclass(frozen=True)
 class PhaseReport:
     stage: Stage
     state: PhaseState
-
-
-@dataclass(frozen=True)
-class Check:
-    code: str
-    state: CheckState
-    required: bool
-    message: str
-    origins: tuple[Origin, ...] = ()
 
 
 @dataclass(frozen=True)

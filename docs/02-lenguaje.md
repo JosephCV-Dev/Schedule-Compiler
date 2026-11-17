@@ -1,7 +1,9 @@
 # Lenguaje de horarios: propuesta v0.2
 
 Estado: especificación y ejemplos, con lexer de etapa 3 y parser/AST de etapa 4
-implementados. Las reglas semánticas todavía están pendientes.
+implementados, más semántica y API de etapa 5. La política actual valida referencias,
+tiempos y aulas; capacidad/laboratorio/límites se muestran como no configurados.
+Interfaz completa pendiente para etapa 6.
 Actualización solicitada por el usuario el 17 de noviembre de 2026: profesor como
 texto libre sin reglas semánticas de profesores; aulas arbitrarias sujetas a
 ocupación; sesiones del choque conocido liberadas en una copia de trabajo.

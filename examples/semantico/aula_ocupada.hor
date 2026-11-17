@@ -1,0 +1,11 @@
+OFERTA "DEMO_AULA_OCUPADA" {
+    MATERIA "Ejemplo de conflicto"
+    GRUPO DESCONOCIDO
+    DOCENTE "Cualquier docente"
+    SESION {
+        AULA "FIE2AUL032"
+        DIA MARTES
+        HORA 12:00
+        DURACION 2
+    }
+}

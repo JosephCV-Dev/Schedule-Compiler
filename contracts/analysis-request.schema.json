@@ -17,6 +17,7 @@
     },
     "source_name": {
       "default": "editor",
+      "minLength": 1,
       "title": "Source Name",
       "type": "string"
     },

@@ -18,7 +18,7 @@ nuevas admitidas y sujetas a ocupación conocida. SIN_ASIGNAR significa pendient
 | 2. Modelos y contrato | Tipos de tokens, AST, diagnósticos, resultados y catálogo | Completada |
 | 3. Análisis léxico | Tokens, patrones, ubicaciones y errores léxicos | Completada |
 | 4. Análisis sintáctico | Gramática ejecutable, AST y errores de estructura | Completada |
-| 5. Semántica y API de análisis | Reglas, catálogo, selección e integración HTTP | Pendiente |
+| 5. Semántica y API de análisis | Reglas, catálogo, selección e integración HTTP | Completada |
 | 6. Interfaz del compilador | Editor, pestañas, consola y horario según referencia | Pendiente |
 | 7. Verificación y entrega | Casos completos, documentación y demostración | Pendiente |
 
@@ -105,9 +105,9 @@ AST parcial. El parser no aplica reglas de horarios ni consulta catálogos.
 Verificación: 141 pruebas del backend, cuatro ejemplos principales con AST,
 contrato sincronizado y wheel que incluye gramática/terminales y ejecuta el parser.
 Carolina conserva ocho ofertas, 16 sesiones y su horario personal. Detalles y
-comandos en [etapa 4](09-analisis-sintactico.md). Etapa 5 pendiente de indicación.
+comandos en [etapa 4](09-analisis-sintactico.md).
 
-## 5. Semántica y API de análisis
+## 5. Semántica y API de análisis — completada
 
 Construir el caso de uso de análisis; resolver ofertas y selecciones, leer los
 datos y aplicar política. Validar horas, duración, referencias, duplicados,
@@ -125,6 +125,16 @@ en los tramos visibles y no presenta cruces personales. La auditoría del catál
 original conserva el choque histórico; la copia de trabajo no lo oculta como si
 fuera una nueva asignación resuelta. Un aula con identidad física no conciliada
 expresa la limitación de la comprobación.
+
+Entregado: caso de uso de tres fases, reglas, símbolos y sesiones normalizadas;
+CLI completa; POST de análisis y consultas de recursos/auditoría. Profesores sin
+reglas, aulas pendientes y reglas no configuradas explícitas. Los ejemplos del
+contrato ahora provienen del motor real.
+
+Verificación: 221 pruebas del backend, incluyendo HTTP/CLI; petición HTTP real con
+Uvicorn desde otro cwd; contrato sincronizado y build del frontend. Carolina
+conserva 16 tramos y 29 h. [Comandos y límites](10-semantica-y-api.md).
+Etapa 6 pendiente de indicación del usuario.
 
 ## 6. Interfaz del compilador
 

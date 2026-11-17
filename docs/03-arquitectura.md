@@ -1,7 +1,8 @@
 # Arquitectura web y plan propuesto
 
-Estado: etapas 1 a 4 preparadas: estructura, modelos, contrato, lexer y parser/AST.
-Semántica e interfaz completa pendientes. Stack confirmado por el usuario.
+Estado: etapas 1 a 5 preparadas: estructura, modelos, contrato y motor de las tres
+fases con API. Interfaz completa pendiente. Stack confirmado por el usuario.
+[Semántica y API](10-semantica-y-api.md).
 Sin publicación. Léxico y CLI: [documentación de etapa 3](08-analisis-lexico.md).
 Sintaxis y AST: [documentación de etapa 4](09-analisis-sintactico.md).
 El seguimiento vigente de etapas está en [el roadmap](05-roadmap.md).
@@ -96,7 +97,7 @@ No se necesitan cuentas de usuario para demostrar los analizadores y comparar
 selecciones. Si después se requiere guardar horarios o inscripciones reales,
 se incorporará persistencia al adaptador correspondiente, sin reescribir el motor.
 
-## Contrato de análisis propuesto
+## Contrato de análisis implementado
 
 `POST /api/v1/analyses` recibirá texto fuente, versión del lenguaje, identificador
 de catálogo, política y alcance. El cliente no debe aportar capacidades ni reglas
@@ -113,8 +114,8 @@ La respuesta incluirá:
 - Sesiones normalizadas para el calendario y una tabla de horario.
 
 Los nombres de campos y esquemas vigentes están en
-[el contrato de la etapa 2](07-contrato-analisis.md). El endpoint se implementará
-en la etapa 5; estos modelos no habilitan todavía la compilación.
+[el contrato de la etapa 2](07-contrato-analisis.md). El endpoint está integrado
+desde etapa 5 y devuelve resultados reales del motor.
 
 Se conservará `null` para un dato que no se conoce; no se usarán ceros ni cadenas
 vacías como sustitutos de capacidades, alumnos o docentes desconocidos.
@@ -175,7 +176,7 @@ Esta lista resume los hitos generales. El desglose y estado por etapa están en
 [el roadmap](05-roadmap.md).
 
 1. **Base del proyecto:** análisis de fuentes, lenguaje, estructura y arranque.
-   Esta es la entrega actual; las etapas del motor y la interfaz están pendientes.
+   Completada junto con el motor y su API. La interfaz sigue pendiente.
 2. **Motor mínimo:** una oferta con dos sesiones produce tokens, AST y símbolos;
    duración cero y referencias incorrectas producen diagnósticos verificables.
 3. **Semántica y selección:** detectar cruces, respetar clases contiguas y analizar

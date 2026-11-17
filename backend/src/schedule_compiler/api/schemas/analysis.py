@@ -1,4 +1,4 @@
-"""Contrato HTTP v1 propuesto. Todavía no se registra POST /analyses."""
+"""Contrato HTTP v1 del análisis de .hor v0.2."""
 
 from __future__ import annotations
 
@@ -19,7 +19,7 @@ class DTO(BaseModel):
 
 class AnalysisRequest(DTO):
     source: str
-    source_name: str = "editor"
+    source_name: str = Field(default="editor", min_length=1)
     language_version: Literal["0.2"] = "0.2"
     catalog_id: Literal["isc-26-1-trabajo", "isc-26-1-original"] = "isc-26-1-trabajo"
     policy_id: Literal["proyecto-v0.2"] = "proyecto-v0.2"

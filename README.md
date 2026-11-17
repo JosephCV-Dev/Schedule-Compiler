@@ -5,13 +5,30 @@ con análisis léxico, sintáctico y semántico e interfaz web.
 
 ## Estado
 
-Etapa 4: lexer y parser disponibles por Python y terminal. Reconocen .hor v0.2 y
-entregan tokens, AST propio y diagnósticos con posiciones. Se conservan los modelos,
-catálogos y contrato previos. La semántica y la interfaz completa siguen pendientes.
-La API ofrece solo salud; ambas fases se prueban mediante CLI.
+Etapa 5: motor completo y API disponibles. Las tres fases entregan tokens, AST,
+símbolos, diagnósticos, comprobaciones y horario normalizado. Profesores libres,
+aulas nuevas sujetas a ocupación y asignaciones pendientes según política.
+Capacidad, laboratorio y límites siguen sin configurar y se muestran expresamente.
+La interfaz completa corresponde a la etapa 6.
 
 Stack confirmado: frontend React con TypeScript y Vite, API en Python con FastAPI
 y modelos del núcleo independientes del framework; lexer basic y parser LALR de Lark.
+
+## Probar el análisis completo
+
+Desde la raíz, con las dependencias del backend instaladas:
+
+```sh
+backend/.venv/bin/python -m schedule_compiler.cli.analyze examples/horario_carolina.hor
+backend/.venv/bin/python -m schedule_compiler.cli.analyze examples/horario_carolina.hor --json
+backend/.venv/bin/python -m schedule_compiler.cli.analyze examples/oferta_compiladores.hor --scope PROPUESTA
+```
+
+PERSONAL requiere HORARIO y PROPUESTA requiere OFERTA. El motor devuelve VALIDO,
+INVALIDO o INCOMPLETO según las reglas requeridas y las ocupaciones cargadas.
+Con el backend encendido, abrir `http://127.0.0.1:8000/docs` para usar
+`POST /api/v1/analyses` y consultar catálogos, ejemplos, auditoría y política.
+[Instrucciones y cuerpo JSON](docs/10-semantica-y-api.md).
 
 ## Probar la sintaxis y ver el árbol
 
@@ -24,7 +41,7 @@ backend/.venv/bin/python -m schedule_compiler.cli.parse examples/horario_carolin
 
 La primera salida dibuja el AST con ramas y nodos. JSON incluye hijos, etiquetas,
 rangos y diagnósticos. Los cuatro ejemplos principales completan sintaxis.
-Esto todavía no valida cruces, referencias ni otras reglas de horarios.
+Este comando de fase no valida cruces ni referencias; para ello usar cli.analyze.
 
 Para probar un error sintáctico intencional:
 
@@ -80,8 +97,8 @@ npm run dev
 ```
 
 Abrir `http://127.0.0.1:5173`. La página indica si el backend está conectado.
-Documentación de la API: `http://127.0.0.1:8000/docs`. Solo está disponible la ruta
-de salud; no se ofrecen resultados de compilación simulados.
+Documentación de la API: `http://127.0.0.1:8000/docs`, con análisis y consultas de
+recursos disponibles. El editor y sus pestañas todavía no están implementados.
 
 Organización inicial:
 
@@ -115,6 +132,7 @@ adicionales en [backend](backend/README.md) y [frontend](frontend/README.md).
 - [Contrato de análisis y modelos de la etapa 2](docs/07-contrato-analisis.md).
 - [Analizador léxico y comandos de prueba](docs/08-analisis-lexico.md).
 - [Analizador sintáctico y árbol AST](docs/09-analisis-sintactico.md).
+- [Semántica, API y análisis completo](docs/10-semantica-y-api.md).
 
 ## Verificar modelos y contrato
 
@@ -129,8 +147,8 @@ Desde la raíz, comprobar que los esquemas y ejemplos exportados están al día:
 backend/.venv/bin/python scripts/exportar_contratos.py --check
 ```
 
-Los fixtures en `contracts/examples/` son ilustraciones del contrato, no salidas
-de un compilador implementado. La entrada futura admite escribir/pegar texto y
+Los casos en `contracts/examples/` se generan con el motor real desde etapa 5 y
+se contrastan con la respuesta HTTP. La interfaz futura admitirá escribir/pegar texto y
 cargar un `.hor` en el mismo editor. El AST exportado tiene nodos e hijos para
 dibujar el árbol, sin imponer su distribución gráfica.
 
@@ -167,5 +185,6 @@ docentes, capacidades ni otros valores que la fuente no proporciona.
   conocido sin aula asignada; fuente original conservada.
 - `data/politica_proyecto.json`: profesores libres y ocupación de aulas activa.
 
-Lexer y parser ya procesan los ejemplos. Las reglas de horarios se incorporarán
-en la etapa 5; la interfaz completa se construirá en la 6.
+Las tres fases ya procesan los ejemplos. Los casos semantico/aula_pendiente.hor y
+semantico/aula_ocupada.hor demuestran INCOMPLETO e INVALIDO en alcance PROPUESTA.
+La interfaz completa se construirá en la etapa 6.

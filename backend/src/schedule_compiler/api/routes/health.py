@@ -12,7 +12,7 @@ class HealthResponse(BaseModel):
     status: Literal["ok"] = "ok"
     service: Literal["schedule-compiler"] = "schedule-compiler"
     language_version: Literal["0.2"] = "0.2"
-    compiler_available: Literal[False] = False
+    compiler_available: Literal[True] = True
 
 
 @router.get("/health", response_model=HealthResponse)

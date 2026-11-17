@@ -113,4 +113,4 @@ Las pruebas cubren las posiciones y jerarquía reales, orden y obligatoriedad de
 campos, días, marcadores, escapes, bloqueos entre fases, EOF, errores de tipos,
 conversión de enteros y la salida CLI en árbol/JSON. Se verificó el parser desde
 un wheel que incluye ambos recursos .lark. El contrato HTTP final sigue sin cambios
-y la API solo expone salud hasta integrar el caso de uso en la etapa 5.
+y el caso de uso completo está integrado desde [etapa 5](10-semantica-y-api.md).

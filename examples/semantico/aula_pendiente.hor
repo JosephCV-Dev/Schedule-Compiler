@@ -1,0 +1,11 @@
+OFERTA "DEMO_PENDIENTE" {
+    MATERIA "Ejemplo con aula pendiente"
+    GRUPO DESCONOCIDO
+    DOCENTE "Cualquier docente"
+    SESION {
+        AULA SIN_ASIGNAR
+        DIA MARTES
+        HORA 10:00
+        DURACION 2
+    }
+}

@@ -2,7 +2,7 @@ export interface HealthResponse {
   status: 'ok'
   service: 'schedule-compiler'
   language_version: '0.2'
-  compiler_available: false
+  compiler_available: boolean
 }
 
 export async function getHealth(signal: AbortSignal): Promise<HealthResponse> {
@@ -15,7 +15,7 @@ export async function getHealth(signal: AbortSignal): Promise<HealthResponse> {
     !('status' in data) || data.status !== 'ok' ||
     !('service' in data) || data.service !== 'schedule-compiler' ||
     !('language_version' in data) || data.language_version !== '0.2' ||
-    !('compiler_available' in data) || data.compiler_available !== false
+    !('compiler_available' in data) || typeof data.compiler_available !== 'boolean'
   ) {
     throw new Error('La respuesta no coincide con el contrato de salud de la API.')
   }
