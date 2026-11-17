@@ -1,7 +1,7 @@
 # Arquitectura web y plan propuesto
 
-Estado: etapa 1 de estructura y arranque preparada; motor e interfaz completa
-pendientes. Stack confirmado por el usuario. Sin publicación.
+Estado: etapas 1 y 2 preparadas: estructura, modelos y contrato. Motor e interfaz
+completa pendientes. Stack confirmado por el usuario. Sin publicación.
 El seguimiento vigente de etapas está en [el roadmap](05-roadmap.md).
 
 ## Orden de trabajo
@@ -109,6 +109,10 @@ La respuesta incluirá:
 - Tabla de símbolos: IDs, clase de entidad, atributos, referencias y procedencia.
 - Diagnósticos y resultado de cada regla.
 - Sesiones normalizadas para el calendario y una tabla de horario.
+
+Los nombres de campos y esquemas vigentes están en
+[el contrato de la etapa 2](07-contrato-analisis.md). El endpoint se implementará
+en la etapa 5; estos modelos no habilitan todavía la compilación.
 
 Se conservará `null` para un dato que no se conoce; no se usarán ceros ni cadenas
 vacías como sustitutos de capacidades, alumnos o docentes desconocidos.

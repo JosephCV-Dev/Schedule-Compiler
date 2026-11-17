@@ -1,0 +1,711 @@
+{
+  "$defs": {
+    "AnalysisStatus": {
+      "enum": [
+        "VALIDO",
+        "INVALIDO",
+        "INCOMPLETO"
+      ],
+      "title": "AnalysisStatus",
+      "type": "string"
+    },
+    "AstNodeResponse": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "kind": {
+          "title": "Kind",
+          "type": "string"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Value"
+        },
+        "value_state": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ValueState"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "span": {
+          "$ref": "#/$defs/SpanResponse"
+        },
+        "children": {
+          "items": {
+            "$ref": "#/$defs/AstNodeResponse"
+          },
+          "title": "Children",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "label",
+        "span"
+      ],
+      "title": "AstNodeResponse",
+      "type": "object"
+    },
+    "CheckResponse": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "state": {
+          "$ref": "#/$defs/CheckState"
+        },
+        "required": {
+          "title": "Required",
+          "type": "boolean"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        },
+        "origins": {
+          "items": {
+            "$ref": "#/$defs/OriginResponse"
+          },
+          "title": "Origins",
+          "type": "array"
+        }
+      },
+      "required": [
+        "code",
+        "state",
+        "required",
+        "message",
+        "origins"
+      ],
+      "title": "CheckResponse",
+      "type": "object"
+    },
+    "CheckState": {
+      "enum": [
+        "CUMPLE",
+        "INCUMPLE",
+        "NO_EVALUABLE",
+        "NO_APLICA",
+        "DESACTIVADA"
+      ],
+      "title": "CheckState",
+      "type": "string"
+    },
+    "DiagnosticResponse": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "stage": {
+          "title": "Stage",
+          "type": "string"
+        },
+        "severity": {
+          "$ref": "#/$defs/Severity"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        },
+        "origin": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/OriginResponse"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "related": {
+          "items": {
+            "$ref": "#/$defs/OriginResponse"
+          },
+          "title": "Related",
+          "type": "array"
+        }
+      },
+      "required": [
+        "code",
+        "stage",
+        "severity",
+        "message",
+        "origin",
+        "related"
+      ],
+      "title": "DiagnosticResponse",
+      "type": "object"
+    },
+    "FieldValueResponse": {
+      "additionalProperties": false,
+      "properties": {
+        "state": {
+          "$ref": "#/$defs/ValueState"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Value"
+        }
+      },
+      "required": [
+        "state",
+        "value"
+      ],
+      "title": "FieldValueResponse",
+      "type": "object"
+    },
+    "IntervalResponse": {
+      "additionalProperties": false,
+      "properties": {
+        "start_minute": {
+          "exclusiveMaximum": 1440,
+          "minimum": 0,
+          "title": "Start Minute",
+          "type": "integer"
+        },
+        "end_minute": {
+          "exclusiveMinimum": 0,
+          "maximum": 1440,
+          "title": "End Minute",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "start_minute",
+        "end_minute"
+      ],
+      "title": "IntervalResponse",
+      "type": "object"
+    },
+    "MetadataResponse": {
+      "additionalProperties": false,
+      "properties": {
+        "language_version": {
+          "title": "Language Version",
+          "type": "string"
+        },
+        "catalog_id": {
+          "title": "Catalog Id",
+          "type": "string"
+        },
+        "catalog_sha256": {
+          "title": "Catalog Sha256",
+          "type": "string"
+        },
+        "policy_id": {
+          "title": "Policy Id",
+          "type": "string"
+        },
+        "policy_version": {
+          "title": "Policy Version",
+          "type": "string"
+        },
+        "scope": {
+          "$ref": "#/$defs/Scope"
+        },
+        "source_name": {
+          "title": "Source Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "language_version",
+        "catalog_id",
+        "catalog_sha256",
+        "policy_id",
+        "policy_version",
+        "scope",
+        "source_name"
+      ],
+      "title": "MetadataResponse",
+      "type": "object"
+    },
+    "OriginResponse": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "TEXTO",
+            "EXCEL",
+            "JSON"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "source_id": {
+          "title": "Source Id",
+          "type": "string"
+        },
+        "span": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SpanResponse"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sheet": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Sheet"
+        },
+        "cells": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Cells",
+          "type": "array"
+        },
+        "pointer": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Pointer"
+        }
+      },
+      "required": [
+        "kind",
+        "source_id",
+        "span",
+        "sheet",
+        "cells",
+        "pointer"
+      ],
+      "title": "OriginResponse",
+      "type": "object"
+    },
+    "PatternResponse": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "expression": {
+          "title": "Expression",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "description",
+        "expression"
+      ],
+      "title": "PatternResponse",
+      "type": "object"
+    },
+    "PhaseResponse": {
+      "additionalProperties": false,
+      "properties": {
+        "stage": {
+          "$ref": "#/$defs/Stage"
+        },
+        "state": {
+          "$ref": "#/$defs/PhaseState"
+        }
+      },
+      "required": [
+        "stage",
+        "state"
+      ],
+      "title": "PhaseResponse",
+      "type": "object"
+    },
+    "PhaseState": {
+      "enum": [
+        "COMPLETADA",
+        "CON_ERRORES",
+        "NO_EJECUTADA"
+      ],
+      "title": "PhaseState",
+      "type": "string"
+    },
+    "PositionResponse": {
+      "additionalProperties": false,
+      "properties": {
+        "offset": {
+          "minimum": 0,
+          "title": "Offset",
+          "type": "integer"
+        },
+        "line": {
+          "minimum": 1,
+          "title": "Line",
+          "type": "integer"
+        },
+        "column": {
+          "minimum": 1,
+          "title": "Column",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "offset",
+        "line",
+        "column"
+      ],
+      "title": "PositionResponse",
+      "type": "object"
+    },
+    "ScheduleResponse": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "sessions": {
+          "items": {
+            "$ref": "#/$defs/SessionResponse"
+          },
+          "title": "Sessions",
+          "type": "array"
+        }
+      },
+      "required": [
+        "name",
+        "sessions"
+      ],
+      "title": "ScheduleResponse",
+      "type": "object"
+    },
+    "Scope": {
+      "enum": [
+        "PERSONAL",
+        "PROPUESTA"
+      ],
+      "title": "Scope",
+      "type": "string"
+    },
+    "SessionResponse": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "offer_id": {
+          "title": "Offer Id",
+          "type": "string"
+        },
+        "day": {
+          "$ref": "#/$defs/Weekday"
+        },
+        "interval": {
+          "$ref": "#/$defs/IntervalResponse"
+        },
+        "room": {
+          "$ref": "#/$defs/FieldValueResponse"
+        },
+        "origins": {
+          "items": {
+            "$ref": "#/$defs/OriginResponse"
+          },
+          "title": "Origins",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "offer_id",
+        "day",
+        "interval",
+        "room",
+        "origins"
+      ],
+      "title": "SessionResponse",
+      "type": "object"
+    },
+    "Severity": {
+      "enum": [
+        "ERROR",
+        "ADVERTENCIA",
+        "INFO"
+      ],
+      "title": "Severity",
+      "type": "string"
+    },
+    "SpanResponse": {
+      "additionalProperties": false,
+      "properties": {
+        "start": {
+          "$ref": "#/$defs/PositionResponse"
+        },
+        "end": {
+          "$ref": "#/$defs/PositionResponse"
+        }
+      },
+      "required": [
+        "start",
+        "end"
+      ],
+      "title": "SpanResponse",
+      "type": "object"
+    },
+    "Stage": {
+      "enum": [
+        "LEXICO",
+        "SINTACTICO",
+        "SEMANTICO"
+      ],
+      "title": "Stage",
+      "type": "string"
+    },
+    "SymbolAttributeResponse": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "value": {
+          "$ref": "#/$defs/FieldValueResponse"
+        }
+      },
+      "required": [
+        "name",
+        "value"
+      ],
+      "title": "SymbolAttributeResponse",
+      "type": "object"
+    },
+    "SymbolResponse": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "kind": {
+          "title": "Kind",
+          "type": "string"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "attributes": {
+          "items": {
+            "$ref": "#/$defs/SymbolAttributeResponse"
+          },
+          "title": "Attributes",
+          "type": "array"
+        },
+        "origins": {
+          "items": {
+            "$ref": "#/$defs/OriginResponse"
+          },
+          "title": "Origins",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "label",
+        "attributes",
+        "origins"
+      ],
+      "title": "SymbolResponse",
+      "type": "object"
+    },
+    "TokenResponse": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "title": "Kind",
+          "type": "string"
+        },
+        "lexeme": {
+          "title": "Lexeme",
+          "type": "string"
+        },
+        "pattern_id": {
+          "title": "Pattern Id",
+          "type": "string"
+        },
+        "span": {
+          "$ref": "#/$defs/SpanResponse"
+        }
+      },
+      "required": [
+        "kind",
+        "lexeme",
+        "pattern_id",
+        "span"
+      ],
+      "title": "TokenResponse",
+      "type": "object"
+    },
+    "ValueState": {
+      "enum": [
+        "CONOCIDO",
+        "DESCONOCIDO",
+        "SIN_ASIGNAR"
+      ],
+      "title": "ValueState",
+      "type": "string"
+    },
+    "Weekday": {
+      "enum": [
+        "LUNES",
+        "MARTES",
+        "MIERCOLES",
+        "JUEVES",
+        "VIERNES",
+        "SABADO",
+        "DOMINGO"
+      ],
+      "title": "Weekday",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1",
+      "default": "1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "metadata": {
+      "$ref": "#/$defs/MetadataResponse"
+    },
+    "status": {
+      "$ref": "#/$defs/AnalysisStatus"
+    },
+    "phases": {
+      "items": {
+        "$ref": "#/$defs/PhaseResponse"
+      },
+      "title": "Phases",
+      "type": "array"
+    },
+    "patterns": {
+      "items": {
+        "$ref": "#/$defs/PatternResponse"
+      },
+      "title": "Patterns",
+      "type": "array"
+    },
+    "tokens": {
+      "items": {
+        "$ref": "#/$defs/TokenResponse"
+      },
+      "title": "Tokens",
+      "type": "array"
+    },
+    "ast": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/AstNodeResponse"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "symbols": {
+      "items": {
+        "$ref": "#/$defs/SymbolResponse"
+      },
+      "title": "Symbols",
+      "type": "array"
+    },
+    "diagnostics": {
+      "items": {
+        "$ref": "#/$defs/DiagnosticResponse"
+      },
+      "title": "Diagnostics",
+      "type": "array"
+    },
+    "catalog_diagnostics": {
+      "items": {
+        "$ref": "#/$defs/DiagnosticResponse"
+      },
+      "title": "Catalog Diagnostics",
+      "type": "array"
+    },
+    "checks": {
+      "items": {
+        "$ref": "#/$defs/CheckResponse"
+      },
+      "title": "Checks",
+      "type": "array"
+    },
+    "schedules": {
+      "items": {
+        "$ref": "#/$defs/ScheduleResponse"
+      },
+      "title": "Schedules",
+      "type": "array"
+    }
+  },
+  "required": [
+    "metadata",
+    "status",
+    "phases",
+    "patterns",
+    "tokens",
+    "ast",
+    "symbols",
+    "diagnostics",
+    "catalog_diagnostics",
+    "checks",
+    "schedules"
+  ],
+  "title": "AnalysisResponse",
+  "type": "object"
+}

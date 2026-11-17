@@ -1,0 +1,72 @@
+{
+  "request": {
+    "source": "HORARIO \"Sin cierre",
+    "source_name": "invalido.hor",
+    "language_version": "0.2",
+    "catalog_id": "isc-26-1-trabajo",
+    "policy_id": "proyecto-v0.2",
+    "scope": "PERSONAL"
+  },
+  "response": {
+    "schema_version": "1",
+    "metadata": {
+      "language_version": "0.2",
+      "catalog_id": "isc-26-1-trabajo",
+      "catalog_sha256": "b136a3404cfd340d5a57b6accdeef9704f70f5c6fd7c3a676639658897c6e70a",
+      "policy_id": "proyecto-v0.2",
+      "policy_version": "0.2",
+      "scope": "PERSONAL",
+      "source_name": "invalido.hor"
+    },
+    "status": "INVALIDO",
+    "phases": [
+      {
+        "stage": "LEXICO",
+        "state": "CON_ERRORES"
+      },
+      {
+        "stage": "SINTACTICO",
+        "state": "NO_EJECUTADA"
+      },
+      {
+        "stage": "SEMANTICO",
+        "state": "NO_EJECUTADA"
+      }
+    ],
+    "patterns": [],
+    "tokens": [],
+    "ast": null,
+    "symbols": [],
+    "diagnostics": [
+      {
+        "code": "CADENA_SIN_CIERRE",
+        "stage": "LEXICO",
+        "severity": "ERROR",
+        "message": "La cadena no tiene comillas de cierre.",
+        "origin": {
+          "kind": "TEXTO",
+          "source_id": "invalido.hor",
+          "span": {
+            "start": {
+              "offset": 8,
+              "line": 1,
+              "column": 9
+            },
+            "end": {
+              "offset": 19,
+              "line": 1,
+              "column": 20
+            }
+          },
+          "sheet": null,
+          "cells": [],
+          "pointer": null
+        },
+        "related": []
+      }
+    ],
+    "catalog_diagnostics": [],
+    "checks": [],
+    "schedules": []
+  }
+}

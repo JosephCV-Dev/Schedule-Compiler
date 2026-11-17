@@ -1,0 +1,386 @@
+{
+  "request": {
+    "source": "HORARIO \"Ejemplo\" {\n    INSCRIBIR \"ISC_7B_COMPILADORES\"\n}\n",
+    "source_name": "valido.hor",
+    "language_version": "0.2",
+    "catalog_id": "isc-26-1-trabajo",
+    "policy_id": "proyecto-v0.2",
+    "scope": "PERSONAL"
+  },
+  "response": {
+    "schema_version": "1",
+    "metadata": {
+      "language_version": "0.2",
+      "catalog_id": "isc-26-1-trabajo",
+      "catalog_sha256": "b136a3404cfd340d5a57b6accdeef9704f70f5c6fd7c3a676639658897c6e70a",
+      "policy_id": "proyecto-v0.2",
+      "policy_version": "0.2",
+      "scope": "PERSONAL",
+      "source_name": "valido.hor"
+    },
+    "status": "VALIDO",
+    "phases": [
+      {
+        "stage": "LEXICO",
+        "state": "COMPLETADA"
+      },
+      {
+        "stage": "SINTACTICO",
+        "state": "COMPLETADA"
+      },
+      {
+        "stage": "SEMANTICO",
+        "state": "COMPLETADA"
+      }
+    ],
+    "patterns": [
+      {
+        "id": "kw_horario",
+        "description": "Palabra HORARIO",
+        "expression": "HORARIO"
+      },
+      {
+        "id": "kw_inscribir",
+        "description": "Palabra INSCRIBIR",
+        "expression": "INSCRIBIR"
+      },
+      {
+        "id": "cadena",
+        "description": "Texto entre comillas",
+        "expression": "\"(?:[^\"\\\\\\r\\n]|\\\\[\"\\\\])*\""
+      },
+      {
+        "id": "abrir",
+        "description": "Llave de apertura",
+        "expression": "\\{"
+      },
+      {
+        "id": "cerrar",
+        "description": "Llave de cierre",
+        "expression": "\\}"
+      }
+    ],
+    "tokens": [
+      {
+        "kind": "KW_HORARIO",
+        "lexeme": "HORARIO",
+        "pattern_id": "kw_horario",
+        "span": {
+          "start": {
+            "offset": 0,
+            "line": 1,
+            "column": 1
+          },
+          "end": {
+            "offset": 7,
+            "line": 1,
+            "column": 8
+          }
+        }
+      },
+      {
+        "kind": "CADENA",
+        "lexeme": "\"Ejemplo\"",
+        "pattern_id": "cadena",
+        "span": {
+          "start": {
+            "offset": 8,
+            "line": 1,
+            "column": 9
+          },
+          "end": {
+            "offset": 17,
+            "line": 1,
+            "column": 18
+          }
+        }
+      },
+      {
+        "kind": "LLAVE_APERTURA",
+        "lexeme": "{",
+        "pattern_id": "abrir",
+        "span": {
+          "start": {
+            "offset": 18,
+            "line": 1,
+            "column": 19
+          },
+          "end": {
+            "offset": 19,
+            "line": 1,
+            "column": 20
+          }
+        }
+      },
+      {
+        "kind": "KW_INSCRIBIR",
+        "lexeme": "INSCRIBIR",
+        "pattern_id": "kw_inscribir",
+        "span": {
+          "start": {
+            "offset": 24,
+            "line": 2,
+            "column": 5
+          },
+          "end": {
+            "offset": 33,
+            "line": 2,
+            "column": 14
+          }
+        }
+      },
+      {
+        "kind": "CADENA",
+        "lexeme": "\"ISC_7B_COMPILADORES\"",
+        "pattern_id": "cadena",
+        "span": {
+          "start": {
+            "offset": 34,
+            "line": 2,
+            "column": 15
+          },
+          "end": {
+            "offset": 55,
+            "line": 2,
+            "column": 36
+          }
+        }
+      },
+      {
+        "kind": "LLAVE_CIERRE",
+        "lexeme": "}",
+        "pattern_id": "cerrar",
+        "span": {
+          "start": {
+            "offset": 56,
+            "line": 3,
+            "column": 1
+          },
+          "end": {
+            "offset": 57,
+            "line": 3,
+            "column": 2
+          }
+        }
+      }
+    ],
+    "ast": {
+      "id": "ast",
+      "kind": "Program",
+      "label": "Programa",
+      "value": null,
+      "value_state": null,
+      "span": {
+        "start": {
+          "offset": 0,
+          "line": 1,
+          "column": 1
+        },
+        "end": {
+          "offset": 58,
+          "line": 4,
+          "column": 1
+        }
+      },
+      "children": [
+        {
+          "id": "ast.0",
+          "kind": "ScheduleDeclaration",
+          "label": "Horario",
+          "value": null,
+          "value_state": null,
+          "span": {
+            "start": {
+              "offset": 0,
+              "line": 1,
+              "column": 1
+            },
+            "end": {
+              "offset": 57,
+              "line": 3,
+              "column": 2
+            }
+          },
+          "children": [
+            {
+              "id": "ast.0.name",
+              "kind": "Campo",
+              "label": "Nombre",
+              "value": "Ejemplo",
+              "value_state": null,
+              "span": {
+                "start": {
+                  "offset": 8,
+                  "line": 1,
+                  "column": 9
+                },
+                "end": {
+                  "offset": 17,
+                  "line": 1,
+                  "column": 18
+                }
+              },
+              "children": []
+            },
+            {
+              "id": "ast.0.enrollment.0",
+              "kind": "EnrollmentDeclaration",
+              "label": "Inscripción",
+              "value": null,
+              "value_state": null,
+              "span": {
+                "start": {
+                  "offset": 24,
+                  "line": 2,
+                  "column": 5
+                },
+                "end": {
+                  "offset": 55,
+                  "line": 2,
+                  "column": 36
+                }
+              },
+              "children": [
+                {
+                  "id": "ast.0.enrollment.0.offer",
+                  "kind": "Campo",
+                  "label": "Oferta",
+                  "value": "ISC_7B_COMPILADORES",
+                  "value_state": null,
+                  "span": {
+                    "start": {
+                      "offset": 34,
+                      "line": 2,
+                      "column": 15
+                    },
+                    "end": {
+                      "offset": 55,
+                      "line": 2,
+                      "column": 36
+                    }
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "symbols": [
+      {
+        "id": "ISC_7B_COMPILADORES",
+        "kind": "OFERTA",
+        "label": "COMPILADORES",
+        "attributes": [],
+        "origins": [
+          {
+            "kind": "EXCEL",
+            "source_id": "ISC HORARIOS 26-1.xlsx",
+            "span": null,
+            "sheet": "Hoja1",
+            "cells": [
+              "A62",
+              "B62",
+              "C62"
+            ],
+            "pointer": null
+          }
+        ]
+      }
+    ],
+    "diagnostics": [],
+    "catalog_diagnostics": [],
+    "checks": [
+      {
+        "code": "OCUPACION_AULA",
+        "state": "CUMPLE",
+        "required": true,
+        "message": "Ejemplo de comprobación cumplida.",
+        "origins": []
+      },
+      {
+        "code": "REGLAS_DOCENTES",
+        "state": "DESACTIVADA",
+        "required": false,
+        "message": "Profesor como texto libre.",
+        "origins": []
+      }
+    ],
+    "schedules": [
+      {
+        "name": "Ejemplo",
+        "sessions": [
+          {
+            "id": "ISC_7B_COMPILADORES_MARTES",
+            "offer_id": "ISC_7B_COMPILADORES",
+            "day": "MARTES",
+            "interval": {
+              "start_minute": 720,
+              "end_minute": 840
+            },
+            "room": {
+              "state": "CONOCIDO",
+              "value": "FIE2-AUL32"
+            },
+            "origins": [
+              {
+                "kind": "EXCEL",
+                "source_id": "ISC HORARIOS 26-1.xlsx",
+                "span": null,
+                "sheet": "Hoja1",
+                "cells": [
+                  "F62",
+                  "G62"
+                ],
+                "pointer": null
+              },
+              {
+                "kind": "JSON",
+                "source_id": "isc_26_1.trabajo.json",
+                "span": null,
+                "sheet": null,
+                "cells": [],
+                "pointer": "/ofertas/60/sesiones/0"
+              }
+            ]
+          },
+          {
+            "id": "ISC_7B_COMPILADORES_JUEVES",
+            "offer_id": "ISC_7B_COMPILADORES",
+            "day": "JUEVES",
+            "interval": {
+              "start_minute": 720,
+              "end_minute": 840
+            },
+            "room": {
+              "state": "CONOCIDO",
+              "value": "FIE2-AUL32"
+            },
+            "origins": [
+              {
+                "kind": "EXCEL",
+                "source_id": "ISC HORARIOS 26-1.xlsx",
+                "span": null,
+                "sheet": "Hoja1",
+                "cells": [
+                  "J62",
+                  "K62"
+                ],
+                "pointer": null
+              },
+              {
+                "kind": "JSON",
+                "source_id": "isc_26_1.trabajo.json",
+                "span": null,
+                "sheet": null,
+                "cells": [],
+                "pointer": "/ofertas/60/sesiones/1"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

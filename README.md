@@ -5,10 +5,11 @@ con análisis léxico, sintáctico y semántico e interfaz web.
 
 ## Estado
 
-Etapa 1: estructura y arranque preparados. Hay una API de salud y una página
-inicial que comprueba la conexión. El motor, el endpoint de análisis y la interfaz
-completa del compilador se construirán por etapas; los archivos `.hor` todavía
-no se ejecutan.
+Etapa 2: modelos y contrato preparados. Hay tipos propios del núcleo, carga de
+catálogos/política, esquemas JSON y ejemplos de resultados. La API sigue ofreciendo
+solo salud y la página inicial comprueba su conexión. El lexer, parser, motor
+semántico y la interfaz completa se construirán por etapas; los archivos `.hor`
+todavía no se ejecutan.
 
 Stack confirmado: frontend React con TypeScript y Vite, API en Python con FastAPI
 y núcleo de compilación independiente del framework que utilizará Lark.
@@ -69,6 +70,25 @@ adicionales en [backend](backend/README.md) y [frontend](frontend/README.md).
 - [Arquitectura web y orden de implementación](docs/03-arquitectura.md).
 - [Roadmap y criterios por etapa](docs/05-roadmap.md).
 - [Referencia visual de la interfaz](docs/06-referencia-frontend.md).
+- [Contrato de análisis y modelos de la etapa 2](docs/07-contrato-analisis.md).
+
+## Verificar modelos y contrato
+
+```sh
+cd backend
+.venv/bin/python -m pytest
+```
+
+Desde la raíz, comprobar que los esquemas y ejemplos exportados están al día:
+
+```sh
+backend/.venv/bin/python scripts/exportar_contratos.py --check
+```
+
+Los fixtures en `contracts/examples/` son ilustraciones del contrato, no salidas
+de un compilador implementado. La entrada futura admite escribir/pegar texto y
+cargar un `.hor` en el mismo editor. El AST exportado tiene nodos e hijos para
+dibujar el árbol, sin imponer su distribución gráfica.
 
 ## Datos y ejemplos
 

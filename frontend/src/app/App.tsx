@@ -43,8 +43,8 @@ export function App() {
       </header>
       <main>
         <section className="foundation" aria-labelledby="foundation-title">
-          <p className="eyebrow">Etapa 1 · Estructura inicial</p>
-          <h1 id="foundation-title">La base del proyecto está lista.</h1>
+          <p className="eyebrow">Etapa 2 · Modelos y contrato</p>
+          <h1 id="foundation-title">Los modelos del proyecto están listos.</h1>
           <p>
             Este espacio se convertirá en el editor de horarios. El análisis
             léxico, sintáctico y semántico se construirá en las siguientes etapas.
@@ -53,7 +53,7 @@ export function App() {
             <span className="status-dot" aria-hidden="true" />
             {connectionText}
           </div>
-          <p className="next-step">Siguiente etapa: modelos y contrato del análisis.</p>
+          <p className="next-step">Siguiente etapa: análisis léxico.</p>
         </section>
       </main>
       <footer>Proyecto académico de Compiladores · Desarrollo por etapas</footer>

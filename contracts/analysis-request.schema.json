@@ -1,0 +1,54 @@
+{
+  "$defs": {
+    "Scope": {
+      "enum": [
+        "PERSONAL",
+        "PROPUESTA"
+      ],
+      "title": "Scope",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "source": {
+      "title": "Source",
+      "type": "string"
+    },
+    "source_name": {
+      "default": "editor",
+      "title": "Source Name",
+      "type": "string"
+    },
+    "language_version": {
+      "const": "0.2",
+      "default": "0.2",
+      "title": "Language Version",
+      "type": "string"
+    },
+    "catalog_id": {
+      "default": "isc-26-1-trabajo",
+      "enum": [
+        "isc-26-1-trabajo",
+        "isc-26-1-original"
+      ],
+      "title": "Catalog Id",
+      "type": "string"
+    },
+    "policy_id": {
+      "const": "proyecto-v0.2",
+      "default": "proyecto-v0.2",
+      "title": "Policy Id",
+      "type": "string"
+    },
+    "scope": {
+      "$ref": "#/$defs/Scope",
+      "default": "PERSONAL"
+    }
+  },
+  "required": [
+    "source"
+  ],
+  "title": "AnalysisRequest",
+  "type": "object"
+}

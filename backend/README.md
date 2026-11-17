@@ -1,7 +1,8 @@
 # Backend
 
 Python 3.12 o superior. FastAPI adapta HTTP; Lark se utilizará para el lenguaje.
-El núcleo de análisis todavía no está implementado.
+Hay modelos del núcleo, cargadores y contrato; las fases de análisis todavía no
+están implementadas. El contrato se documenta en `docs/07-contrato-analisis.md`.
 
 ## Instalación
 
@@ -40,5 +41,20 @@ motor aún no está construido. No se expone una compilación de muestra.
 - `domain`: entidades y reglas semánticas.
 - `infrastructure`: lectura de catálogos y políticas.
 
-Los últimos cuatro módulos tienen sus carpetas preparadas y se implementarán
-siguiendo el roadmap. No hay base de datos ni autenticación en esta etapa.
+Los módulos ya contienen modelos, contrato, carga de catálogos y normalización
+de identidad de aulas. Las fases del compilador se añadirán según el roadmap.
+No hay base de datos ni autenticación en esta etapa.
+
+## Pruebas
+
+```sh
+.venv/bin/python -m pytest
+```
+
+Se comprueban invariantes de modelos y resultados, lectura sin modificar fuentes,
+procedencia de las dos sesiones sin aula, reemplazo temporal de ofertas, claves
+de aula, política de profesores libres y conversión del AST a nodos visuales.
+
+El generador `scripts/exportar_contratos.py`, ejecutado desde la raíz con este
+entorno, exporta el JSON Schema y fixtures de resultados. Su modo `--check`
+comprueba que los archivos siguen sincronizados con los modelos.

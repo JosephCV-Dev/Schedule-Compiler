@@ -15,7 +15,7 @@ nuevas admitidas y sujetas a ocupación conocida. SIN_ASIGNAR significa pendient
 | --- | --- | --- |
 | 0. Alcance y fuentes | Análisis del Excel, lenguaje v0.2 y ejemplos personales | Completada |
 | 1. Estructura y arranque | Carpetas, dependencias, API de salud y página inicial | Completada |
-| 2. Modelos y contrato | Tipos de tokens, AST, diagnósticos, resultados y catálogo | Pendiente |
+| 2. Modelos y contrato | Tipos de tokens, AST, diagnósticos, resultados y catálogo | Completada |
 | 3. Análisis léxico | Tokens, patrones, ubicaciones y errores léxicos | Pendiente |
 | 4. Análisis sintáctico | Gramática ejecutable, AST y errores de estructura | Pendiente |
 | 5. Semántica y API de análisis | Reglas, catálogo, selección e integración HTTP | Pendiente |
@@ -29,7 +29,7 @@ nuevas admitidas y sujetas a ocupación conocida. SIN_ASIGNAR significa pendient
 - Lenguaje v0.2 y prompt para convertir imágenes.
 - Ejemplos personales y de Carolina, con limitaciones de las fuentes documentadas.
 
-## 1. Estructura y arranque — alcance de esta entrega
+## 1. Estructura y arranque — completada
 
 Entregables: paquete Python bajo `backend/src`, módulos separados por función,
 proyecto React bajo `frontend/src`, herramientas configuradas y dependencias
@@ -48,7 +48,7 @@ build de React/TypeScript y comprobaciones HTTP de salud, OpenAPI, documentació
 página de desarrollo y proxy Vite → FastAPI. No se realizó inspección visual en
 un navegador. La siguiente etapa permanece pendiente de indicación del usuario.
 
-## 2. Modelos y contrato
+## 2. Modelos y contrato — completada
 
 Definir dataclasses o tipos propios para posiciones, tokens, AST, oferta, sesión,
 horario, diagnósticos y comprobaciones. Separar tipos del dominio de los modelos
@@ -58,6 +58,15 @@ códigos de aula. Definir cómo cargar catálogo de trabajo y política.
 Criterio: contrato de análisis documentado con ejemplos de resultado válido,
 inválido e incompleto; procedencia del Excel y marcadores desconocidos preservados.
 Los modelos del núcleo se utilizan sin importar FastAPI ni React.
+
+Entregado: modelos Python sin frameworks en el núcleo, carga explícita del
+catálogo/política, claves de comparación de aulas y reemplazo temporal de ofertas.
+Contrato Pydantic separado, JSON Schema exportado y tres fixtures ilustrativos.
+El AST se adapta a nodos con hijos, etiquetas y rangos para dibujarlo en la interfaz.
+Documentación: [contrato de análisis](07-contrato-analisis.md).
+
+Verificación: 32 pruebas del backend, sincronización de esquemas/fixtures y build
+del frontend. La etapa 3 permanece pendiente de indicación del usuario.
 
 ## 3. Análisis léxico
 
@@ -104,7 +113,10 @@ Construir la pantalla conforme a [la referencia visual](06-referencia-frontend.m
 tema oscuro y violeta; editor a la izquierda; pestañas a la derecha para tokens,
 árbol, símbolos, diagnósticos y horario; consola inferior.
 
-Agregar carga de ejemplos/archivos, Compilar y Limpiar, estados de espera y error,
+Agregar recuadro de texto editable y botón «Subir .hor» que carga el archivo en ese
+mismo recuadro. Representar el AST como árbol visual de nodos y ramas con niveles,
+zoom/desplazamiento y conexión con el editor mediante sus rangos. Agregar carga de
+ejemplos, Compilar y Limpiar, estados de espera y error,
 ubicaciones navegables y diseño adaptable. Consumir resultados reales de la API.
 
 Criterio: completar desde el navegador un flujo válido y otro con errores; no
